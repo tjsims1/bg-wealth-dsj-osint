@@ -1,0 +1,96 @@
+SOURCE: BonChat broadcast (BG-NNN cell, retained-victim audience), captured 2026-05-05
+LANGUAGE: English
+RECIPIENT: All retained DSJEX/BGW account holders
+TYPE: Operator-authored "anti-fraud tips" — a self-documenting
+      information-control / member-discipline announcement.
+PRESERVED VERBATIM. the test account's identity is not in this text.
+
+------------------------------------------------------------
+💥 BG Anti-Fraud Tips 💥
+
+☆ 1. BG team staff will never proactively add your personal contact
+   information; anyone doing so is a scammer.
+
+☆ 2. BG team staff will not recommend other investment projects, account
+   opening websites, transfer or deposit addresses; all operations must
+   be conducted on the DSJEX platform; otherwise, it is definitely a
+   scam.
+
+☆ 3. BG team staff uniformly use Bonchat; any other social media platform
+   is a scam.
+
+☆ 4. No member is allowed to share unfamiliar links in the group (leaders
+   at level 7 and above may share lecture videos or links).
+
+☆ 5. BG members who need a DSJEX link can contact Elena or obtain it from
+   the notification group.
+
+☎️ (New Members) Please recognize the official Bonchat accounts:
+   [Stephen03] and [Elena03].
+
+⚠️⚠️⚠️ New members should add Elena03 to activate their DSJEX account
+   first, and then add Stephen03.
+
+☎️ (Existing members) Please do not add Bonchat accounts repeatedly.
+
+🎀 Protecting Our Shared Interests 🎀
+
+We must be vigilant against all kinds of scams and rationally respond to
+any false information about BG and DSJEX. Any information lacking solid
+evidence should be firmly refuted and must not be spread. Let us work
+together to maintain the team's reputation and defend the integrity,
+development, and long-term plans of BG and DSJEX.
+
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. ROLE SPLIT BETWEEN OPERATOR HANDLES — DEFINITIVE:
+   * Elena03 = onboarding / intake / DSJEX-activation gateway. New
+     members must add Elena03 FIRST.
+   * Stephen03 = ongoing signal-broadcast role, added second.
+   This confirms Elena03 is the highest-value single subpoena target for
+   victim-list discovery — every onboarded victim has interacted with
+   Elena03 to activate their account.
+
+2. LV7+ MLM TIER = OPERATOR-TRUSTED LAYER:
+   "leaders at level 7 and above may share lecture videos or links."
+   This is structural confirmation that LV7+ promoters (Cynthia Tran
+   §3.4.2, Lien Tran, allegedly Gagan Sarkaria §3.4.1) are the trusted
+   internal content-distribution layer for the operators — i.e. the
+   middle-management-promoter cohort that bridges operators and victims.
+
+3. EXPLICIT CULT-INFORMATION-CONTROL INSTRUCTIONS — EACH IS A TEXTBOOK
+   INDICATOR FROM CULT-DEPROGRAMMING LITERATURE:
+   a. Lock victim into proprietary platform (DSJEX-only operations, no
+      external sites).
+   b. Lock victim into proprietary channel (BonChat-only contact, no
+      other social media).
+   c. Suppress lateral information sharing (no "unfamiliar links" except
+      from LV7+ trusted promoters).
+   d. Pre-emptively dismiss external warnings as "false information"
+      that "must not be spread" — designed to neutralize regulator
+      advisories, dehek.com / BehindMLM reporting, and any victim who
+      tries to raise concerns.
+   e. Direct instruction to actively "defend the integrity" of the
+      platform — i.e. recruit victims as defenders against criticism.
+   These five instructions, given simultaneously in a single notice,
+   match the BITE Model of Authoritarian Control (Hassan, 2019)
+   information-control behavioral indicators almost line-for-line.
+
+4. SELF-IRONIC ADMISSION:
+   The "Anti-Fraud Tips" headline is itself the irony: every "tip" the
+   operators give is a description of how their own scheme is run. Tip
+   #1 ("staff will never proactively add your personal contact
+   information") is operationally inverted — the operators have a
+   centralized contact registry of every onboarded user via Elena03's
+   account. Tip #2 ("all operations must be conducted on the DSJEX
+   platform") locks the victim's funds inside operator-controlled
+   infrastructure. Tip #3-#5 lock the victim's communication. The
+   notice is a confession dressed as a warning.
+
+5. INVESTIGATIVE PRIORITY DERIVED FROM THIS NOTICE:
+   Subpoena BonChat for Elena03's contact list = direct enumeration of
+   every onboarded BGW/DSJEX victim. This is now the single
+   highest-leverage attribution / victim-identification artifact in the
+   investigation.
