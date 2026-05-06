@@ -41,6 +41,10 @@ The scheme is **operationally dead** but **not contained**: surviving accomplice
 | `dsj627.icu` | DSJ mobile-app distribution | Live | Hosts iOS `mobileconfig` profile + Android `apk` per `/api/app/config`. **Mobile-config install = MDM-style trust grant — significant threat vector if installed.** |
 | `dsiscos.com` | DSJ image / asset CDN | Live | Slide banners + announcement art served from here. |
 | `dsj24.oss-ap-southeast-1.aliyuncs.com` | Alibaba Cloud Singapore S3 bucket | Live | DSJ branding/logo store. |
+| `nex.afirrmjob.com` | **NEXO Trading Global / "NEXOmax" frontend (new sibling)** | **Live (HTTP 200)** | Discovered 2026-05-05. Same operator family per dehek.com. |
+| `afirrmjob.com` | NEXO parent SaaS host | Cloudflare-fronted | Registrar **Dominet (HK) Limited / Alibaba Cloud**, created 2025-03-11 — same Chinese registrar fingerprint as the rest of the cluster. |
+| `bggp.vip`, `bg911.cc` | BG-rotation lookalikes | Listed by WA DFI | New patterns extending the rotation fleet. |
+| `dsj15.com` | DSJ-rotation lookalike | Listed in alertopedia.com | Confirms the `dsj{N}.com` numerator runs lower than the previously catalogued range. |
 
 **Domain rotation pattern:** numeric suffix lookalikes (`dsj{N}.com`, `dsjex{N}.com`, `dsj{N}.icu`, `bg{N}.com`, `yzzq{N}.cc`, `tra{N}.tw`) registered in fast bursts. Any new domain matching these patterns + privacy-shielded WHOIS + Cloudflare in front + Chinese hosting backend should be treated as suspect.
 
@@ -105,6 +109,7 @@ Forensic value: backend repo before deletion contained referral-code logic, depo
 - **Operational signal-code delivery (live-confirmed): BonChat ONLY.** The "trading signal codes" that victims paste into the rigged UI are sent exclusively via BonChat. Operators specifically push victims into BonChat — and out of mainstream channels — once they're past the initial recruitment funnel. This deliberate channel split (open recruitment → closed signals) is itself a high-confidence operator-attribution signal, and it explains why subpoenas of Telegram/WhatsApp turn up recruitment chatter but rarely the rigged-trading evidence.
 - Confirmed Telegram recruitment channel (reported for abuse): `t.me/+fyRGxnhsEKkwYzg5`.
 - **BonChat is confirmed as the recruitment vector for this specific case.** the test account was opened by a third party who received the registration link via BonChat. BonChat use is itself an indicator on the WA DFI alert and BehindMLM reporting — operators specifically push victims into it because it resists subpoena.
+- **BonChat as victim-control infrastructure (per dehek.com investigation).** The platform is used not just for signal delivery but for **active surveillance and silencing**: operators monitor member messages, block screenshots in-app, and require victims to provide a "reason" before withdrawals — those who try to speak out or refuse are muted or removed from the channel. BonChat is a low-uptake messenger by design — chosen because it offers minimal transparency around message retention while giving operators central conversation control.
 - **Mobile-app distribution:** `dsj627.icu/dsj625.mobileconfig` (iOS) and `dsj627.icu/dsj625.apk` (Android) — installing the iOS profile grants MDM-style trust and is a major escalation vector beyond simple investment loss.
 
 ---
@@ -165,6 +170,10 @@ Senior promoters / Zoom presenters (publicly named by Danny de Hek's "Avengers" 
 
 > **Mau Hunt Kota** — Samoa (named by BehindMLM specifically).
 
+> **Hohepa Patea** — New Zealand. Currently promoting "Signal Raiders" / CRGLOBAL / UICEX — same operator family as DSJ/BGW per dehek.com investigation (right-of-reply offered 2025-10-25). Subject of FMA NZ TXEX warning.
+
+> **Philip J Hermann** — listed as "CEO" of NEXO Trading Global / NEXOmax (via `nex.afirrmjob.com`). NEXO LIMITED incorporated February 2026 at a Denver registered-agent address; references a FinCEN MSB registration (which provides no regulatory legitimacy). Same playbook as BGW. Profile assessment pending — front-man hypothesis (cf. Stephen Beard, §3.2) plausible but unconfirmed.
+
 These names are sourced from public Zoom-meeting attendance records and social-media activity compiled by the dehek.com Avengers community. They are **alleged promoters**, not subject to any criminal charge known to this investigator.
 
 ### 3.5 Live-Captured Upline IDs (anonymous, confirmed-active 2026-05-05)
@@ -182,6 +191,30 @@ Both accounts registered **within 4 minutes of each other** on 2024-06-14. This 
 - Operator team-leader registered alongside their first downline as an artificial "depth"
 
 Names are **not exposed by the API** at LV0 rank — by design. To resolve names, either subpoena DSJ via FBI IC3 case linkage, or follow the human chain (the BonChat sender is the natural pivot — but the test account came from a third party, breaking that chain).
+
+---
+
+### 3.6 Multi-Brand Operator Family (the "TXEX Umbrella")
+
+The DSJ Exchange / BG Wealth Sharing operation is **one cell of a long-running, multi-decade exchange-clone-as-a-service network**. The same playbook (10-tier MLM ranks, twice-daily "signal codes" pasted into a rigged UI, BonChat surveillance, withdrawal-blocking-plus-tax exit-scam, **the same recurring "Professor" persona reappearing across brands** per Alberta Securities Commission) has shipped under at least the following names. Promoters often pivot before each collapse, carrying their downline networks into the next brand.
+
+| Era | Brand(s) | Status / Notes |
+| --- | --- | --- |
+| Earlier | **TXEX** (umbrella name) | FMA NZ explicit warning page: `fma.govt.nz/library/warnings-and-alerts/txex/` (2025) |
+| ~ | **LWEX** | Predecessor brand per dehek.com |
+| ~ | **CR Group LLC / CR Wealth / CR Investment Group / CRGLOBAL / UICEX** | Collapsed; current rebrand → "Signal Raiders" |
+| 2025 | **BG Wealth Sharing** | FBI seizure of `bgwealthsharing.com` 2026-04-23; collapsed late April 2026 |
+| 2025 | **DSJ Exchange / DSJEX** | Active sibling to BGW; live successor frontends `tra809.tw`, `dsj626.icu`, `dsj627.icu` etc. (this report) |
+| 2025-12 | **Swift Wave Capital / VCEX / Value Chain** | Promoter Faiana Brown (also BGW); FMA-listed 2026-04-14; live VCEX nodes on `38.182.168.98` (`vcexpro.com`, `vcexin.com`) |
+| 2026-02 | **NEXO Trading Global / NEXOmax** | Live at `nex.afirrmjob.com` (Cloudflare/Alibaba); NEXO LIMITED Denver shell; named "CEO" Philip J Hermann |
+| 2026 | **Signal Raiders** | Current rebrand of CRGLOBAL/UICEX; promoter Hohepa Patea (NZ) — subject of FMA TXEX warning |
+
+**Ancillary same-family brands referenced by investigators:** Hyperverse, Validus (older Australian crypto MLM Ponzis using the same recruitment-and-rebrand pattern; same compensation-plan archetype).
+
+**Forensic implications:**
+- The "**Professor Stephen Beard**" persona (§3.2) is plausibly **a recurring on-camera identity reused across multiple brands** — the dehek/ASC observation that "the same professor persona" appears in TXEX/CRGLOBAL/BGW/etc. means a single reverse-image-search may surface him in promotional material spanning multiple takedown-case brand names. That makes him a stronger forensic anchor than any single-brand investigation would suggest.
+- The DSJ-stack signature (Spring/Java REST + `app-login-token` + plain-JSON over Cloudflare) and the VCEX-stack signature (Apache Struts 2 + AES-128-ECB-with-`dapp-20230831abc` + signing-salt-`VCExhhw...`) are **two distinct backends** servicing this same family, suggesting either two sibling SaaS vendors or one vendor with two product lines. NEXO's stack is a third datapoint: TradingView + Vite + `afirrmjob.com` parent — fingerprint pending.
+- The 2026-04-23 indictment hit one cell. The umbrella is much larger.
 
 ---
 
@@ -216,10 +249,22 @@ Names are **not exposed by the API** at LV0 rank — by design. To resolve names
 
 **UK Companies House:** "DSJ Exchange Ltd" — incorporated July 2024, **dissolved October 2025**, company #15821489 (`find-and-update.company-information.service.gov.uk/company/15821489`). Used for legitimacy theater; never a regulated entity.
 
-**Fake SEC license claim (advertised to victims via in-app announcements):**
+**Fake SEC license claim — VERIFIED FRAUDULENT** (advertised to victims via in-app announcements):
+
 > "Good news: DSJEX successfully applied for a SEC license from the U.S. Securities and Exchange Commission on July 11, 2025. CIK: 0002076856"
 
-CIK should be verified against EDGAR. A CIK is automatically issued on first filing and means *nothing* about "license" status — which is a common misrepresentation tactic. Either the CIK doesn't exist, or it was obtained via a sham Form D / no-action filing for legitimacy theater.
+EDGAR confirms the CIK is real but the "license" framing is fraudulent:
+
+| EDGAR field | Value |
+| --- | --- |
+| Company name | **DSJ Exchange PTY Ltd** |
+| CIK | 0002076856 |
+| Filings on record | **1** total — Form D, dated 2025-07-11 |
+| State of incorporation | Colorado |
+| Mailing address | 3190 SOUTH VAUGHN WAY, AURORA, CO 80014 |
+| SIC code | (blank — no business sector claimed) |
+
+**Form D is a notice of an EXEMPT (i.e., unregistered) securities offering under Reg D.** It is *the opposite of a "license"* — you file it precisely to claim *exemption* from SEC registration requirements. The filing is the SEC equivalent of writing yourself a permission slip; SEC reviews are not part of the process and the agency does not "issue licenses" through Form D. The Aurora CO address is almost certainly a registered-agent shell. **The advertised SEC-license claim is therefore a verified misrepresentation actionable as securities fraud (15 U.S.C. § 77q(a)).**
 
 ---
 

@@ -41,6 +41,24 @@ domains:
   - tradepulse-ai.com
   - copytradingsignals.org
 
+  # NEXO Trading Global / NEXOmax (sibling brand 2026-02, Philip J Hermann CEO)
+  - nex.afirrmjob.com
+  - afirrmjob.com
+  - nexotradingglobal.com
+  - nexo-trading.com
+  - nexotg.com
+
+  # Additional rotation domains surfaced via WA DFI + alertopedia
+  - bggp.vip
+  - bg911.cc
+  - dsj15.com
+
+  # CRGLOBAL / UICEX / Signal Raiders (current rebrand of TXEX-family successor)
+  - uicex.com
+  - crglobal.com
+  - signalraiders.com
+  - signalraiders.io
+
 # Cert Transparency queries (crt.sh) — surface new lookalikes registering certs
 crtsh_queries:
   - "%.dsjex.%"
@@ -50,3 +68,10 @@ crtsh_queries:
   - "%vcex%"
   - "%swiftwave%"
   - "%swift-wave%"
+  - "%afirrmjob%"
+  - "%uicex%"
+  - "%crglobal%"
+  - "%signalraider%"
+  - "%nexomax%"
+  - "%txex%"
+  - "%lwex%"
