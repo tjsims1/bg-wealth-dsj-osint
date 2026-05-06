@@ -11,11 +11,11 @@
 
 **DSJ Exchange (DSJEX) / BG Wealth Sharing** was a "click-a-button" cryptocurrency Ponzi operated out of a scam compound in **Min Let Pan, Burma**, from at least **January 2025 until December 2025**, with US-facing recruitment continuing until the platform's collapse in **late April 2026**. Victims deposited USDT (TRC-20) into a controlled exchange UI, were fed scripted "trading signals" exclusively via BonChat (other channels — Telegram, WhatsApp — were used for *recruitment* only), and saw fake P&L until withdrawals locked. Total estimated illicit volume: **~$150M**, with **~$41.5M frozen** by combined US/international action.
 
-Two Chinese nationals — **Jiang Wen Jie** (aka Jiang Nan) and **Huang Xingshan** (aka Ah Zhe) — were charged in the District of Columbia on **2026-04-23** as part of DOJ's Scam Center Strike Force. Both fled Burma to Thailand in November 2025 and were arrested by Thai authorities on immigration fraud; US extradition is undecided.
+Two Chinese nationals — **Jiang Wen Jie** (aka Jiang Nan) and **Huang Xingshan** (aka Ah Zhe) — were charged in the District of Columbia on **2026-04-23** as part of DOJ's Scam Center Strike Force. Both fled Burma to Thailand in November 2025 and were arrested by Thai authorities on immigration fraud; US extradition is undecided. **The two named defendants are almost certainly a small subset of the operating team.** Min Let Pan-style scam compounds typically house 50–200 workers (signal scripters, BonChat handlers, MLM recruiters, IT staff). BonChat activity has remained continuously live post-indictment — see §9 — confirming the operational team is largely intact and that further indictments are likely as the DOJ Strike Force unwinds the cell.
 
-The platform branding (Professor Stephen Beard as "founder", Joseph Smith as COO) appears entirely **fabricated/AI-generated**. The actual technical operation relied on freelance/commissioned developers in India and possibly elsewhere, with the source code briefly exposed on public GitHub.
+The platform branding personas — "**Professor Stephen Beard**" (claimed founder, gives daily "signals") and "**Joseph Smith**" (claimed COO) — are not who they claim to be. **The strongest working hypothesis on Stephen Beard is that he is a "白工" / "white-monkey job" hire** — a Western foreigner paid by a Chinese promoter to appear in legitimacy-theater promotional material with little to no knowledge of the underlying scheme. This is a well-documented Chinese marketing practice; it fits the pattern of *real video appearances* + *zero verifiable biographical trail outside the promotional materials*. AI synthesis remains possible but is less likely given the consistency of the on-screen identity. **If correct, "Stephen Beard" is a witness, not a target** — but the photographer / videographer / agency that paid him is a key lead. The actual technical operation relied on freelance/commissioned developers in India and possibly elsewhere, with the source code briefly exposed on public GitHub.
 
-The scheme is **operationally dead** but **not contained**: surviving accomplices are running successor "click a button" clones (Swift Wave Capital, others), and at least two recruitment landing pages remain live on Vercel as of report time.
+The scheme is **operationally dead** but **not contained**: surviving accomplices are running successor "click a button" clones (Swift Wave Capital, others), at least two recruitment landing pages remain live on Vercel as of report time, and BonChat trading-signal channels continue to deliver scripted entries to retained victims.
 
 ---
 
@@ -116,10 +116,18 @@ Forensic value: backend repo before deletion contained referral-code logic, depo
 - **Jiang Wen Jie** (aka **Jiang Nan**) — Chinese national, operated Burma compound Min Let Pan, fled to Thailand Nov 2025, arrested by Thai authorities (immigration fraud).
 - **Huang Xingshan** (aka **Ah Zhe**) — Chinese national, same compound, same flight pattern, same Thai detention.
 
-### 3.2 Front-End Personas (likely fictional / AI-generated)
+**Likely additional operators (not yet charged).** Burma scam compounds typically employ 50–200 workers per cell, segmented across roles: signal-script writers, BonChat handlers (the "Stephen Beard" voice on chat is plausibly a rotating team, not one person), MLM recruiters, IT/devs, finance/laundering. The persistence of BonChat-delivered signal codes after the 2026-04-23 indictment confirms an active operating team beyond the two named defendants. Investigative priorities for additional attribution:
+- BonChat handle operators sending signal codes — capture timestamps + handles per session
+- Operators of `api.ddjea.com` / Cloudflare account that fronts it
+- Whoever holds the private keys to the operator hot wallet `TYwaXc4ofNK2mL4NHaz9y58WiNAhguqWLu` and the top-5 next-hop wallets in §2.2
 
-- **"Professor Stephen Beard"** — claimed BGW founder, gives daily "trading signals". No identity verifiable outside promo materials. Referenced by name in the **FCA UK warning** (May 2025).
-- **"Joseph Smith"** — claimed DSJ Exchange COO. Promo video: `youtube.com/watch?v=dJ9A87PSJhM`. No verifiable identity.
+### 3.2 Front-End Personas (paid actors and/or fabricated)
+
+- **"Professor Stephen Beard"** — claimed BGW founder, gives daily "trading signals" (delivered exclusively via BonChat per §2.4). No identity verifiable outside promo materials. Referenced by name in the **FCA UK warning** (May 2025).
+  - **Working hypothesis:** "Stephen Beard" is a **"白工" / "white-monkey job"** — a Western foreigner hired by a Chinese promoter to appear in legitimacy-theater video and photography, almost certainly with no knowledge of the underlying scheme. Hired-foreigner-as-prop is a well-documented Chinese marketing practice; the pattern (consistent on-screen face + zero biographical paper trail) fits.
+  - Practical implication: the on-screen "Professor" is most likely **a witness, not a target**. The casting/talent agency that placed him and the production company that filmed him are the upstream leads; investigators should subpoena BGW media production records and reverse-image-search the on-screen identity to find his other commercial appearances.
+  - Earlier characterization in this report as "AI-generated" is downgraded to "possible but unlikely given consistent video presence."
+- **"Joseph Smith"** — claimed DSJ Exchange COO. Promo video: `youtube.com/watch?v=dJ9A87PSJhM`. No verifiable identity. Same "white-monkey job" hypothesis applies and should be evaluated jointly.
 
 ### 3.3 Developers (commissioned / linked)
 
