@@ -84,6 +84,9 @@ domains:
   # Surfaced 2026-05-05 from a victim's URL bar in a cash-collection screenshot
   - tra818.tw
 
+  # BonChat platform domain (operator-controlled messenger; subpoena target)
+  - bonchat.live
+
   # CRGLOBAL / UICEX / Signal Raiders (current rebrand of TXEX-family successor)
   - uicex.com
   - crglobal.com

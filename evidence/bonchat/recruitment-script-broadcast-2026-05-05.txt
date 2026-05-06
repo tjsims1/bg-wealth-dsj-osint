@@ -1,0 +1,108 @@
+SOURCE: BonChat broadcast (BG-NNN cell, retained-victim audience), captured 2026-05-05
+LANGUAGE: English
+RECIPIENT: All retained members (intended for them to forward to recruits)
+TYPE: Operator-authored recruitment / onboarding funnel script — literal
+      step-by-step instructions distributed to existing members for use
+      with prospective victims.
+PRESERVED VERBATIM. the test account's identity is not in this text.
+
+------------------------------------------------------------
+Welcome to the BG Wealthshare Investment Group!
+
+New members can invest from $500 to $5,000 and receive professional
+guidance from Professor Stephen Beard. You will benefit greatly from
+this discussion group!
+
+Steps to join the BG Wealthshare Investment Group:
+
+1. Register a DSJ trading account.
+
+2. Purchase equal amounts of USDT, BTC, and ETH to invest in your
+   cryptocurrency portfolio.
+
+3. After the purchase, your purchased USDT, BTC, and ETH will be
+   transferred to your DSJ trading account.
+
+4. Once the funds are in your account, you can start profiting based on
+   trading signals.
+
+To avoid disrupting your daily activities, the Bon Chat group will close
+at 11:00 PM EST and reopen at 10:30 AM the following morning.
+
+Please continue to follow the BG Group website: bg6988.com
+
+1. You can securely download BON Chat by searching for "bon Chat" in the
+   corresponding mobile application.
+2. After downloading: Enter "bg2606" and click "Next". Then click
+   "Register" at the bottom.
+3. Select your country/region and enter your mobile phone number.
+   After receiving the verification code, click "Continue".
+   Enter your username (letters and numbers).
+4. Enter your password and confirm again.
+   You will be successfully logged in.
+5. After logging in, please be sure to upload your profile picture; this
+   is very important.
+
+https://www.bonchat.live
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. EXPLICIT INVESTMENT-OFFERING TERMS — SECURITIES-FRAUD PREDICATE:
+   The notice advertises a $500–$5,000 investment range with promised
+   "professional guidance from Professor Stephen Beard" and the implied
+   yield from "trading signals." Combined with the §4 captured returns
+   claims (1.8% daily, 99.6% AI win rate, "BG guarantees 100%") and the
+   §3.4.2 Vietnamese-Zoom evidence of guaranteed-return marketing, this
+   is direct documentary evidence of an unregistered securities offering
+   with promised returns to retail investors — predicate elements for
+   15 U.S.C. § 77q(a) and parallel state-securities statutes.
+
+2. MULTI-ASSET DEPOSIT REQUIREMENT — CHARGEBACK-RESISTANCE PATTERN:
+   Step 2 forces victims to *"Purchase equal amounts of USDT, BTC, and
+   ETH"* before depositing. This is operationally significant for
+   forensic purposes:
+   * The TRON-only trace in wallet/WALLET_FORENSICS.md captures only
+     the USDT-TRC20 leg of victim deposits. BTC and ETH legs are
+     additional on-chain surfaces that can be subpoenaed and traced.
+   * BTC transactions are irreversible — operators chose this asset
+     specifically to defeat fiat chargeback paths, even though BTC is
+     more publicly traceable than mixers.
+   * Each victim deposit therefore generates 3 distinct on-chain
+     fingerprints — investigators with multi-chain attribution tools
+     (Chainalysis, Arkham) can cross-correlate.
+
+3. BG2606 SERVER + BONCHAT.LIVE PLATFORM CITATION:
+   The notice instructs new members to register on BonChat server
+   "bg2606" — confirming our prior identification of the active server
+   per server-migration-broadcast-2026-05-05.txt. The platform domain
+   bonchat.live is itself a subpoena target for compliance data on
+   server BG2606, accounts Elena03 / Stephen03 / Amelia, and the full
+   victim contact graph through Elena03.
+
+4. PHONE-NUMBER REGISTRATION:
+   Step 3 ("Select your country/region and enter your mobile phone
+   number. After receiving the verification code, click 'Continue'")
+   confirms BonChat tied account creation to phone numbers via SMS
+   verification. This means every victim's onboarded phone number is in
+   BonChat's registration database — making a BonChat compliance
+   subpoena for Elena03's contacts equivalent to a phone-number list of
+   the entire victim cohort.
+
+5. OPERATOR-IMPOSED BUSINESS HOURS:
+   "Bon Chat group will close at 11:00 PM EST and reopen at 10:30 AM"
+   is operator-controlled, not a BonChat-platform feature. This serves
+   two operator purposes: (a) limit the window in which victims can
+   raise complaints / share warning information when operators are not
+   monitoring, and (b) mimic legitimate-business operating-hours theater
+   to reinforce the "real exchange" framing.
+
+6. RECRUITMENT-LAYER COMPLICITY:
+   The fact that this script is broadcast TO existing members (rather
+   than directly to recruits) means operators rely on existing members
+   to forward it to new recruits. Each existing member who forwards
+   this script and onboards a downline becomes a knowing distributor
+   of fraudulent investment-offering terms — adding another individual
+   wire-fraud / securities-fraud predicate per §3.4 promoter, parallel
+   to the rectification-notice complicity vector documented in
+   rectification-notice-broadcast-2026-05-02.txt §3.
