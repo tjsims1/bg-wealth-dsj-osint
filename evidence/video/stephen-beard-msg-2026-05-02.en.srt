@@ -1,0 +1,1605 @@
+1
+00:00:02,000 --> 00:00:03,550
+
+Hello everyone, this is Stephen as
+
+2
+00:00:03,550 --> 00:00:03,560
+Hello everyone, this is Stephen as
+ 
+
+3
+00:00:03,560 --> 00:00:05,510
+Hello everyone, this is Stephen as
+usual. So, we are currently at a
+
+4
+00:00:05,510 --> 00:00:05,520
+usual. So, we are currently at a
+ 
+
+5
+00:00:05,520 --> 00:00:09,470
+usual. So, we are currently at a
+critical juncture in DSX's IPO process,
+
+6
+00:00:09,470 --> 00:00:09,480
+critical juncture in DSX's IPO process,
+ 
+
+7
+00:00:09,480 --> 00:00:12,510
+critical juncture in DSX's IPO process,
+so which directly impacts the subsequent
+
+8
+00:00:12,510 --> 00:00:12,520
+so which directly impacts the subsequent
+ 
+
+9
+00:00:12,520 --> 00:00:16,550
+so which directly impacts the subsequent
+use and fund security of every member's
+
+10
+00:00:16,550 --> 00:00:16,560
+use and fund security of every member's
+ 
+
+11
+00:00:16,560 --> 00:00:18,830
+use and fund security of every member's
+account first of all. So, first I want
+
+12
+00:00:18,830 --> 00:00:18,840
+account first of all. So, first I want
+ 
+
+13
+00:00:18,840 --> 00:00:21,630
+account first of all. So, first I want
+to confirm a key piece of information.
+
+14
+00:00:21,630 --> 00:00:21,640
+to confirm a key piece of information.
+ 
+
+15
+00:00:21,640 --> 00:00:24,630
+to confirm a key piece of information.
+So, DSX right now has officially entered
+
+16
+00:00:24,630 --> 00:00:24,640
+So, DSX right now has officially entered
+ 
+
+17
+00:00:24,640 --> 00:00:28,510
+So, DSX right now has officially entered
+the crucial stage of IPO preparation and
+
+18
+00:00:28,510 --> 00:00:28,520
+the crucial stage of IPO preparation and
+ 
+
+19
+00:00:28,520 --> 00:00:32,269
+the crucial stage of IPO preparation and
+has introduced a relevant auditing
+
+20
+00:00:32,269 --> 00:00:32,279
+has introduced a relevant auditing
+ 
+
+21
+00:00:32,279 --> 00:00:34,270
+has introduced a relevant auditing
+department to conduct a systematic
+
+22
+00:00:34,270 --> 00:00:34,280
+department to conduct a systematic
+ 
+
+23
+00:00:34,280 --> 00:00:37,110
+department to conduct a systematic
+review for the entire platform. So, this
+
+24
+00:00:37,110 --> 00:00:37,120
+review for the entire platform. So, this
+ 
+
+25
+00:00:37,120 --> 00:00:40,510
+review for the entire platform. So, this
+review is not just a simple procedure,
+
+26
+00:00:40,510 --> 00:00:40,520
+review is not just a simple procedure,
+ 
+
+27
+00:00:40,520 --> 00:00:43,430
+review is not just a simple procedure,
+so but a very rigorous auditing
+
+28
+00:00:43,430 --> 00:00:43,440
+so but a very rigorous auditing
+ 
+
+29
+00:00:43,440 --> 00:00:45,950
+so but a very rigorous auditing
+mechanism. So, so far focusing on three
+
+30
+00:00:45,950 --> 00:00:45,960
+mechanism. So, so far focusing on three
+ 
+
+31
+00:00:45,960 --> 00:00:48,550
+mechanism. So, so far focusing on three
+core areas. So, first is the accuracy of
+
+32
+00:00:48,550 --> 00:00:48,560
+core areas. So, first is the accuracy of
+ 
+
+33
+00:00:48,560 --> 00:00:50,630
+core areas. So, first is the accuracy of
+the financial statements,
+
+34
+00:00:50,630 --> 00:00:50,640
+the financial statements,
+ 
+
+35
+00:00:50,640 --> 00:00:54,590
+the financial statements,
+second the clarity of fund flows, and
+
+36
+00:00:54,590 --> 00:00:54,600
+second the clarity of fund flows, and
+ 
+
+37
+00:00:54,600 --> 00:00:56,590
+second the clarity of fund flows, and
+the third one
+
+38
+00:00:56,590 --> 00:00:56,600
+the third one
+ 
+
+39
+00:00:56,600 --> 00:00:58,510
+the third one
+whether all account data complies with a
+
+40
+00:00:58,510 --> 00:00:58,520
+whether all account data complies with a
+ 
+
+41
+00:00:58,520 --> 00:01:00,510
+whether all account data complies with a
+capital market compliance standards,
+
+42
+00:01:00,510 --> 00:01:00,520
+capital market compliance standards,
+ 
+
+43
+00:01:00,520 --> 00:01:04,189
+capital market compliance standards,
+right? So, Well, in other words, DSX
+
+44
+00:01:04,189 --> 00:01:04,199
+right? So, Well, in other words, DSX
+ 
+
+45
+00:01:04,199 --> 00:01:06,870
+right? So, Well, in other words, DSX
+has now officially moved from
+
+46
+00:01:06,870 --> 00:01:06,880
+has now officially moved from
+ 
+
+47
+00:01:06,880 --> 00:01:10,350
+has now officially moved from
+internal development phase to phase of
+
+48
+00:01:10,350 --> 00:01:10,360
+internal development phase to phase of
+ 
+
+49
+00:01:10,360 --> 00:01:12,270
+internal development phase to phase of
+being reviewed and verified. So,
+
+50
+00:01:12,270 --> 00:01:12,280
+being reviewed and verified. So,
+ 
+
+51
+00:01:12,280 --> 00:01:13,350
+being reviewed and verified. So,
+however,
+
+52
+00:01:13,350 --> 00:01:13,360
+however,
+ 
+
+53
+00:01:13,360 --> 00:01:16,390
+however,
+a very critical issue has
+
+54
+00:01:16,390 --> 00:01:16,400
+a very critical issue has
+ 
+
+55
+00:01:16,400 --> 00:01:18,910
+a very critical issue has
+arisen during the audit process.
+
+56
+00:01:18,910 --> 00:01:18,920
+arisen during the audit process.
+ 
+
+57
+00:01:18,920 --> 00:01:20,510
+arisen during the audit process.
+The auditing department discovered
+
+58
+00:01:20,510 --> 00:01:20,520
+The auditing department discovered
+ 
+
+59
+00:01:20,520 --> 00:01:22,030
+The auditing department discovered
+irregularities
+
+60
+00:01:22,030 --> 00:01:22,040
+irregularities
+ 
+
+61
+00:01:22,040 --> 00:01:23,550
+irregularities
+in the use of some accounts,
+
+62
+00:01:23,550 --> 00:01:23,560
+in the use of some accounts,
+ 
+
+63
+00:01:23,560 --> 00:01:26,470
+in the use of some accounts,
+particularly as a practice of one person
+
+64
+00:01:26,470 --> 00:01:26,480
+particularly as a practice of one person
+ 
+
+65
+00:01:26,480 --> 00:01:28,390
+particularly as a practice of one person
+holding multiple accounts. That's
+
+66
+00:01:28,390 --> 00:01:28,400
+holding multiple accounts. That's
+ 
+
+67
+00:01:28,400 --> 00:01:30,910
+holding multiple accounts. That's
+unfortunate, of course. So, this
+
+68
+00:01:30,910 --> 00:01:30,920
+unfortunate, of course. So, this
+ 
+
+69
+00:01:30,920 --> 00:01:33,390
+unfortunate, of course. So, this
+not only affects the accuracy of the
+
+70
+00:01:33,390 --> 00:01:33,400
+not only affects the accuracy of the
+ 
+
+71
+00:01:33,400 --> 00:01:36,870
+not only affects the accuracy of the
+data, but also involves unclear account
+
+72
+00:01:36,870 --> 00:01:36,880
+data, but also involves unclear account
+ 
+
+73
+00:01:36,880 --> 00:01:39,430
+data, but also involves unclear account
+ownership and ambiguous
+
+74
+00:01:39,430 --> 00:01:39,440
+ownership and ambiguous
+ 
+
+75
+00:01:39,440 --> 00:01:41,430
+ownership and ambiguous
+tax responsibilities, of course.
+
+76
+00:01:41,430 --> 00:01:41,440
+tax responsibilities, of course.
+ 
+
+77
+00:01:41,440 --> 00:01:44,150
+tax responsibilities, of course.
+So, more seriously, according to
+
+78
+00:01:44,150 --> 00:01:44,160
+So, more seriously, according to
+ 
+
+79
+00:01:44,160 --> 00:01:46,590
+So, more seriously, according to
+current statistics, this situation
+
+80
+00:01:46,590 --> 00:01:46,600
+current statistics, this situation
+ 
+
+81
+00:01:46,600 --> 00:01:48,310
+current statistics, this situation
+accounts for
+
+82
+00:01:48,310 --> 00:01:48,320
+accounts for
+ 
+
+83
+00:01:48,320 --> 00:01:51,150
+accounts for
+over 70% of cases and is
+
+84
+00:01:51,150 --> 00:01:51,160
+over 70% of cases and is
+ 
+
+85
+00:01:51,160 --> 00:01:54,750
+over 70% of cases and is
+distributed across various teams.
+
+86
+00:01:54,750 --> 00:01:54,760
+distributed across various teams.
+ 
+
+87
+00:01:54,760 --> 00:01:56,590
+distributed across various teams.
+What does this mean?
+
+88
+00:01:56,590 --> 00:01:56,600
+What does this mean?
+ 
+
+89
+00:01:56,600 --> 00:01:59,470
+What does this mean?
+This means the overall compliance of the
+
+90
+00:01:59,470 --> 00:01:59,480
+This means the overall compliance of the
+ 
+
+91
+00:01:59,480 --> 00:02:02,270
+This means the overall compliance of the
+platform data has been affected. So, for
+
+92
+00:02:02,270 --> 00:02:02,280
+platform data has been affected. So, for
+ 
+
+93
+00:02:02,280 --> 00:02:04,150
+platform data has been affected. So, for
+this reason, the review process has been
+
+94
+00:02:04,150 --> 00:02:04,160
+this reason, the review process has been
+ 
+
+95
+00:02:04,160 --> 00:02:06,110
+this reason, the review process has been
+temporarily suspended.
+
+96
+00:02:06,110 --> 00:02:06,120
+temporarily suspended.
+ 
+
+97
+00:02:06,120 --> 00:02:08,950
+temporarily suspended.
+The review department has clearly
+
+98
+00:02:08,950 --> 00:02:08,960
+The review department has clearly
+ 
+
+99
+00:02:08,960 --> 00:02:11,430
+The review department has clearly
+stated that comprehensive
+
+100
+00:02:11,430 --> 00:02:11,440
+stated that comprehensive
+ 
+
+101
+00:02:11,440 --> 00:02:13,510
+stated that comprehensive
+restrictions must be complete before the
+
+102
+00:02:13,510 --> 00:02:13,520
+restrictions must be complete before the
+ 
+
+103
+00:02:13,520 --> 00:02:15,830
+restrictions must be complete before the
+IPO review can proceed.
+
+104
+00:02:15,830 --> 00:02:15,840
+IPO review can proceed.
+ 
+
+105
+00:02:15,840 --> 00:02:17,550
+IPO review can proceed.
+And therefore, everyone must understand
+
+106
+00:02:17,550 --> 00:02:17,560
+And therefore, everyone must understand
+ 
+
+107
+00:02:17,560 --> 00:02:20,710
+And therefore, everyone must understand
+that this is not an individual's
+
+108
+00:02:20,710 --> 00:02:20,720
+that this is not an individual's
+ 
+
+109
+00:02:20,720 --> 00:02:22,870
+that this is not an individual's
+problem, but a problem that the entire
+
+110
+00:02:22,870 --> 00:02:22,880
+problem, but a problem that the entire
+ 
+
+111
+00:02:22,880 --> 00:02:24,950
+problem, but a problem that the entire
+system must face and solve together,
+
+112
+00:02:24,950 --> 00:02:24,960
+system must face and solve together,
+ 
+
+113
+00:02:24,960 --> 00:02:27,150
+system must face and solve together,
+right? So, next I will discuss the most
+
+114
+00:02:27,150 --> 00:02:27,160
+right? So, next I will discuss the most
+ 
+
+115
+00:02:27,160 --> 00:02:31,430
+right? So, next I will discuss the most
+crucial point, right? The
+
+116
+00:02:31,430 --> 00:02:31,440
+crucial point, right? The
+ 
+
+117
+00:02:31,440 --> 00:02:33,350
+crucial point, right? The
+rectification requirements, right? So,
+
+118
+00:02:33,350 --> 00:02:33,360
+rectification requirements, right? So,
+ 
+
+119
+00:02:33,360 --> 00:02:34,830
+rectification requirements, right? So,
+let me take a look.
+
+120
+00:02:34,830 --> 00:02:34,840
+let me take a look.
+ 
+
+121
+00:02:34,840 --> 00:02:36,150
+let me take a look.
+Aha, so [clears throat]
+
+122
+00:02:36,150 --> 00:02:36,160
+Aha, so [clears throat]
+ 
+
+123
+00:02:36,160 --> 00:02:37,310
+Aha, so [clears throat]
+right.
+
+124
+00:02:37,310 --> 00:02:37,320
+right.
+ 
+
+125
+00:02:37,320 --> 00:02:39,190
+right.
+So, currently the review department has
+
+126
+00:02:39,190 --> 00:02:39,200
+So, currently the review department has
+ 
+
+127
+00:02:39,200 --> 00:02:41,630
+So, currently the review department has
+given clear restrictions. All users must
+
+128
+00:02:41,630 --> 00:02:41,640
+given clear restrictions. All users must
+ 
+
+129
+00:02:41,640 --> 00:02:43,790
+given clear restrictions. All users must
+complete account compliance processing
+
+130
+00:02:43,790 --> 00:02:43,800
+complete account compliance processing
+ 
+
+131
+00:02:43,800 --> 00:02:46,310
+complete account compliance processing
+and tax payment within 5 days. So, the
+
+132
+00:02:46,310 --> 00:02:46,320
+and tax payment within 5 days. So, the
+ 
+
+133
+00:02:46,320 --> 00:02:50,390
+and tax payment within 5 days. So, the
+uniform standard is tax payment of 12%
+
+134
+00:02:50,390 --> 00:02:50,400
+uniform standard is tax payment of 12%
+ 
+
+135
+00:02:50,400 --> 00:02:52,710
+uniform standard is tax payment of 12%
+of the account balance, right? So, for
+
+136
+00:02:52,710 --> 00:02:52,720
+of the account balance, right? So, for
+ 
+
+137
+00:02:52,720 --> 00:02:55,510
+of the account balance, right? So, for
+example, if your account has 50,000
+
+138
+00:02:55,510 --> 00:02:55,520
+example, if your account has 50,000
+ 
+
+139
+00:02:55,520 --> 00:02:58,790
+example, if your account has 50,000
+dollars, you will need to pay 6,000
+
+140
+00:02:58,790 --> 00:02:58,800
+dollars, you will need to pay 6,000
+ 
+
+141
+00:02:58,800 --> 00:03:01,910
+dollars, you will need to pay 6,000
+for the tax. So, this is currently the
+
+142
+00:03:01,910 --> 00:03:01,920
+for the tax. So, this is currently the
+ 
+
+143
+00:03:01,920 --> 00:03:03,870
+for the tax. So, this is currently the
+most core and critical step in the
+
+144
+00:03:03,870 --> 00:03:03,880
+most core and critical step in the
+ 
+
+145
+00:03:03,880 --> 00:03:06,070
+most core and critical step in the
+entire
+
+146
+00:03:06,070 --> 00:03:06,080
+entire
+ 
+
+147
+00:03:06,080 --> 00:03:08,310
+entire
+rectification process. So, of course,
+
+148
+00:03:08,310 --> 00:03:08,320
+rectification process. So, of course,
+ 
+
+149
+00:03:08,320 --> 00:03:10,430
+rectification process. So, of course,
+many people will ask a question, why
+
+150
+00:03:10,430 --> 00:03:10,440
+many people will ask a question, why
+ 
+
+151
+00:03:10,440 --> 00:03:12,750
+many people will ask a question, why
+can't it be deducted directly from the
+
+152
+00:03:12,750 --> 00:03:12,760
+can't it be deducted directly from the
+ 
+
+153
+00:03:12,760 --> 00:03:13,790
+can't it be deducted directly from the
+account?
+
+154
+00:03:13,790 --> 00:03:13,800
+account?
+ 
+
+155
+00:03:13,800 --> 00:03:15,870
+account?
+So, I must clarify this point because
+
+156
+00:03:15,870 --> 00:03:15,880
+So, I must clarify this point because
+ 
+
+157
+00:03:15,880 --> 00:03:18,830
+So, I must clarify this point because
+this review is led by an external audit
+
+158
+00:03:18,830 --> 00:03:18,840
+this review is led by an external audit
+ 
+
+159
+00:03:18,840 --> 00:03:20,230
+this review is led by an external audit
+department,
+
+160
+00:03:20,230 --> 00:03:20,240
+department,
+ 
+
+161
+00:03:20,240 --> 00:03:21,590
+department,
+and uh
+
+162
+00:03:21,590 --> 00:03:21,600
+and uh
+ 
+
+163
+00:03:21,600 --> 00:03:23,470
+and uh
+they require complete data that is
+
+164
+00:03:23,470 --> 00:03:23,480
+they require complete data that is
+ 
+
+165
+00:03:23,480 --> 00:03:24,790
+they require complete data that is
+verifiable,
+
+166
+00:03:24,790 --> 00:03:24,800
+verifiable,
+ 
+
+167
+00:03:24,800 --> 00:03:27,470
+verifiable,
+traceable, and recordable, of course.
+
+168
+00:03:27,470 --> 00:03:27,480
+traceable, and recordable, of course.
+ 
+
+169
+00:03:27,480 --> 00:03:28,910
+traceable, and recordable, of course.
+So,
+
+170
+00:03:28,910 --> 00:03:28,920
+So,
+ 
+
+171
+00:03:28,920 --> 00:03:30,790
+So,
+if the platform deducts money directly
+
+172
+00:03:30,790 --> 00:03:30,800
+if the platform deducts money directly
+ 
+
+173
+00:03:30,800 --> 00:03:32,910
+if the platform deducts money directly
+from the account, it cannot
+
+174
+00:03:32,910 --> 00:03:32,920
+from the account, it cannot
+ 
+
+175
+00:03:32,920 --> 00:03:35,190
+from the account, it cannot
+form an independent payment record from
+
+176
+00:03:35,190 --> 00:03:35,200
+form an independent payment record from
+ 
+
+177
+00:03:35,200 --> 00:03:37,110
+form an independent payment record from
+an auditing perspective, [clears throat]
+
+178
+00:03:37,110 --> 00:03:37,120
+an auditing perspective, [clears throat]
+ 
+
+179
+00:03:37,120 --> 00:03:39,830
+an auditing perspective, [clears throat]
+right? So, in other words, the auditing
+
+180
+00:03:39,830 --> 00:03:39,840
+right? So, in other words, the auditing
+ 
+
+181
+00:03:39,840 --> 00:03:42,270
+right? So, in other words, the auditing
+department cannot confirm
+
+182
+00:03:42,270 --> 00:03:42,280
+department cannot confirm
+ 
+
+183
+00:03:42,280 --> 00:03:46,950
+department cannot confirm
+did you voluntarily pay this money or
+
+184
+00:03:46,950 --> 00:03:46,960
+did you voluntarily pay this money or
+ 
+
+185
+00:03:46,960 --> 00:03:49,110
+did you voluntarily pay this money or
+has the tax payment been genuinely
+
+186
+00:03:49,110 --> 00:03:49,120
+has the tax payment been genuinely
+ 
+
+187
+00:03:49,120 --> 00:03:51,230
+has the tax payment been genuinely
+completed, right? So, without an
+
+188
+00:03:51,230 --> 00:03:51,240
+completed, right? So, without an
+ 
+
+189
+00:03:51,240 --> 00:03:55,390
+completed, right? So, without an
+independent record, this data is invalid
+
+190
+00:03:55,390 --> 00:03:55,400
+independent record, this data is invalid
+ 
+
+191
+00:03:55,400 --> 00:03:57,630
+independent record, this data is invalid
+in an audit and will not be accepted,
+
+192
+00:03:57,630 --> 00:03:57,640
+in an audit and will not be accepted,
+ 
+
+193
+00:03:57,640 --> 00:04:00,990
+in an audit and will not be accepted,
+unfortunately. So, therefore, this time
+
+194
+00:04:00,990 --> 00:04:01,000
+unfortunately. So, therefore, this time
+ 
+
+195
+00:04:01,000 --> 00:04:03,470
+unfortunately. So, therefore, this time
+complete chain must be formed
+
+196
+00:04:03,470 --> 00:04:03,480
+complete chain must be formed
+ 
+
+197
+00:04:03,480 --> 00:04:04,990
+complete chain must be formed
+through
+
+198
+00:04:04,990 --> 00:04:05,000
+through
+ 
+
+199
+00:04:05,000 --> 00:04:07,590
+through
+user self-payment plus system record, so
+
+200
+00:04:07,590 --> 00:04:07,600
+user self-payment plus system record, so
+ 
+
+201
+00:04:07,600 --> 00:04:09,670
+user self-payment plus system record, so
+that the auditing department can verify
+
+202
+00:04:09,670 --> 00:04:09,680
+that the auditing department can verify
+ 
+
+203
+00:04:09,680 --> 00:04:11,270
+that the auditing department can verify
+and approve it
+
+204
+00:04:11,270 --> 00:04:11,280
+and approve it
+ 
+
+205
+00:04:11,280 --> 00:04:13,870
+and approve it
+uniformly. This is not due to
+
+206
+00:04:13,870 --> 00:04:13,880
+uniformly. This is not due to
+ 
+
+207
+00:04:13,880 --> 00:04:16,229
+uniformly. This is not due to
+complicated procedures, but rather the
+
+208
+00:04:16,229 --> 00:04:16,239
+complicated procedures, but rather the
+ 
+
+209
+00:04:16,239 --> 00:04:18,190
+complicated procedures, but rather the
+capital market's basic requirement for
+
+210
+00:04:18,190 --> 00:04:18,200
+capital market's basic requirement for
+ 
+
+211
+00:04:18,200 --> 00:04:21,470
+capital market's basic requirement for
+data all authenticated. So, regarding
+
+212
+00:04:21,470 --> 00:04:21,480
+data all authenticated. So, regarding
+ 
+
+213
+00:04:21,480 --> 00:04:24,670
+data all authenticated. So, regarding
+another concern, the funds,
+
+214
+00:04:24,670 --> 00:04:24,680
+another concern, the funds,
+ 
+
+215
+00:04:24,680 --> 00:04:27,870
+another concern, the funds,
+the fees paid this time are not lost,
+
+216
+00:04:27,870 --> 00:04:27,880
+the fees paid this time are not lost,
+ 
+
+217
+00:04:27,880 --> 00:04:31,310
+the fees paid this time are not lost,
+nor other platform revenue. So,
+
+218
+00:04:31,310 --> 00:04:31,320
+nor other platform revenue. So,
+ 
+
+219
+00:04:31,320 --> 00:04:34,910
+nor other platform revenue. So,
+after rectification this complete
+
+220
+00:04:34,910 --> 00:04:34,920
+after rectification this complete
+ 
+
+221
+00:04:34,920 --> 00:04:36,590
+after rectification this complete
+completed, right? So,
+
+222
+00:04:36,590 --> 00:04:36,600
+completed, right? So,
+ 
+
+223
+00:04:36,600 --> 00:04:39,110
+completed, right? So,
+and the audit is approved, these fees
+
+224
+00:04:39,110 --> 00:04:39,120
+and the audit is approved, these fees
+ 
+
+225
+00:04:39,120 --> 00:04:42,030
+and the audit is approved, these fees
+will be processed processed by DSX and
+
+226
+00:04:42,030 --> 00:04:42,040
+will be processed processed by DSX and
+ 
+
+227
+00:04:42,040 --> 00:04:44,790
+will be processed processed by DSX and
+refunded according to the tax paid.
+
+228
+00:04:44,790 --> 00:04:44,800
+refunded according to the tax paid.
+ 
+
+229
+00:04:44,800 --> 00:04:47,030
+refunded according to the tax paid.
+So, um
+
+230
+00:04:47,030 --> 00:04:47,040
+So, um
+ 
+
+231
+00:04:47,040 --> 00:04:49,510
+So, um
+that is to say, the funds you paid
+
+232
+00:04:49,510 --> 00:04:49,520
+that is to say, the funds you paid
+ 
+
+233
+00:04:49,520 --> 00:04:52,910
+that is to say, the funds you paid
+during the rectification period can be
+
+234
+00:04:52,910 --> 00:04:52,920
+during the rectification period can be
+ 
+
+235
+00:04:52,920 --> 00:04:54,750
+during the rectification period can be
+withdrawn normally after the audit is
+
+236
+00:04:54,750 --> 00:04:54,760
+withdrawn normally after the audit is
+ 
+
+237
+00:04:54,760 --> 00:04:57,110
+withdrawn normally after the audit is
+completed. So, during the
+
+238
+00:04:57,110 --> 00:04:57,120
+completed. So, during the
+ 
+
+239
+00:04:57,120 --> 00:05:00,070
+completed. So, during the
+rectification period, to ensure data
+
+240
+00:05:00,070 --> 00:05:00,080
+rectification period, to ensure data
+ 
+
+241
+00:05:00,080 --> 00:05:02,470
+rectification period, to ensure data
+consistency, the platform will do two
+
+242
+00:05:02,470 --> 00:05:02,480
+consistency, the platform will do two
+ 
+
+243
+00:05:02,480 --> 00:05:05,470
+consistency, the platform will do two
+things. First, suspend the withdrawal
+
+244
+00:05:05,470 --> 00:05:05,480
+things. First, suspend the withdrawal
+ 
+
+245
+00:05:05,480 --> 00:05:07,550
+things. First, suspend the withdrawal
+function, unfortunately, then second,
+
+246
+00:05:07,550 --> 00:05:07,560
+function, unfortunately, then second,
+ 
+
+247
+00:05:07,560 --> 00:05:09,808
+function, unfortunately, then second,
+suspend all trading services.
+
+248
+00:05:09,808 --> 00:05:09,818
+suspend all trading services.
+ 
+
+249
+00:05:09,818 --> 00:05:10,190
+suspend all trading services.
+>> [sighs]
+
+250
+00:05:10,190 --> 00:05:10,200
+>> [sighs]
+ 
+
+251
+00:05:10,200 --> 00:05:13,230
+>> [sighs]
+>> This isn't about restricting anyone, but
+
+252
+00:05:13,230 --> 00:05:13,240
+>> This isn't about restricting anyone, but
+ 
+
+253
+00:05:13,240 --> 00:05:15,230
+>> This isn't about restricting anyone, but
+about ensuring all data remains
+
+254
+00:05:15,230 --> 00:05:15,240
+about ensuring all data remains
+ 
+
+255
+00:05:15,240 --> 00:05:17,790
+about ensuring all data remains
+consistent and controllable during the
+
+256
+00:05:17,790 --> 00:05:17,800
+consistent and controllable during the
+ 
+
+257
+00:05:17,800 --> 00:05:20,070
+consistent and controllable during the
+review process, right? So,
+
+258
+00:05:20,070 --> 00:05:20,080
+review process, right? So,
+ 
+
+259
+00:05:20,080 --> 00:05:23,550
+review process, right? So,
+and once the rectification is completed,
+
+260
+00:05:23,550 --> 00:05:23,560
+and once the rectification is completed,
+ 
+
+261
+00:05:23,560 --> 00:05:26,270
+and once the rectification is completed,
+and the review is passed, all functions
+
+262
+00:05:26,270 --> 00:05:26,280
+and the review is passed, all functions
+ 
+
+263
+00:05:26,280 --> 00:05:28,270
+and the review is passed, all functions
+will return to normal. And finally, I
+
+264
+00:05:28,270 --> 00:05:28,280
+will return to normal. And finally, I
+ 
+
+265
+00:05:28,280 --> 00:05:30,550
+will return to normal. And finally, I
+want to emphasize a crucial point any
+
+266
+00:05:30,550 --> 00:05:30,560
+want to emphasize a crucial point any
+ 
+
+267
+00:05:30,560 --> 00:05:32,710
+want to emphasize a crucial point any
+exchange
+
+268
+00:05:32,710 --> 00:05:32,720
+exchange
+ 
+
+269
+00:05:32,720 --> 00:05:35,190
+exchange
+want to enter the capital market must do
+
+270
+00:05:35,190 --> 00:05:35,200
+want to enter the capital market must do
+ 
+
+271
+00:05:35,200 --> 00:05:37,150
+want to enter the capital market must do
+one thing, be open, transparent, and
+
+272
+00:05:37,150 --> 00:05:37,160
+one thing, be open, transparent, and
+ 
+
+273
+00:05:37,160 --> 00:05:39,030
+one thing, be open, transparent, and
+compliant. So,
+
+274
+00:05:39,030 --> 00:05:39,040
+compliant. So,
+ 
+
+275
+00:05:39,040 --> 00:05:41,430
+compliant. So,
+what are you experiencing now is a
+
+276
+00:05:41,430 --> 00:05:41,440
+what are you experiencing now is a
+ 
+
+277
+00:05:41,440 --> 00:05:43,870
+what are you experiencing now is a
+necessary stage in a platform's journey
+
+278
+00:05:43,870 --> 00:05:43,880
+necessary stage in a platform's journey
+ 
+
+279
+00:05:43,880 --> 00:05:46,630
+necessary stage in a platform's journey
+from internal growth to capital market
+
+280
+00:05:46,630 --> 00:05:46,640
+from internal growth to capital market
+ 
+
+281
+00:05:46,640 --> 00:05:48,390
+from internal growth to capital market
+access. So, I hope everyone will
+
+282
+00:05:48,390 --> 00:05:48,400
+access. So, I hope everyone will
+ 
+
+283
+00:05:48,400 --> 00:05:50,870
+access. So, I hope everyone will
+approach this with understanding, not
+
+284
+00:05:50,870 --> 00:05:50,880
+approach this with understanding, not
+ 
+
+285
+00:05:50,880 --> 00:05:52,270
+approach this with understanding, not
+emotion.
+
+286
+00:05:52,270 --> 00:05:52,280
+emotion.
+ 
+
+287
+00:05:52,280 --> 00:05:55,870
+emotion.
+And once the platform passes the
+
+288
+00:05:55,870 --> 00:05:55,880
+And once the platform passes the
+ 
+
+289
+00:05:55,880 --> 00:05:58,790
+And once the platform passes the
+the hurdle, it will provide
+
+290
+00:05:58,790 --> 00:05:58,800
+the hurdle, it will provide
+ 
+
+291
+00:05:58,800 --> 00:06:01,230
+the hurdle, it will provide
+a more stable, secure, and of course,
+
+292
+00:06:01,230 --> 00:06:01,240
+a more stable, secure, and of course,
+ 
+
+293
+00:06:01,240 --> 00:06:03,590
+a more stable, secure, and of course,
+valuable environment. So,
+
+294
+00:06:03,590 --> 00:06:03,600
+valuable environment. So,
+ 
+
+295
+00:06:03,600 --> 00:06:06,710
+valuable environment. So,
+of course, this isn't about just solving
+
+296
+00:06:06,710 --> 00:06:06,720
+of course, this isn't about just solving
+ 
+
+297
+00:06:06,720 --> 00:06:08,950
+of course, this isn't about just solving
+problems. It's about laying a foundation
+
+298
+00:06:08,950 --> 00:06:08,960
+problems. It's about laying a foundation
+ 
+
+299
+00:06:08,960 --> 00:06:10,710
+problems. It's about laying a foundation
+for our future
+
+300
+00:06:10,710 --> 00:06:10,720
+for our future
+ 
+
+301
+00:06:10,720 --> 00:06:13,510
+for our future
+together. So, my final thought is for
+
+302
+00:06:13,510 --> 00:06:13,520
+together. So, my final thought is for
+ 
+
+303
+00:06:13,520 --> 00:06:16,350
+together. So, my final thought is for
+everyone that is isn't a time to choose,
+
+304
+00:06:16,350 --> 00:06:16,360
+everyone that is isn't a time to choose,
+ 
+
+305
+00:06:16,360 --> 00:06:17,230
+everyone that is isn't a time to choose,
+but
+
+306
+00:06:17,230 --> 00:06:17,240
+but
+ 
+
+307
+00:06:17,240 --> 00:06:18,990
+but
+a time to cooperate, not a time to
+
+308
+00:06:18,990 --> 00:06:19,000
+a time to cooperate, not a time to
+ 
+
+309
+00:06:19,000 --> 00:06:20,750
+a time to cooperate, not a time to
+observe, but a time to execute, of
+
+310
+00:06:20,750 --> 00:06:20,760
+observe, but a time to execute, of
+ 
+
+311
+00:06:20,760 --> 00:06:21,710
+observe, but a time to execute, of
+course.
+
+312
+00:06:21,710 --> 00:06:21,720
+course.
+ 
+
+313
+00:06:21,720 --> 00:06:22,990
+course.
+So,
+
+314
+00:06:22,990 --> 00:06:23,000
+So,
+ 
+
+315
+00:06:23,000 --> 00:06:24,190
+So,
+basically, let's
+
+316
+00:06:24,190 --> 00:06:24,200
+basically, let's
+ 
+
+317
+00:06:24,200 --> 00:06:25,590
+basically, let's
+all together let's navigate this stage
+
+318
+00:06:25,590 --> 00:06:25,600
+all together let's navigate this stage
+ 
+
+319
+00:06:25,600 --> 00:06:28,070
+all together let's navigate this stage
+together, and the future will
+
+320
+00:06:28,070 --> 00:06:28,080
+together, and the future will
+ 
+
+321
+00:06:28,080 --> 00:06:32,040
+together, and the future will
+truly belong to us as usual. Thank you.
+
