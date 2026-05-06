@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-**DSJ Exchange (DSJEX) / BG Wealth Sharing** was a "click-a-button" cryptocurrency Ponzi operated out of a scam compound in **Min Let Pan, Burma**, from at least **January 2025 until December 2025**, with US-facing recruitment continuing until the platform's collapse in **late April 2026**. Victims deposited USDT (TRC-20) into a controlled exchange UI, were fed scripted "trading signals" via Telegram/WhatsApp/BonChat, and saw fake P&L until withdrawals locked. Total estimated illicit volume: **~$150M**, with **~$41.5M frozen** by combined US/international action.
+**DSJ Exchange (DSJEX) / BG Wealth Sharing** was a "click-a-button" cryptocurrency Ponzi operated out of a scam compound in **Min Let Pan, Burma**, from at least **January 2025 until December 2025**, with US-facing recruitment continuing until the platform's collapse in **late April 2026**. Victims deposited USDT (TRC-20) into a controlled exchange UI, were fed scripted "trading signals" exclusively via BonChat (other channels — Telegram, WhatsApp — were used for *recruitment* only), and saw fake P&L until withdrawals locked. Total estimated illicit volume: **~$150M**, with **~$41.5M frozen** by combined US/international action.
 
 Two Chinese nationals — **Jiang Wen Jie** (aka Jiang Nan) and **Huang Xingshan** (aka Ah Zhe) — were charged in the District of Columbia on **2026-04-23** as part of DOJ's Scam Center Strike Force. Both fled Burma to Thailand in November 2025 and were arrested by Thai authorities on immigration fraud; US extradition is undecided.
 
@@ -101,7 +101,8 @@ Forensic value: backend repo before deletion contained referral-code logic, depo
 ### 2.4 Communication Channels
 
 - Public funnel: YouTube, Facebook, Instagram, LinkedIn → invite to **Zoom hype meetings**.
-- Operational: **Telegram**, **WhatsApp**, **BonChat** — "signal codes" pasted by victims into the rigged UI.
+- **Recruitment** (broadcast / outreach): Telegram, WhatsApp, social DMs.
+- **Operational signal-code delivery (live-confirmed): BonChat ONLY.** The "trading signal codes" that victims paste into the rigged UI are sent exclusively via BonChat. Operators specifically push victims into BonChat — and out of mainstream channels — once they're past the initial recruitment funnel. This deliberate channel split (open recruitment → closed signals) is itself a high-confidence operator-attribution signal, and it explains why subpoenas of Telegram/WhatsApp turn up recruitment chatter but rarely the rigged-trading evidence.
 - Confirmed Telegram recruitment channel (reported for abuse): `t.me/+fyRGxnhsEKkwYzg5`.
 - **BonChat is confirmed as the recruitment vector for this specific case.** the test account was opened by a third party who received the registration link via BonChat. BonChat use is itself an indicator on the WA DFI alert and BehindMLM reporting — operators specifically push victims into it because it resists subpoena.
 - **Mobile-app distribution:** `dsj627.icu/dsj625.mobileconfig` (iOS) and `dsj627.icu/dsj625.apk` (Android) — installing the iOS profile grants MDM-style trust and is a major escalation vector beyond simple investment loss.
