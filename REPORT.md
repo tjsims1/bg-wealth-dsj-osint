@@ -45,6 +45,9 @@ The scheme is **operationally dead** but **not contained**: surviving accomplice
 | `afirrmjob.com` | NEXO parent SaaS host | Cloudflare-fronted | Registrar **Dominet (HK) Limited / Alibaba Cloud**, created 2025-03-11 — same Chinese registrar fingerprint as the rest of the cluster. |
 | `bggp.vip`, `bg911.cc` | BG-rotation lookalikes | Listed by WA DFI | New patterns extending the rotation fleet. |
 | `dsj15.com` | DSJ-rotation lookalike | Listed in alertopedia.com | Confirms the `dsj{N}.com` numerator runs lower than the previously catalogued range. |
+| `dsj158.com`, `dsj081.com` | DSJ-rotation lookalikes | **Officially named by BCSC, 2026-01-28** (Investment Caution Warning, DSJ Exchange PTY Ltd) | Primary regulator citation: `bcsc.bc.ca/enforcement/early-intervention/investment-caution-list/2026/dsj-exchange-pty-ltd` |
+| `limitlesscrowd.xyz` | Sarkaria-owned BGW recruitment funnel | DNS dead (taken down post-BCSC); registered Namecheap 2025-05-13, NS at MYSECURECLOUDHOST.COM | Flagged by BCSC in the companion BG Wealth Sharing warning (2026-01-28). Owner per site footer: Gagan Sarkaria — see §3.4.1. |
+| `tradewithnick.com` | Variant front-man brand for BGW | ASIC Investor Alert List (Jan 2026); BGW alias | Surfaces a separate "Nick" front-man persona used in some recruitment funnels (separate from Stephen Beard / Joseph Smith). |
 
 **Domain rotation pattern:** numeric suffix lookalikes (`dsj{N}.com`, `dsjex{N}.com`, `dsj{N}.icu`, `bg{N}.com`, `yzzq{N}.cc`, `tra{N}.tw`) registered in fast bursts. Any new domain matching these patterns + privacy-shielded WHOIS + Cloudflare in front + Chinese hosting backend should be treated as suspect.
 
@@ -173,6 +176,24 @@ Senior promoters / Zoom presenters (publicly named by Danny de Hek's "Avengers" 
 > **Hohepa Patea** — New Zealand. Currently promoting "Signal Raiders" / CRGLOBAL / UICEX — same operator family as DSJ/BGW per dehek.com investigation (right-of-reply offered 2025-10-25). Subject of FMA NZ TXEX warning.
 
 > **Philip J Hermann** — listed as "CEO" of NEXO Trading Global / NEXOmax (via `nex.afirrmjob.com`). NEXO LIMITED incorporated February 2026 at a Denver registered-agent address; references a FinCEN MSB registration (which provides no regulatory legitimacy). Same playbook as BGW. Profile assessment pending — front-man hypothesis (cf. Stephen Beard, §3.2) plausible but unconfirmed.
+
+### 3.4.1 Documented promoter — Gagan Sarkaria (case-study citation chain)
+
+The most directly-actionable promoter on the §3.4 list — public-facing under her real name, with a multi-scheme history and a primary-source regulator citation.
+
+| Element | Detail |
+| --- | --- |
+| **Real name** | Gagan Sarkaria, MFA, MBA |
+| **Public branding** | "High Achievement Coach" / "Soulful Life, High Achievement Business Coach"; markets life-coaching, executive/entrepreneur coaching, and "Zi Wei Dou Shu (Chinese Astrology) Destiny Science Life Map Readings" |
+| **Business entity** | "Unfold Your Success, LLC" — Dallas–Fort Worth market, Texas, US |
+| **Personal sites + handles** | `gagansarkaria.com`; `gagansarkaria.international`; `linkedin.com/in/gagansarkaria`; YouTube channel `UC18m5EWP-rSt-lFPjQ3FV-g`; Thrive Global contributor profile |
+| **DSJEX in-platform rank** | **LV7** per BehindMLM reporting — that's ≥1,500 effective recruits under the §4.5 rank schedule |
+| **Direct DSJ promo evidence** | **Appeared in promotional content alongside "Dr. Stephen Beard" for DSJEX** (per BehindMLM Canada-BC writeup) |
+| **Owned BGW recruitment funnel** | **`limitlesscrowd.xyz`** — Sarkaria identified as **"Founding Member of Blockchain Sports Crowdfunding Project brought to you by Limitless"** in the site's own footer. Domain dropped (DNS dead) shortly after BCSC named it. |
+| **Multi-scheme history** | Daisy Global (Jeremy Roma's collapsed crypto Ponzi) → Blockchain Sports (Daisy descendant) → BG Wealth Sharing / DSJEX → likely whatever's next. Textbook scheme-hopper profile. |
+| **Primary regulator citations** | **BCSC** Investment Caution Warning, DSJ Exchange PTY Ltd, **2026-01-28** (`bcsc.bc.ca/enforcement/early-intervention/investment-caution-list/2026/dsj-exchange-pty-ltd`); BCSC companion BG Wealth Sharing warning same date that specifically flags `limitlesscrowd.xyz` (per BehindMLM). dehek.com dedicated article: "BG Wealth Sharing Collapse: Gagan Sarkaria's False Promises Exposed as Withdrawal Crisis Deepens" (May 2026). |
+
+**Why the elevated treatment:** Sarkaria meets every threshold for first-tier referral to a regulator: real-name public-facing footprint, regulator-primary-source citation, owned recruitment infrastructure (a domain explicitly named in the BCSC warning), in-platform LV7 rank (substantial recruitment depth), direct on-camera collaboration with the front-man persona ("Dr. Stephen Beard"), and a prior-scheme history establishing pattern. **Recommended: Texas Attorney General Consumer Protection Division + FBI IC3 (US-resident, US-domiciled LLC) and BCSC follow-up (Canadian victims).**
 
 These names are sourced from public Zoom-meeting attendance records and social-media activity compiled by the dehek.com Avengers community. They are **alleged promoters**, not subject to any criminal charge known to this investigator.
 

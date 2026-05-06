@@ -53,6 +53,16 @@ domains:
   - bg911.cc
   - dsj15.com
 
+  # BCSC-named (2026-01-28 Investment Caution Warning)
+  - dsj158.com
+  - dsj081.com
+
+  # Sarkaria-owned BGW recruitment funnel (BCSC-flagged; Namecheap-registered 2025-05-13)
+  - limitlesscrowd.xyz
+
+  # tradewithnick.com — variant front-man brand per ASIC Investor Alert List Jan 2026
+  - tradewithnick.com
+
   # CRGLOBAL / UICEX / Signal Raiders (current rebrand of TXEX-family successor)
   - uicex.com
   - crglobal.com
