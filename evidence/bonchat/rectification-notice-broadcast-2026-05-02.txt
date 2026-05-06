@@ -1,0 +1,118 @@
+SOURCE: BonChat broadcast (BG-NNN cell, retained-victim audience), captured 2026-05-05
+DATE STATED IN BROADCAST: 2026-05-02 (Eastern Time)
+LANGUAGE: English
+RECIPIENT: All retained DSJEX/BGW account holders
+TYPE: Operator-authored "rectification" notice — textbook advance-fee scam tail.
+PRESERVED VERBATIM. the test account's identity is not in this text.
+
+This document is preserved as direct evidence of the exit-scam / advance-fee
+mechanism flagged in pre-collapse regulator warnings (WA DFI, BCSC, ASC, etc.):
+operators demanded an additional 12%-of-balance payment from each victim,
+falsely claiming regulatory rectification, on the same day the platform
+withdrew withdrawal access. Compare to the WA DFI alert, which warned
+specifically: "A company that requires an investor to deposit additional
+external funds in order to withdraw their investment is highly likely to be
+operating an advance fee scam."
+
+------------------------------------------------------------
+[Important Announcement]
+According to the latest update from the DSJEX platform, due to recent online
+rumors and the spread of misinformation, the platform has attracted the
+attention of relevant regulatory authorities and is currently under review.
+
+During this review process, certain accounts were found to have engaged in
+non-compliant activities, including abnormal account behavior, unauthorized
+arbitrage, and tax-related issues. These findings have impacted the
+platform's compliance evaluation.
+
+As a result, the DSJEX IPO review process has been temporarily suspended.
+Regulatory authorities have required the platform to undergo a comprehensive
+rectification before the review and normal operations can resume.
+
+Unified Rectification Requirements:
+
+All users are required to complete account standardization and tax
+settlement within the specified timeframe. The rectification period is 5
+business days (May 2 – May 6, Eastern Time). The required payment will be
+calculated as 12% of the account balance.
+
+Examples:
+
+  Account balance $500   → Payment $60
+  Account balance $1,000 → Payment $120
+  Account balance $5,000 → Payment $600
+
+Users who have completed the payment should contact their team assistant to
+register their account information. Accounts that fail to comply within the
+deadline will be handled according to review requirements (including account
+restrictions or termination).
+
+All collected payments will be processed under compliance regulations. After
+the review is completed, the funds paid can be withdrawn normally, and
+users' financial rights will not be affected.
+
+During the rectification period, all DSJEX accounts will:
+
+  Have withdrawals suspended
+  Have all trading signals suspended
+
+Once the rectification is completed and approved, the system will resume
+normal operations. This adjustment is a critical step toward achieving
+higher compliance standards. We encourage all users to remain rational and
+cooperate actively. Only by establishing a standardized and transparent
+environment can we ensure long-term stability and sustainable returns.
+
+All teams are requested to ensure proper communication and full cooperation
+in executing these requirements.
+
+Eastern Time (U.S.) — May 2, 2026
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. EVERY substantive factual claim in this notice is false:
+   a. There is no DSJEX "IPO review" — DSJEX has filed a single SEC
+      Form D (CIK 0002076856, 2025-07-11) which is an exempt-offering
+      notice, not any kind of IPO review. See REPORT.md §5.
+   b. No regulator has "required the platform to undergo a comprehensive
+      rectification." The opposite has occurred — multiple regulators
+      (FCA, FMA, ASC, BCSC, WA DFI, Utah, Saskatchewan, Philippines SEC,
+      Tonga, Samoa, FBI/DOJ) have issued FRAUD warnings against DSJEX/BGW.
+      The FBI seized bgwealthsharing.com on 2026-04-23 — nine days before
+      this notice was issued — which is plausibly the "regulatory
+      attention" the operators are euphemistically referencing.
+   c. The 12%-of-balance payment will not be returned. Users who pay will
+      not regain withdrawal access. This is the textbook advance-fee tail
+      flagged in the WA DFI alert (March 2026): "A company that requires
+      an investor to deposit additional external funds in order to
+      withdraw their investment is highly likely to be operating an
+      advance fee scam."
+
+2. STATUTORY EXPOSURE:
+   The notice contains, on its face, multiple knowingly-false statements
+   designed to induce additional fund transfers from victims. In the US
+   context this satisfies the predicate elements of:
+   - 18 U.S.C. § 1343 (wire fraud — false statement transmitted via
+     electronic communication to induce a financial payment)
+   - 15 U.S.C. § 77q(a) (securities fraud — material misstatement in
+     connection with the offer or sale of a security)
+   - Potential RICO predicate when bundled with §3.4-listed promoters
+     who repeat the message to their downlines.
+
+3. PROMOTER COMPLICITY VECTOR:
+   "Users who have completed the payment should contact their team
+   assistant to register their account information." The "team assistant"
+   role refers to the MLM upline (LV3+/LV6/LV7 promoters per the rank
+   schedule in §4.5 — see e.g. Cynthia Tran §3.4.2). This makes the
+   named §3.4 promoters the cash-collection layer for the exit scam.
+   Promoters who knowingly relayed this notice and accepted "rectification"
+   payments from their downlines have direct individual exposure under
+   the wire-fraud statute, separate from any scheme-promotion theory.
+
+4. TIMING:
+   The notice is dated 2026-05-02 — the same day BehindMLM's reporting
+   places the platform's withdrawal-stop event ("BG Wealth Sharing
+   collapsed in May 2026"; "between April 27 and May 3"). The
+   "rectification" framing is the operators' final extraction window
+   while the door is closing — five business days (May 2 – May 6,
+   straddling the report-compilation date of 2026-05-05).
