@@ -11,7 +11,7 @@
 
 **DSJ Exchange (DSJEX) / BG Wealth Sharing** was a "click-a-button" cryptocurrency Ponzi operated out of a scam compound in **Min Let Pan, Burma**, from at least **January 2025 until December 2025**, with US-facing recruitment continuing until the platform's collapse in **late April 2026**. Victims deposited USDT (TRC-20) into a controlled exchange UI, were fed scripted "trading signals" exclusively via BonChat (other channels — Telegram, WhatsApp — were used for *recruitment* only), and saw fake P&L until withdrawals locked. Total estimated illicit volume: **~$150M**, with **~$41.5M frozen** by combined US/international action.
 
-Two Chinese nationals — **Jiang Wen Jie** (aka Jiang Nan) and **Huang Xingshan** (aka Ah Zhe) — were charged in the District of Columbia on **2026-04-23** as part of DOJ's Scam Center Strike Force. Both fled Burma to Thailand in November 2025 and were arrested by Thai authorities on immigration fraud; US extradition is undecided. **The two named defendants are almost certainly a small subset of the operating team.** Min Let Pan-style scam compounds typically house 50–200 workers (signal scripters, BonChat handlers, MLM recruiters, IT staff). BonChat activity has remained continuously live post-indictment — see §9 — confirming the operational team is largely intact and that further indictments are likely as the DOJ Strike Force unwinds the cell.
+Two Chinese nationals — **Jiang Wen Jie** (aka Jiang Nan) and **Huang Xingshan** (aka Ah Zhe) — were charged in the District of Columbia on **2026-04-23** as part of DOJ's Scam Center Strike Force. Both fled Burma to Thailand in November 2025 and were arrested by Thai authorities on immigration fraud; US extradition is undecided. **The two named defendants are not the masterminds; they are mid-level operators.** Two strong tells: (a) they were caught on *immigration* charges in Thailand, not financial crimes — that's the profile of compound staff who fled the heat without high-level protection, not of bosses with ties capable of insulating them; and (b) the operation's scale (≥$150M moved, exchange-as-a-service backend, multi-tier laundering chain shown in §2.2) requires institutional-level financiers + a software vendor + a laundering layer + an MLM marketing layer. The two indicted defendants plausibly managed the day-to-day compound and recruitment cell. Apex actors and several specialist roles remain at large — see §3.1 for the typical hierarchy. BonChat activity has remained continuously live post-indictment — see §9 — confirming the operational team is largely intact and that further indictments are likely as the DOJ Strike Force unwinds the broader network.
 
 The platform branding personas — "**Professor Stephen Beard**" (claimed founder, gives daily "signals") and "**Joseph Smith**" (claimed COO) — are not who they claim to be. **Stephen Beard is a real person who appears recurrently in live Zoom meetings with victim recruits** (eyewitness corroboration). This rules out the AI-synthesis hypothesis (earlier report draft retracted). His **visual profile fits the Chinese "白工" (white-monkey job) archetype** — the kind of Western foreigner Chinese state media (CGTN) and promoter agencies recruit for legitimacy theater — so the most plausible reconstruction is: **白工 origin → escalated involvement**. Recurring live Zoom appearances rule out a one-shot prop hire and put him squarely in the "knowing participant" category by now, regardless of how much he understood at first. Treat him as a **target / co-conspirator candidate, not a mere witness**, while recognizing he is **a hired front man — not the apex of the operation**. Investigators should reverse-image-search his face (likely surfaces in prior CGTN appearances or other Chinese-promoter materials) and subpoena recordings of past BGW Zoom sessions for direct-evidence statements. The actual technical operation relied on freelance/commissioned developers in India and possibly elsewhere, with the source code briefly exposed on public GitHub.
 
@@ -113,13 +113,30 @@ Forensic value: backend repo before deletion contained referral-code logic, depo
 
 ### 3.1 Charged (DOJ, D.C., 2026-04-23)
 
-- **Jiang Wen Jie** (aka **Jiang Nan**) — Chinese national, operated Burma compound Min Let Pan, fled to Thailand Nov 2025, arrested by Thai authorities (immigration fraud).
-- **Huang Xingshan** (aka **Ah Zhe**) — Chinese national, same compound, same flight pattern, same Thai detention.
+- **Jiang Wen Jie** (aka **Jiang Nan**) — Chinese national, operated Burma compound Min Let Pan, fled to Thailand Nov 2025, arrested by Thai authorities **on immigration fraud, not on the underlying investment-fraud counts**. Treated by DOJ as operational management of the compound; almost certainly **not the apex** of the scheme.
+- **Huang Xingshan** (aka **Ah Zhe**) — Chinese national, same compound, same flight pattern, same Thai detention. Same mid-level-management profile.
 
-**Likely additional operators (not yet charged).** Burma scam compounds typically employ 50–200 workers per cell, segmented across roles: signal-script writers, BonChat handlers (the "Stephen Beard" voice on chat is plausibly a rotating team, not one person), MLM recruiters, IT/devs, finance/laundering. The persistence of BonChat-delivered signal codes after the 2026-04-23 indictment confirms an active operating team beyond the two named defendants. Investigative priorities for additional attribution:
-- BonChat handle operators sending signal codes — capture timestamps + handles per session
-- Operators of `api.ddjea.com` / Cloudflare account that fronts it
-- Whoever holds the private keys to the operator hot wallet `TYwaXc4ofNK2mL4NHaz9y58WiNAhguqWLu` and the top-5 next-hop wallets in §2.2
+**Why the two charged are likely mid-level, not kingpins.** They were arrested in Thailand on *immigration* charges — that's the failure mode of compound staff fleeing without high-level protection, not of financiers / sponsors. The financial scale ($150M+ historic, $30M through a single 4-day hot wallet) and the operational sophistication (centralized backend, rotating domain fleet, Cloudflare + Alibaba CDN + exchange-as-a-service template, multi-hop laundering, MLM marketing layer, BonChat + Zoom dual-channel handling, 白工 talent acquisition) require *layered* organizational structure these two could not credibly run alone.
+
+**Typical Burma "click-a-button" compound hierarchy (roles likely still at large):**
+
+| Layer | Role | Status of named defendants vs this layer |
+| --- | --- | --- |
+| **Apex / financier** | Capital sponsors, often Triad-affiliated; rarely physically present at the compound | Not charged. Untouched by current indictment. |
+| **Compound leadership** | Cell operations boss, security, payroll | Not charged. Local protection in Burma. |
+| **Mid-level management** | Floor managers, shift leads, BonChat-team supervisors | **← Jiang Wen Jie + Huang Xingshan most likely sit here.** |
+| **Floor staff** (50–200 typical headcount) | BonChat handlers / signal scripters; KYC / chargeback handlers; IT / dev support | Not charged. Continued operation post-2026-04-23 confirms most floor staff still working. |
+| **Marketing / MLM front** | Named promoters in §3.4 (Lee Meadows, Faiana Brown, etc.) — outside the compound | Not charged criminally; subject of regulator advisories only. |
+| **Front-man personas** | "Stephen Beard", "Joseph Smith" — paid Western spokespeople with 白工 origin | Not charged. See §3.2; treat as targets / co-conspirators, not apex. |
+| **Software vendor** | The Chinese exchange-clone-as-a-service supplier whose codebase backs DSJ + VCEX + clones | Unidentified. Strong forensic lead — same backend signatures span multiple "click-a-button" Ponzis. |
+| **Laundering layer** | Operators of the next-hop wallets in §2.2 + the further off-ramp into CEXes | Unidentified. Top-5 next-hop wallets are the freeze targets. |
+
+**Investigative priorities for additional attribution:**
+- BonChat handle operators sending signal codes — capture timestamps + handles per session.
+- Operators of `api.ddjea.com` / Cloudflare account that fronts it (subpoena Cloudflare for billing identity).
+- Private-key holders for the operator hot wallet `TYwaXc4ofNK2mL4NHaz9y58WiNAhguqWLu` and the top-5 next-hop wallets in §2.2.
+- The exchange-clone software vendor — fingerprintable across DSJ + VCEX (different stacks but same operator pattern); GitHub commits in `Navyakushwaha/DSJ-Exchange` and the deleted `XiaolanLin808/BG-Wealth_SCript` are starting points.
+- Zoom host accounts that schedule recurring BGW meetings — host billing identity is the cleanest path to the front-man personas' real names.
 
 ### 3.2 Front-End Personas (paid actors and/or fabricated)
 
