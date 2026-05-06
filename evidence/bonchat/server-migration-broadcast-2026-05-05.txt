@@ -1,0 +1,76 @@
+SOURCE: BonChat broadcast (BG-NNN cell), captured 2026-05-05
+LANGUAGE: English
+RECIPIENT: "All BG Members" (mass broadcast to retained users)
+TYPE: Operator-authored server-migration announcement
+PRESERVED VERBATIM. the test account's identity is not in this text.
+
+------------------------------------------------------------
+To all BG Members:
+
+To support the team's future expansion and the increasing learning and
+development needs in 2026, and to align with BG Wealth Sharing's Eastern
+Time trading signals, we have launched a new independent Bonchat server:
+BG2606.
+
+The launch of the new server will significantly enhance the stability,
+efficiency, and overall quality of team communication.
+
+Important Notice:
+
+❌ The old servers are no longer accepting new members. Please do not add: ***3666
+❌ The old servers are no longer accepting new members. Please do not add: ***2022
+❌ The old servers are no longer accepting new members. Please do not add: ***2026
+❌ The old servers are no longer accepting new members. Please do not add: ***2601
+❌ The old servers are no longer accepting new members. Please do not add: ***2602
+❌ The old servers are no longer accepting new members. Please do not add: ***2603
+❌ The old servers are no longer accepting new members. Please do not add: ***2604
+❌ The old servers are no longer accepting new members. Please do not add: ***2605
+
+✅ The new server is now active: BG2606
+
+All new members will be directed to the BG2606 server.
+
+The existing servers are reserved for current members only and will no
+longer be activated or accept new participants.
+
+Official accounts remain unchanged:
+
+  Stephen03
+  Elena03
+
+Official designated group remains unchanged:
+
+  BG-015 Wealth Sharing Investment Group
+
+We sincerely request all team leaders to promptly communicate this
+announcement to their respective members.
+
+The activation of the BG2606 server marks an important step toward a more
+efficient and professional communication environment. Let us continue to
+work together to strengthen BG and achieve even greater success.
+
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. The operator runs at least NINE distinct BonChat servers for BG Wealth
+   Sharing alone: BG2022, BG2026, BG2601, BG2602, BG2603, BG2604, BG2605,
+   BG2606 (current), BG3666. Numbering is not strictly sequential —
+   suggests internal server-rotation hygiene rather than chronological
+   cells.
+
+2. "Eastern Time trading signals" explicit confirmation that operations
+   coordinate signal-broadcast windows around US ET — direct evidence of
+   primary US targeting (jurisdictionally relevant).
+
+3. "Official accounts" Stephen03 and Elena03 are the underlying BonChat
+   usernames of the broadcast-operator personas. Stephen03 maps to the
+   "BG-Stephen Beard" display name documented in
+   evidence/bonchat/bonchat-broadcast-2026-05-05.jpg. "Elena03" is a
+   previously-undocumented second persona — likely a parallel front-name
+   fronting another language cohort or another operator shift.
+
+4. "Official designated group remains unchanged: BG-015 Wealth Sharing
+   Investment Group" confirms the BG-NNN groups are scoped within
+   parent BG-YYYY servers; the BG-NNN structure persists across server
+   migrations.
