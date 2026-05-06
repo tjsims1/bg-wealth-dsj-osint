@@ -1,0 +1,89 @@
+SOURCE: BonChat broadcast (BG-NNN cell, retained-victim audience), captured 2026-05-05
+DATE STATED IN BROADCAST: 2026-05-05 (Eastern Time)
+LANGUAGE: English
+RECIPIENT: All retained DSJEX/BGW account holders
+TYPE: Operator-authored "restoration" announcement — second beat of the
+      exit-scam playbook documented in rectification-notice-broadcast-2026-05-02.txt
+PRESERVED VERBATIM. the test account's identity is not in this text.
+
+------------------------------------------------------------
+[BG Wealth Sharing Announcement]
+
+Following multiple rounds of communication and coordination between
+Professor Stephen Beard and DSJEX staff, and securing relevant rights for
+everyone, starting May 4th (Eastern Time), members who have completed
+their 12% tax payment will gradually have their trading, withdrawal, and
+fund transfer functions restored in their personal accounts.
+
+To ensure a smooth overall process and avoid a recurrence of a
+concentrated run on the platform, withdrawals will be processed in batches
+and in an orderly manner. Funds are expected to arrive gradually within 72
+hours. Normal withdrawal channels will be fully restored on May 7th, at
+which time the arrival time will return to within 48 hours. Please monitor
+your account status closely and strictly follow the platform's
+instructions.
+
+Meanwhile, members who have not yet completed their tax payment are
+requested to cooperate with the DSJEX platform as soon as possible to
+complete the relevant procedures to restore normal fund flow in their
+accounts. All teams are requested to communicate this information and
+cooperate in its implementation.
+
+May 5th, 2026 (Eastern Time)
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. SECOND BEAT OF THE DOCUMENTED EXIT-SCAM PLAYBOOK.
+   The May 2 broadcast (rectification-notice-broadcast-2026-05-02.txt)
+   demanded 12% of each victim's account balance under false claims of
+   regulator-mandated "rectification." This May 5 broadcast announces
+   "gradual withdrawal restoration" for those who paid. Together they form
+   a textbook pattern:
+     May 2:    Demand 12% rectification fee (fake regulatory pressure)
+     May 3-5:  Cash collection (Amelia broadcasts proof-of-payment from
+               specific victims; see rectification-payment-confirmation-
+               2026-05-05.jpg)
+     May 5:    "Drip-restoration" announcement (this artifact) — promises
+               gradual access, keeps victims hopeful enough to delay
+               complaints, while pressuring non-payers to pay
+     May 7:    Promised "full restoration" — predicted outcome: operators
+               either disappear, deliver token withdrawals to a few
+               cherry-picked victims as social proof, or invoke another
+               fee layer ("clearance fee", "verification fee", etc.)
+
+2. INVOCATION OF "PROFESSOR STEPHEN BEARD" BY NAME.
+   The notice frames Beard as having engaged in "multiple rounds of
+   communication and coordination" with "DSJEX staff" to "secure relevant
+   rights for everyone." This is theatrical separation between the
+   front-man persona (advocate role) and the platform staff (compliance
+   role) — two halves of the same operator. The on-camera persona is
+   being deployed as the "guardian/champion" of victims to maintain trust
+   while operators continue extracting fees from non-payers.
+
+3. MANIPULATION VECTORS PRESENT IN THE NOTICE:
+   - "Avoid a concentrated run on the platform" — implies platform has
+     real liquidity that needs protecting, false on its face per §2.2
+     wallet-forensics showing the operator hot wallet had $30M
+     through-volume in 4 days but only ~$1 TRX residual.
+   - "Funds are expected to arrive gradually within 72 hours" — vague
+     timeline shift, classic scam-pattern stalling.
+   - "Members who have not yet completed their tax payment are requested
+     to cooperate ... as soon as possible" — pressure on holdouts to pay
+     before May 7 deadline, when they would otherwise see the actual
+     outcome.
+
+4. STATUTORY EXPOSURE EXTENDS:
+   This notice contains additional false statements on its face,
+   continuing the wire-fraud (18 U.S.C. § 1343) and securities-fraud
+   (15 U.S.C. § 77q(a)) predicate chain. Each operator-authored
+   broadcast is a separate count.
+
+5. WATCH FOR THE MAY 7 BROADCAST.
+   Whatever appears in BG-015 (or its successor server BG2606) on
+   May 7 ET will be diagnostic:
+     - If actual withdrawals process: operators are stalling for
+       additional fee extraction (likely beat #3 of the playbook)
+     - If "additional verification fee" or similar emerges: classic
+       continued advance-fee tail
+     - If silence / channel goes dark: operators have absconded
