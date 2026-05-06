@@ -1,0 +1,149 @@
+SOURCE: BonChat broadcast (BG-NNN cell, retained-victim audience), captured 2026-05-05
+LANGUAGE: English
+RECIPIENT: All retained members (intended for them to internalize and forward to recruits)
+TYPE: Operator-authored MLM-recruitment manipulation manual + KYC-extraction
+      withdrawal-blocking instructions. Includes the strongest single
+      securities-fraud predicate captured to date: an explicit "100%
+      guarantee profit" advertisement.
+PRESERVED VERBATIM. the test account's identity is not in this text.
+
+------------------------------------------------------------
+This is the latest BG Wealth Sharing PPT introduction, which is detailed
+and covers important information such as the core concept, development
+opportunities and income model of the project. I hope everyone can save
+this information and print it out in time to share with friends, so as
+to help them understand the BG project more comprehensively and jointly
+open up new opportunities for wealth appreciation
+
+Every member who joins the BG team must understand the importance of
+win-win cooperation. As long as you follow Professor Stephen's trading
+method, the BG team will 100% guarantee your profit. While making
+profits, we hope that you can uphold the two principles of the BG team:
+
+1. Respect others: Please reply promptly after receiving a message,
+   which is the most basic respect for others.
+
+2. Gratitude: When you and the BG team make profits together, please
+   recognize the win-win cooperation between us, and take the initiative
+   to share the investment projects of the BG team, invite more people
+   to join, and jointly realize the cornerstone of the win-win
+   cooperation between the three parties.
+
+DSJEX Exchange and BG Group provide financial security for users.
+
+All users will be subject to identity verification when using a new
+wallet address for the first time to withdraw funds to confirm whether
+the address is used by the user. The BG team will contact you for
+confirmation. After the review is passed, there will be no need to check
+again when using the wallet address for future withdrawals.
+
+If the user needs to change the wallet address, he/she needs to contact
+the head of the BG team to submit an application to ensure that the
+change operation is performed by himself/herself, so as to prevent
+account information leakage and ensure the safety of funds.
+
+Please cooperate with each other to jointly maintain the safety of
+funds to ensure that the funds arrive safely in your account.
+
+Sharing is an art that requires trust, preparation, focus, real stories,
+and a sincere attitude. By optimizing the way you share, you can
+significantly increase your chances of success and achieve greater
+goals. Now is the best time to review and improve your sharing methods,
+paying attention to every detail and striving for perfection.
+
+First, building trust is the foundation of sharing. Establishing a
+transparent and open relationship with your audience will make your
+sharing more impactful. Second, thorough preparation can help you
+clarify your thoughts, boost your confidence, and make your sharing
+more fluent. Focus on the core content of your sharing to avoid
+distracting the audience with irrelevant information.
+
+Real stories can resonate and evoke emotions, making the audience more
+engaged. Your sincere attitude is the bridge that promotes
+communication, allowing people to feel your enthusiasm and sincerity.
+
+Continuously learning and practicing to improve your sharing skills is
+an important way to achieve success. Whether it's participating in
+relevant courses, reading books, or seeking advice from others, there
+are always opportunities to take it to the next level.
+
+The BG team will always support you, providing the necessary resources
+and guidance to help you continuously optimize your sharing strategies
+and achieve higher goals. Let's join hands, grow together, and meet the
+challenges and opportunities of the future!
+
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. STRONGEST SECURITIES-FRAUD PREDICATE TO DATE — VERBATIM:
+   "As long as you follow Professor Stephen's trading method, the BG
+   team will 100% guarantee your profit."
+   This is an unconditional written guarantee of investment profit
+   distributed to retail victims by operators of an unregistered
+   investment offering. The 100% framing eliminates any "good-faith
+   belief" defense — guarantee language at this level is per se
+   indicative of fraud under longstanding SEC and FTC enforcement
+   doctrine. Combined with the §3.4.2 Vietnamese-Zoom advertisement of
+   "1.8% daily profit, capital doubles in 60 days, BG guarantees 100%",
+   this satisfies the predicate elements for 15 U.S.C. § 77q(a)
+   without further investigative work.
+
+2. MLM "TWO PRINCIPLES" = COERCION MECHANICS:
+   - "Respect": obligation to reply promptly (victim availability for
+     operator outreach, especially during withdrawal-blocking events).
+   - "Gratitude": obligation to actively recruit ("take the initiative
+     to share the investment projects... invite more people to join").
+   Recruitment-as-moral-duty framing is a textbook MLM-pyramid
+   coercion mechanism. The structural effect is to make declining to
+   recruit feel like a betrayal of the group rather than a personal
+   choice.
+
+3. KYC-IMPERSONATION + WALLET-FREEZE ATTACK VECTOR:
+   "All users will be subject to identity verification when using a
+   new wallet address for the first time to withdraw funds... The BG
+   team will contact you for confirmation."
+   This serves three operator purposes:
+   a. Harvest additional PII from victims at the withdrawal-attempt
+      moment (when victim is most motivated to comply with anything
+      the operators ask).
+   b. Manufacture an indefinitely-extensible delay window (the
+      "review" is operator-controlled, no defined deadline).
+   c. Allow operators to flag and block withdrawals destined for
+      forensically-traceable wallets — e.g. known exchange-deposit
+      addresses, attorneys' wallets, fraud-recovery escrow services.
+   Combined with the wallet-change-approval gate ("contact the head
+   of the BG team to submit an application"), victims are prevented
+   from re-routing their fake balance to any operator-disapproved
+   destination.
+
+4. PPT (POWERPOINT) RECRUITMENT MATERIALS REFERENCED:
+   Members are instructed to "save this information and print it out
+   in time to share with friends" — confirming Chinese MLM offline-
+   evangelism model where physical printed materials supplement the
+   BonChat / Zoom funnel. The actual PPT is presumably distributed in
+   the same channel and would be a separate artifact worth capturing.
+
+5. RECRUITMENT SOFT-SKILLS COACHING — STRUCTURED TRAINING:
+   The second half of the notice ("trust, preparation, focus, real
+   stories, sincere attitude") is sales-script coaching applied to
+   friends-and-family conversion. Operators are providing structured
+   training in how to be more persuasive when recruiting a downline
+   from one's own social circle. This professionalizes the recruitment
+   role and converts members into trained sales agents — adding
+   another evidentiary thread for promoter complicity (§3.4 promoters
+   are not just passive members; they are operator-trained recruitment
+   agents).
+
+6. STATUTORY EXPOSURE — STRONGEST SINGLE BROADCAST:
+   - 15 U.S.C. § 77q(a) (securities fraud, "100% guarantee profit"
+     statement)
+   - 18 U.S.C. § 1343 (wire fraud — false statements transmitted
+     electronically to induce financial deposits)
+   - 18 U.S.C. § 1962 (RICO — combined with all prior captured
+     broadcasts, establishes pattern of racketeering activity over
+     time, with organized structure: signal broadcasts, exit-scam,
+     cash-collection, info-control, recruitment-coaching, all
+     coordinated)
+   - State consumer-protection statutes triggered by the explicit
+     guarantee
