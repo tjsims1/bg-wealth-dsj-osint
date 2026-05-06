@@ -300,6 +300,14 @@ Senior promoters / Zoom presenters (publicly named by Danny de Hek's "Avengers" 
 
 **Vietnamese-diaspora targeting cohort (added 2026-05-05).** A BonChat broadcast captured 2026-05-05 (preserved at `evidence/zoom/zoom-invitation-vietnamese-2026-05-05.txt`) names Cynthia Tran, Lien Tran, Katrina Tran, and Vivian HaChau PhamVo as the presenter and co-hosts of a recurring Wednesday + Friday Vietnamese-language Zoom presentation series for BG Wealth Sharing. The four are the first promoters in this report whose **DSJEX in-platform ranks are confirmed by primary-source operator broadcast** (LV7 / LV7 / LV6 / LV3 respectively); the rank schedule in §4.5 implies LV7 status corresponds to ≥1,500 effective recruits.
 
+**Self-published-promoter recruitment funnels (added 2026-05-05).** Some §3.4 promoters operate their own personal-brand recruitment funnels, publicly accessible and not previously documented in the secondary-source promoter dossiers:
+
+- **Steven Rachel** — self-published recruitment YouTube on `youtube.com/@StevenRachel`. Notable artifact: 2026-03-01 video *"BG Wealth Sharing | Inside My DSJ Exchange Account With No Trading Experience"* (`youtube.com/watch?v=gO4Mwq5E4xs`, ~14.5K views), in which he states verbatim *"I'm not a trader. I don't analyze charts. I simply copy and paste the trading signals."* — direct corroboration of the §4 / §2.4 rigged-trading Order-Code mechanism from a promoter's own mouth.
+  - Recruitment funnel: **`win.steverachel.com`** (title "This System Pays!") — form-based lead capture asking *first name, last name, email, phone, "What Level Are You Starting With?"* — pre-segmenting victims by §4 deposit-tier before pitch.
+  - Funnel form action posts to **`smartmoneyproject.net/member/capture-prospect`** — appears to be a **commercial MLM-funnel SaaS** that BG promoters subscribe to (with `srachel` as Rachel's per-tenant slug). NOT necessarily operator-controlled; potentially a third-party funnel-builder service used by promoters across multiple MLM schemes. **If SmartMoneyProject is in fact used by multiple BG promoters, a subpoena to its operator would surface the entire promoter-funnel cohort plus their captured prospect lists** — a high-leverage attribution / victim-list discovery target.
+  - Public-facing contact (visible on the funnel page itself, not extracted by this investigator): `srachel2@gmail.com`. Linked socials: `facebook.com/ItsMeStevenRachel`, `vm.tiktok.com/ZTRgR7opj/`, `instagram.com/stevenrachel2/`.
+  - Treatment: alleged BG promoter, public-facing, self-published. Right of reply per §3.4.1 / §3.4.2.
+
 > **Mau Hunt Kota** — Samoa (named by BehindMLM specifically).
 
 > **Hohepa Patea** — New Zealand. Currently promoting "Signal Raiders" / CRGLOBAL / UICEX — same operator family as DSJ/BGW per dehek.com investigation (right-of-reply offered 2025-10-25). Subject of FMA NZ TXEX warning.
