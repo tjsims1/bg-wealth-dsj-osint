@@ -63,6 +63,24 @@ domains:
   # tradewithnick.com — variant front-man brand per ASIC Investor Alert List Jan 2026
   - tradewithnick.com
 
+  # 2026-04-25 / 2026-04-27 rotation burst (TJ-supplied, broadcast to victims by email)
+  # All registered via Gname.com Pte. Ltd. (Singapore) — same fingerprint as VCEX
+  # BG brand
+  - bg6988.com
+  - bg5399.cc
+  # DSJEX rotation — note: shifted from themed `dsj{N}` to random 3-letter prefixes
+  - yti355.com
+  - yti351.com
+  - okm772.net
+  - okm776.net
+  - ase5228.net
+  - ajy6278.net
+  - wt1113.cc
+  - asq1283.net
+  - apy2088.net
+  - wtl003.cc
+  - wtl005.cc
+
   # CRGLOBAL / UICEX / Signal Raiders (current rebrand of TXEX-family successor)
   - uicex.com
   - crglobal.com

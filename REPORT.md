@@ -49,7 +49,24 @@ The scheme is **operationally dead** but **not contained**: surviving accomplice
 | `limitlesscrowd.xyz` | Sarkaria-owned BGW recruitment funnel | DNS dead (taken down post-BCSC); registered Namecheap 2025-05-13, NS at MYSECURECLOUDHOST.COM | Flagged by BCSC in the companion BG Wealth Sharing warning (2026-01-28). Owner per site footer: Gagan Sarkaria — see §3.4.1. |
 | `tradewithnick.com` | Variant front-man brand for BGW | ASIC Investor Alert List (Jan 2026); BGW alias | Surfaces a separate "Nick" front-man persona used in some recruitment funnels (separate from Stephen Beard / Joseph Smith). |
 
-**Domain rotation pattern:** numeric suffix lookalikes (`dsj{N}.com`, `dsjex{N}.com`, `dsj{N}.icu`, `bg{N}.com`, `yzzq{N}.cc`, `tra{N}.tw`) registered in fast bursts. Any new domain matching these patterns + privacy-shielded WHOIS + Cloudflare in front + Chinese hosting backend should be treated as suspect.
+**Domain rotation pattern:** numeric-suffix lookalikes registered in fast bursts. The original branded patterns (`dsj{N}.com`, `dsjex{N}.com`, `dsj{N}.icu`, `bg{N}.com`, `yzzq{N}.cc`, `tra{N}.tw`) have been **partially superseded by un-themed 3-letter-prefix rotations** as of late April 2026 — operators are deliberately moving away from brand-mappable names to evade pattern-match detection. Examples in current rotation (TJ-supplied 2026-05-05 from victim-email broadcasts, all live HTTP 200 unless noted, all via Gname.com Pte. Ltd. registrar):
+
+| Pattern | Examples | Notes |
+| --- | --- | --- |
+| `bg{N}.com / .cc` (legacy themed) | `bg6988.com`, `bg5399.cc` | Both live |
+| `yti{N}.com` | `yti351.com`, `yti355.com` | Both live |
+| `okm{N}.net` | `okm772.net`, `okm776.net` | Both live |
+| `ase{N}.net` | `ase5228.net` | Live (HTTP responds) |
+| `ajy{N}.net` | `ajy6278.net` (and `/h5/ios` for iOS profile distribution) | Live |
+| `wt{N}.cc` / `wtl{N}.cc` | `wt1113.cc`, `wtl003.cc`, `wtl005.cc` | Some live |
+| `asq{N}.net` | `asq1283.net` | Live |
+| `apy{N}.net` | `apy2088.net` | Live |
+
+**Operator-attribution registrar:** every WHOIS record sampled traces to **Gname.com Pte. Ltd.** (Singapore-domiciled registrar; abuse contact `complaint@gname.com`, phone `+65.65189986`). This is the same registrar that the VCEX domains (`vcexpro.com`, `vcexin.com` etc.) used; **it is now the strongest single-source operator fingerprint in this network.** Any new domain in the rotation patterns above + Gname.com registration + Cloudflare front-end is high-confidence DSJEX/BGW family.
+
+**Bulk-registration evidence:** the 2026-04-27 batch shows `asq1283.net` and `ajy6278.net` created in the **same minute** (08:40:54 / 08:40:56 UTC) — script-driven bulk registration, not manual. The 2026-04-25 batch (`wtl003.cc` and adjacent) registered ~05:25 UTC. Pacing of victim-broadcast email "Latest Login URLs" notifications matches a daily-to-bi-daily rotation cadence.
+
+Any new domain matching these patterns + privacy-shielded WHOIS + Cloudflare in front + Gname.com registrar should be treated as suspect.
 
 **Centralized backend hint:** `api.ddjea.com` services *multiple* DSJ frontends (the test session pinged `api.tra809.tw` once but all real traffic flowed to `api.ddjea.com`). One backend, many disposable storefronts.
 
