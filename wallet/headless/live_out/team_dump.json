@@ -1,0 +1,56 @@
+{
+  "POST /api/app/share/team": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/share/team": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/share/my/award": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/share/my/award": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/user/share": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/user/share": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/rank/team": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/rank/team": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/second/share/user/list": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/second/share/user/list": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/second/share/list": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/second/share/list": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/second/share/user/follow": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/second/share/user/follow": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/user/credit/list": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/user/credit/list": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "POST /api/app/user/credit/getScore": {
+    "err": "TypeError: Failed to fetch"
+  },
+  "GET /api/app/user/credit/getScore": {
+    "err": "TypeError: Failed to fetch"
+  }
+}

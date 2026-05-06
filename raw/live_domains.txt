@@ -1,0 +1,46 @@
+=== bgex.pro ===
+--- A ---
+--- NS ---
+--- WHOIS (head) ---
+status:       ACTIVE
+created:      2002-05-08
+
+=== bggracefulwealth.com ===
+--- A ---
+--- NS ---
+--- WHOIS (head) ---
+status:       ACTIVE
+created:      1985-01-01
+   Updated Date: 2026-03-27T14:23:24Z
+   Creation Date: 2025-07-01T02:54:41Z
+   Registry Expiry Date: 2027-07-01T02:54:41Z
+   Registrar: HOSTINGER operations, UAB
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: NS1.DNS-PARKING.COM
+   Name Server: NS2.DNS-PARKING.COM
+
+=== bgwealthalert.com ===
+--- A ---
+--- NS ---
+--- WHOIS (head) ---
+status:       ACTIVE
+created:      1985-01-01
+   Updated Date: 2026-04-04T17:37:57Z
+   Creation Date: 2026-04-04T17:37:57Z
+   Registry Expiry Date: 2027-04-04T17:37:57Z
+   Registrar: Name.com, Inc.
+   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+   Name Server: DNS1.P06.NSONE.NET
+   Name Server: DNS2.P06.NSONE.NET
+   Name Server: DNS3.P06.NSONE.NET
+   Name Server: DNS4.P06.NSONE.NET
+Updated Date: 2026-04-04T17:37:57Z 
+Creation Date: 2026-04-04T17:37:57Z 
+Registrar Registration Expiration Date: 2027-04-04T17:37:57Z 
+Registrar: Name.com, Inc. 
+Domain Status: clientTransferProhibited https://www.icann.org/epp#clientTransferProhibited 
+Registry Registrant ID: Not Available From Registry 
+Registrant Name: Redacted For Privacy 
+Registrant Organization: Domain Protection Services, Inc. 
+Registrant Street: PO Box 1769  
+

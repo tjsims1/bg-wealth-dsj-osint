@@ -1,0 +1,24 @@
+[2026-05-06T00:15:18+00:00] watchlist run
+  bgwealthsharing.com                      A=[104.21.21.220,172.67.200.211,2606:4700:3035::ac43:c8d3,2606:4700:3036::6815:15dc] HTTP=200 server=cloudflare
+  dsjex.net                                A=[2001:db8:1000::fa,203.0.113.250] HTTP=<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl. server=-
+  dsj89.com                                A=[104.21.96.8,172.67.150.30,2606:4700:3035::6815:6008,2606:4700:3036::ac43:961e] HTTP=HTTP Error 500: Internal Server Error server=-
+  dsjex123.com                             A=[104.21.2.65,172.67.128.216,2606:4700:3033::ac43:80d8,2606:4700:3036::6815:241] HTTP=HTTP Error 403: Forbidden server=-
+  bg877.com                                A=[-] HTTP=<urlopen error [Errno 8] nodename nor servname provided, or not known> server=-
+  bg661.com                                A=[-] HTTP=<urlopen error [Errno 8] nodename nor servname provided, or not known> server=-
+  yzzq919.cc                               A=[104.21.41.231,172.67.195.154,2606:4700:3030::ac43:c39a,2606:4700:3035::6815:29e7] HTTP=HTTP Error 403: Forbidden server=-
+  yzzq657.cc                               A=[104.21.9.254,172.67.161.202,2606:4700:3037::6815:9fe,2606:4700:3037::ac43:a1ca] HTTP=HTTP Error 403: Forbidden server=-
+  bg-wealth-sharing-six.vercel.app         A=[216.198.79.67,64.29.17.67] HTTP=200 server=Vercel
+  bg-wealth-simulator.vercel.app           A=[216.198.79.3,64.29.17.3] HTTP=200 server=Vercel
+  bggracefulwealth.com                     A=[148.135.128.69,2a02:4780:4e:4851:b0c1:4a88:20a1:bfec,2a02:4780:50:2449:7501:28cf:f2f2:236d,92.112.198.37] HTTP=200 server=hcdn
+  vcexbe.com                               A=[2001:db8:1000::fa,203.0.113.250] HTTP=<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl. server=-
+  vcexup.com                               A=[2001:db8:1000::fa,203.0.113.250] HTTP=<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl. server=-
+  vcexpro.com                              A=[38.182.168.98] HTTP=200 server=Xcdn
+  vcexin.com                               A=[38.182.168.98] HTTP=200 server=Xcdn
+  crt.sh '%.dsjex.%': 0 unique names
+  crt.sh '%bgwealth%': __error__: The read operation timed out
+  crt.sh '%bg-wealth%': 0 unique names
+  crt.sh '%yzzq%': 0 unique names
+  crt.sh '%vcex%': __error__: HTTP Error 404: Not Found
+  crt.sh '%swiftwave%': __error__: HTTP Error 404: Not Found
+  crt.sh '%swift-wave%': __error__: The read operation timed out
+  CHANGE bggracefulwealth.com: A ['148.135.128.164', '2a02:4780:4f:1618:307c:9937:169d:9aff', '2a02:4780:51:b836:c3f5:9eda:39e6:55f', '92.112.198.35'] -> ['148.135.128.69', '2a02:4780:4e:4851:b0c1:4a88:20a1:bfec', '2a02:4780:50:2449:7501:28cf:f2f2:236d', '92.112.198.37'], HTTP 200 -> 200

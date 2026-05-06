@@ -1,0 +1,37 @@
+{
+  "target": "https://bg-wealth-sharing-six.vercel.app/",
+  "events": 41,
+  "hosts": [
+    [
+      "bg-wealth-sharing-six.vercel.app",
+      6
+    ],
+    [
+      "images.unsplash.com",
+      4
+    ],
+    [
+      "fonts.gstatic.com",
+      3
+    ],
+    [
+      "cdn.tailwindcss.com",
+      2
+    ],
+    [
+      "unpkg.com",
+      2
+    ],
+    [
+      "www.gstatic.com",
+      2
+    ],
+    [
+      "fonts.googleapis.com",
+      1
+    ]
+  ],
+  "validatedTron": [],
+  "allTronCandidates": [],
+  "apiCalls": []
+}

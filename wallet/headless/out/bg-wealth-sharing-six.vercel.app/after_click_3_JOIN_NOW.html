@@ -1,0 +1,938 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth bg-[#030305]"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Wealth | Official Information Portal</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&amp;family=JetBrains+Mono:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        bgdark: '#030305',
+                        bgpanel: '#0a0a0d',
+                        bgborder: 'rgba(255, 255, 255, 0.06)',
+                        bgred: '#E31837',
+                        bgreddark: '#9e0d22',
+                        bgblue: '#0B3B60',
+                    },
+                    boxShadow: {
+                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.5)',
+                        'glow-red': '0 0 50px rgba(227, 24, 55, 0.15)',
+                        'glow-blue': '0 0 50px rgba(11, 59, 96, 0.15)',
+                    },
+                    animation: {
+                        'aurora-1': 'aurora 20s infinite alternate ease-in-out',
+                        'aurora-2': 'aurora 25s infinite alternate-reverse ease-in-out',
+                    },
+                    keyframes: {
+                        aurora: {
+                            '0%': { transform: 'translate(0, 0) scale(1) rotate(0deg)' },
+                            '50%': { transform: 'translate(5%, 10%) scale(1.1) rotate(5deg)' },
+                            '100%': { transform: 'translate(-5%, -5%) scale(0.9) rotate(-5deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base Styles & Custom Cursor */
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+            color: #ffffff;
+            cursor: none;
+        }
+        
+        a, button, input, video { cursor: none; }
+
+        #cursor {
+            position: fixed;
+            top: 0; left: 0;
+            width: 8px; height: 8px;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99999;
+            transform: translate(-50%, -50%);
+            transition: width 0.3s, height 0.3s, background-color 0.3s;
+            mix-blend-mode: difference;
+        }
+        #cursor-follower {
+            position: fixed;
+            top: 0; left: 0;
+            width: 40px; height: 40px;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99998;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s linear, width 0.3s, height 0.3s;
+        }
+
+        .hover-target:hover ~ #cursor { width: 12px; height: 12px; background: #E31837; mix-blend-mode: normal;}
+        .hover-target:hover ~ #cursor-follower { width: 60px; height: 60px; border-color: rgba(227, 24, 55, 0.5); background: rgba(227, 24, 55, 0.05); }
+
+        /* Cinematic Noise Overlay */
+        .noise::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #030305; }
+        ::-webkit-scrollbar-thumb { background: #1a1a24; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #E31837; }
+        
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+
+        .glass-nav {
+            background: rgba(3, 3, 5, 0.7);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .glass-panel {
+            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+            backdrop-filter: blur(30px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .aurora {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            z-index: -1;
+            mix-blend-mode: screen;
+            opacity: 0.3;
+        }
+
+        /* Reading Progress Bar */
+        #readProgress {
+            position: fixed;
+            top: 0; left: 0; height: 2px;
+            background: #E31837;
+            z-index: 100000;
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        /* Page Transition CSS */
+        .page-section {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .page-section.active {
+            display: block;
+            opacity: 1;
+        }
+
+        /* Drop Cap for Articles */
+        .drop-cap::first-letter {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            float: left;
+            line-height: 1;
+            padding-right: 0.5rem;
+            color: #E31837;
+        }
+
+        /* Form Inputs */
+        .input-line { position: relative; margin-bottom: 3rem; }
+        .input-line input {
+            width: 100%; background: transparent; border: none;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding: 1rem 0; color: white; font-size: 1.125rem; transition: border-color 0.4s;
+        }
+        .input-line input:focus { outline: none; }
+        .input-line label {
+            position: absolute; left: 0; top: 1rem;
+            color: rgba(255,255,255,0.4); font-size: 1.125rem; pointer-events: none;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .input-line input:focus ~ label, .input-line input:valid ~ label {
+            top: -1rem; font-size: 0.75rem; color: #E31837; letter-spacing: 0.1em; text-transform: uppercase;
+        }
+        .input-line .line-focus {
+            position: absolute; bottom: 0; left: 50%; width: 0; height: 1px;
+            background: #E31837; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); transform: translateX(-50%);
+        }
+        .input-line input:focus ~ .line-focus { width: 100%; }
+
+        .loader {
+            border: 2px solid rgba(255,255,255,0.1); border-left-color: #E31837;
+            border-radius: 50%; width: 20px; height: 20px; animation: spin 1s linear infinite; display: none;
+        }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        /* Toast positioning fixes */
+        #toast {
+            position: fixed;
+            bottom: -100px;
+            right: 20px;
+            background: rgba(10, 10, 13, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: bottom 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 999999;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        #toast.show {
+            bottom: 20px;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.visible{visibility:visible}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-0{bottom:0px}.bottom-\[-10\%\]{bottom:-10%}.left-0{left:0px}.left-\[-10\%\]{left:-10%}.right-4{right:1rem}.right-\[-5\%\]{right:-5%}.top-0{top:0px}.top-4{top:1rem}.top-\[-10\%\]{top:-10%}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.z-\[100\]{z-index:100}.m-0{margin:0px}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.my-12{margin-top:3rem;margin-bottom:3rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-8{margin-top:2rem;margin-bottom:2rem}.\!mb-0{margin-bottom:0px !important}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-20{margin-bottom:5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-2{margin-left:0.5rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.line-clamp-2{overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-24{height:6rem}.h-3{height:0.75rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-8{height:2rem}.h-\[1px\]{height:1px}.h-\[500px\]{height:500px}.h-\[50vh\]{height:50vh}.h-\[600px\]{height:600px}.h-full{height:100%}.h-px{height:1px}.h-screen{height:100vh}.min-h-\[400px\]{min-height:400px}.min-h-screen{min-height:100vh}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-3{width:0.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-\[500px\]{width:500px}.w-\[600px\]{width:600px}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-none{max-width:none}.border-collapse{border-collapse:collapse}.-translate-x-full{--tw-translate-x:-100%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-\[pulse_3s_ease-in-out_infinite\]{animation:pulse 3s ease-in-out infinite}@keyframes aurora{0%{transform:translate(0, 0) scale(1) rotate(0deg)}50%{transform:translate(5%, 10%) scale(1.1) rotate(5deg)}100%{transform:translate(-5%, -5%) scale(0.9) rotate(-5deg)}}.animate-aurora-1{animation:aurora 20s infinite alternate ease-in-out}@keyframes aurora{0%{transform:translate(0, 0) scale(1) rotate(0deg)}50%{transform:translate(5%, 10%) scale(1.1) rotate(5deg)}100%{transform:translate(-5%, -5%) scale(0.9) rotate(-5deg)}}.animate-aurora-2{animation:aurora 25s infinite alternate-reverse ease-in-out}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-none{cursor:none}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-8{column-gap:2rem}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-white\/10 > :not([hidden]) ~ :not([hidden]){border-color:rgb(255 255 255 / 0.1)}.divide-white\/5 > :not([hidden]) ~ :not([hidden]){border-color:rgb(255 255 255 / 0.05)}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.scroll-smooth{scroll-behavior:smooth}.whitespace-nowrap{white-space:nowrap}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[2rem\]{border-radius:2rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-r-xl{border-top-right-radius:0.75rem;border-bottom-right-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.\!border-bgdark{--tw-border-opacity:1 !important;border-color:rgb(3 3 5 / var(--tw-border-opacity, 1)) !important}.border-bgblue{--tw-border-opacity:1;border-color:rgb(11 59 96 / var(--tw-border-opacity, 1))}.border-bgred{--tw-border-opacity:1;border-color:rgb(227 24 55 / var(--tw-border-opacity, 1))}.border-bgred\/20{border-color:rgb(227 24 55 / 0.2)}.border-bgred\/40{border-color:rgb(227 24 55 / 0.4)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.\!border-l-transparent{border-left-color:transparent !important}.bg-\[\#020203\]{--tw-bg-opacity:1;background-color:rgb(2 2 3 / var(--tw-bg-opacity, 1))}.bg-\[\#030305\]{--tw-bg-opacity:1;background-color:rgb(3 3 5 / var(--tw-bg-opacity, 1))}.bg-bgblue\/20{background-color:rgb(11 59 96 / 0.2)}.bg-bgdark{--tw-bg-opacity:1;background-color:rgb(3 3 5 / var(--tw-bg-opacity, 1))}.bg-bgdark\/90{background-color:rgb(3 3 5 / 0.9)}.bg-bgpanel{--tw-bg-opacity:1;background-color:rgb(10 10 13 / var(--tw-bg-opacity, 1))}.bg-bgred{--tw-bg-opacity:1;background-color:rgb(227 24 55 / var(--tw-bg-opacity, 1))}.bg-bgred\/10{background-color:rgb(227 24 55 / 0.1)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-white\/\[0\.02\]{background-color:rgb(255 255 255 / 0.02)}.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1450101499163-c8848c66ca85\?ixlib\=rb-4\.0\.3\&auto\=format\&fit\=crop\&w\=1920\&q\=80\'\)\]{background-image:url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')}.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1556761175-5973dc0f32b7\?ixlib\=rb-4\.0\.3\&auto\=format\&fit\=crop\&w\=1920\&q\=80\'\)\]{background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')}.bg-\[url\(\'https\:\/\/images\.unsplash\.com\/photo-1611974789855-9c2a0a7236a3\?ixlib\=rb-4\.0\.3\&auto\=format\&fit\=crop\&w\=1920\&q\=80\'\)\]{background-image:url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-bgblue\/20{--tw-gradient-from:rgb(11 59 96 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(11 59 96 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-bgdark{--tw-gradient-from:#030305 var(--tw-gradient-from-position);--tw-gradient-to:rgb(3 3 5 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gray-200{--tw-gradient-from:#e5e7eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(229 231 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-bgdark\/80{--tw-gradient-to:rgb(3 3 5 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(3 3 5 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-white\/5{--tw-gradient-to:rgb(255 255 255 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(255 255 255 / 0.05) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-bgred\/20{--tw-gradient-to:rgb(227 24 55 / 0.2) var(--tw-gradient-to-position)}.to-gray-600{--tw-gradient-to:#4b5563 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.bg-cover{background-size:cover}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.bg-center{background-position:center}.bg-no-repeat{background-repeat:no-repeat}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-1{padding:0.25rem}.p-10{padding:2.5rem}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-32{padding-top:8rem;padding-bottom:8rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.pb-16{padding-bottom:4rem}.pl-6{padding-left:1.5rem}.pt-10{padding-top:2.5rem}.pt-20{padding-top:5rem}.text-left{text-align:left}.\!text-center{text-align:center !important}.text-center{text-align:center}.font-mono{font-family:JetBrains Mono, monospace}.font-sans{font-family:Plus Jakarta Sans, sans-serif}.font-serif{font-family:Playfair Display, serif}.\!text-\[10px\]{font-size:10px !important}.\!text-xl{font-size:1.25rem !important;line-height:1.75rem !important}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-\[1\]{line-height:1}.leading-loose{line-height:2}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.\!tracking-\[0\.3em\]{letter-spacing:0.3em !important}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-\[0\.3em\]{letter-spacing:0.3em}.tracking-\[0\.4em\]{letter-spacing:0.4em}.tracking-tight{letter-spacing:-0.025em}.tracking-tighter{letter-spacing:-0.05em}.tracking-wide{letter-spacing:0.025em}.tracking-widest{letter-spacing:0.1em}.text-bgblue{--tw-text-opacity:1;color:rgb(11 59 96 / var(--tw-text-opacity, 1))}.text-bgdark{--tw-text-opacity:1;color:rgb(3 3 5 / var(--tw-text-opacity, 1))}.text-bgred{--tw-text-opacity:1;color:rgb(227 24 55 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.decoration-bgred\/50{-webkit-text-decoration-color:rgb(227 24 55 / 0.5);text-decoration-color:rgb(227 24 55 / 0.5)}.underline-offset-4{text-underline-offset:4px}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-30{opacity:0.3}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-glow-blue{--tw-shadow:0 0 50px rgba(11, 59, 96, 0.15);--tw-shadow-colored:0 0 50px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-glow-red{--tw-shadow:0 0 50px rgba(227, 24, 55, 0.15);--tw-shadow-colored:0 0 50px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-xl{--tw-blur:blur(24px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.brightness-75{--tw-brightness:brightness(.75);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-2xl{--tw-backdrop-blur:blur(40px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-3xl{--tw-backdrop-blur:blur(64px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.selection\:bg-bgred *::selection{--tw-bg-opacity:1;background-color:rgb(227 24 55 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-bgred::selection{--tw-bg-opacity:1;background-color:rgb(227 24 55 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-bgred:hover{--tw-border-opacity:1;border-color:rgb(227 24 55 / var(--tw-border-opacity, 1))}.hover\:border-white\/20:hover{border-color:rgb(255 255 255 / 0.2)}.hover\:border-white\/30:hover{border-color:rgb(255 255 255 / 0.3)}.hover\:bg-bgred\/10:hover{background-color:rgb(227 24 55 / 0.1)}.hover\:bg-bgred\/20:hover{background-color:rgb(227 24 55 / 0.2)}.hover\:bg-white\/10:hover{background-color:rgb(255 255 255 / 0.1)}.hover\:bg-white\/5:hover{background-color:rgb(255 255 255 / 0.05)}.hover\:text-bgred:hover{--tw-text-opacity:1;color:rgb(227 24 55 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:translate-x-0{--tw-translate-x:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:translate-x-2{--tw-translate-x:0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:border-white\/30{border-color:rgb(255 255 255 / 0.3)}.group:hover .group-hover\:brightness-100{--tw-brightness:brightness(1);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\:grayscale-0{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}@media (min-width: 640px){.sm\:p-4{padding:1rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:mt-10{margin-top:2.5rem}.md\:flex{display:flex}.md\:hidden{display:none}.md\:w-auto{width:auto}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-16{padding:4rem}.md\:p-8{padding:2rem}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-\[6\.5rem\]{font-size:6.5rem}}</style></head>
+<body class="noise antialiased selection:bg-bgred selection:text-white">
+
+    <div id="readProgress" style="width: 96.1747%;"></div>
+    <div id="cursor" style="left: 1111px; top: 48px;"></div>
+    <div id="cursor-follower" style="left: 1110.92px; top: 47.9967px;"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-700 hover-target" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <div class="flex items-center gap-4 cursor-none group" onclick="showPage('main')">
+                    <div class="relative overflow-hidden rounded-xl border border-white/10 bg-white p-1 transition-all duration-500 group-hover:border-white/30">
+                        <img class="h-10 w-auto object-contain rounded-lg" src="logo.jpg" alt="Logo" onerror="this.src='https://placehold.co/100x100/0B3B60/FFF?text=BG'">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-sans font-bold text-lg text-white tracking-widest uppercase">BG Wealth</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('videoSection').scrollIntoView(), 100);" class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors hover-target relative overflow-hidden group">
+                        Presentation <span class="absolute bottom-0 left-0 w-full h-[1px] bg-bgred transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+                    </a>
+                    <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('about').scrollIntoView(), 100);" class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors hover-target relative overflow-hidden group">
+                        Platform <span class="absolute bottom-0 left-0 w-full h-[1px] bg-bgred transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+                    </a>
+                    <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('articles').scrollIntoView(), 100);" class="text-xs font-semibold uppercase tracking-[0.2em] text-gray-400 hover:text-white transition-colors hover-target relative overflow-hidden group">
+                        Documentation <span class="absolute bottom-0 left-0 w-full h-[1px] bg-bgred transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></span>
+                    </a>
+                    
+                    <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('join').scrollIntoView(), 100);" class="hover-target text-white px-6 py-2.5 rounded-full border border-white/20 hover:border-bgred hover:bg-bgred/10 transition-all duration-300 font-semibold text-xs uppercase tracking-[0.2em]">
+                        Join Now
+                    </a>
+                    
+                    <button onclick="openAdminModal()" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-white/30 transition-all duration-500 hover-target bg-white/5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield" aria-hidden="true" class="lucide lucide-shield w-4 h-4"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+                    </button>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button onclick="toggleMobileMenu()" class="text-white focus:outline-none hover-target">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" aria-hidden="true" class="lucide lucide-menu w-8 h-8 font-light"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-bgdark border-t border-white/10 absolute w-full h-screen backdrop-blur-3xl p-8">
+            <div class="flex flex-col gap-8 mt-10">
+                <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('videoSection').scrollIntoView(), 100); toggleMobileMenu();" class="text-3xl font-serif text-white hover:text-bgred transition-colors">Presentation</a>
+                <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('about').scrollIntoView(), 100); toggleMobileMenu();" class="text-3xl font-serif text-white hover:text-bgred transition-colors">The Platform</a>
+                <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('articles').scrollIntoView(), 100); toggleMobileMenu();" class="text-3xl font-serif text-white hover:text-bgred transition-colors">Documentation</a>
+                <a href="#" onclick="showPage('main'); setTimeout(()=&gt;document.getElementById('join').scrollIntoView(), 100); toggleMobileMenu();" class="text-3xl font-serif text-bgred transition-colors">Join Now</a>
+                <div class="h-px w-full bg-white/10 my-4"></div>
+                <button onclick="openAdminModal(); toggleMobileMenu()" class="text-left text-gray-400 font-mono text-sm uppercase tracking-widest flex items-center gap-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="terminal" aria-hidden="true" class="lucide lucide-terminal w-4 h-4"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg> Admin Terminal
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- MAIN LANDING PAGE -->
+    <!-- ========================================== -->
+    <div id="mainPage" class="page-section active">
+        
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+            <div class="aurora w-[600px] h-[600px] bg-bgred/10 top-[-10%] left-[-10%] animate-aurora-1"></div>
+            <div class="aurora w-[500px] h-[500px] bg-bgblue/20 bottom-[-10%] right-[-5%] animate-aurora-2"></div>
+
+            <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+                <div class="reveal inline-flex items-center gap-3 mb-8 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md">
+                    <span class="w-1.5 h-1.5 rounded-full bg-bgred animate-pulse"></span>
+                    <span class="text-[9px] font-bold uppercase tracking-[0.3em] text-gray-300">Est. 2018 | Global Financial Chain</span>
+                </div>
+                
+                <h1 class="reveal delay-1 text-5xl md:text-7xl lg:text-[6.5rem] font-bold text-white tracking-tighter mb-6 leading-[1]">
+                    Eradicate Poverty. <br>
+                    <span class="font-serif italic font-light text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-gray-600">Build Digital Wealth.</span>
+                </h1>
+                
+                <p class="reveal delay-2 text-lg text-gray-400 mb-12 font-light max-w-2xl mx-auto leading-relaxed">
+                    Join the BG Wealth Sharing Group. A regulated, ASIC &amp; SEC certified ecosystem merging high-yield binary options trading with the raw power of the DSJ Exchange.
+                </p>
+                
+                <div class="reveal delay-2 flex justify-center gap-6">
+                    <a href="#join" class="hover-target px-8 py-4 bg-bgred text-white rounded-full font-bold text-xs uppercase tracking-[0.2em] shadow-glow-red hover:scale-105 transition-transform">
+                        Register Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Official Video Presentation Section -->
+        <section id="videoSection" class="py-20 relative z-10">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-12 reveal text-center">
+                    <h2 class="text-[10px] font-bold tracking-[0.4em] text-gray-400 uppercase mb-4">Official Presentation</h2>
+                    <h3 class="font-sans text-3xl text-white font-bold tracking-tight">Understanding the <span class="font-serif italic font-light text-bgred">Ecosystem</span></h3>
+                </div>
+
+                <div class="reveal delay-1 glass-panel rounded-[2rem] p-2 sm:p-4 border border-white/10 shadow-2xl relative overflow-hidden">
+                    <!-- Glow behind video -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-bgblue/20 to-bgred/20 blur-xl z-0"></div>
+                    
+                    <video controls="" preload="metadata" class="relative z-10 w-full rounded-2xl shadow-lg border border-white/5 hover-target" poster="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80">
+                        <source src="bg-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <!-- Highlighted Text Block (Requested Addition) -->
+                <div class="reveal delay-2 mt-8 md:mt-10 p-6 md:p-8 rounded-2xl border border-bgred/40 bg-bgred/10 text-center relative overflow-hidden shadow-glow-red hover-target transition-all duration-500 hover:bg-bgred/20 max-w-4xl mx-auto">
+                    <!-- Subtle pulsing background layer -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent animate-[pulse_3s_ease-in-out_infinite]"></div>
+                    
+                    <!-- Content -->
+                    <p class="relative z-10 text-white font-semibold text-lg md:text-2xl leading-relaxed tracking-wide font-sans">
+                        "दोस्तों, 👆यह व्हिडिओ देखिए और कैसे हम दिन का सिर्फ <span class="text-bgred font-bold underline decoration-bgred/50 underline-offset-4">1 मिनट</span> का काम करके, हर महिना <span class="text-bgred font-bold underline decoration-bgred/50 underline-offset-4">30 हजार से 3 लाख</span> कमा सकते है"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-32 relative z-10 bg-[#020203]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-20 reveal text-center">
+                    <h2 class="text-[10px] font-bold tracking-[0.4em] text-bgred uppercase mb-4">Architecture</h2>
+                    <h3 class="font-sans text-4xl md:text-5xl text-white font-bold tracking-tight">The Dual <span class="font-serif italic font-light text-gray-500">Engine</span></h3>
+                </div>
+
+                <div class="grid lg:grid-cols-2 gap-6">
+                    <div class="reveal glass-panel rounded-3xl p-10 hover-target border border-white/5 hover:border-white/20 transition-all duration-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-merge" aria-hidden="true" class="lucide lucide-git-merge w-8 h-8 text-bgred mb-6"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path></svg>
+                        <h3 class="font-sans text-3xl font-bold text-white mb-4">BG Wealth Sharing</h3>
+                        <p class="text-gray-400 text-lg leading-relaxed font-light mb-6">
+                            Founded in 2018 by Stephen Beard, BG Wealth is more than a trading platform—it's a complete financial industry chain. Backed by a £30 Million guarantee fund established in 2024 to ensure member safety.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-500">
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" aria-hidden="true" class="lucide lucide-check text-bgred w-4 h-4"><path d="M20 6 9 17l-5-5"></path></svg> Blockchain &amp; Digital Currency</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" aria-hidden="true" class="lucide lucide-check text-bgred w-4 h-4"><path d="M20 6 9 17l-5-5"></path></svg> Private Funds &amp; Venture Capital</li>
+                        </ul>
+                    </div>
+
+                    <div class="reveal delay-1 glass-panel rounded-3xl p-10 hover-target border border-white/5 hover:border-white/20 transition-all duration-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="candlestick-chart" aria-hidden="true" class="lucide lucide-candlestick-chart w-8 h-8 text-bgblue mb-6"><path d="M9 5v4"></path><rect width="4" height="6" x="7" y="9" rx="1"></rect><path d="M9 15v2"></path><path d="M17 3v2"></path><rect width="4" height="8" x="15" y="5" rx="1"></rect><path d="M17 13v3"></path><path d="M3 3v16a2 2 0 0 0 2 2h16"></path></svg>
+                        <h3 class="font-sans text-3xl font-bold text-white mb-4">DSJ Exchange</h3>
+                        <p class="text-gray-400 text-lg leading-relaxed font-light mb-6">
+                            The backend operational powerhouse. Bound by a 10-year partnership agreement, DSJ Exchange provides global, legally compliant trading infrastructure for all BG Wealth members.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-500">
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" aria-hidden="true" class="lucide lucide-check text-bgblue w-4 h-4"><path d="M20 6 9 17l-5-5"></path></svg> US SEC &amp; ASIC Australia Certified</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" aria-hidden="true" class="lucide lucide-check text-bgblue w-4 h-4"><path d="M20 6 9 17l-5-5"></path></svg> Regulated in 30+ Countries (MAS, DFSA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Official Documentation (Articles) Index -->
+        <section id="articles" class="py-32 relative z-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-20 reveal text-center">
+                    <h2 class="text-[10px] font-bold tracking-[0.4em] text-bgred uppercase mb-4">Official Documentation</h2>
+                    <h3 class="font-serif text-4xl md:text-5xl text-white font-light italic">Platform Analysis</h3>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Article 1 Link -->
+                    <div onclick="showPage('article1')" class="reveal hover-target group cursor-none glass-panel rounded-2xl overflow-hidden p-2 hover:bg-white/5 transition-all duration-500">
+                        <div class="relative h-56 overflow-hidden rounded-xl bg-bgpanel">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-full object-cover filter grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700">
+                            <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[8px] uppercase tracking-widest text-white border border-white/10">Trading</div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-sans text-xl font-bold text-white mb-2">The Trading &amp; Compounding Engine</h4>
+                            <p class="text-gray-500 text-sm font-light line-clamp-2 mb-6">Learn about the 99.6% accurate Binary Options signals and how your capital doubles in just 55 days.</p>
+                            <span class="text-xs font-bold uppercase tracking-widest text-bgred flex items-center">Read Document <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-3 h-3 ml-2 group-hover:translate-x-2 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 Link -->
+                    <div onclick="showPage('article2')" class="reveal delay-1 hover-target group cursor-none glass-panel rounded-2xl overflow-hidden p-2 hover:bg-white/5 transition-all duration-500">
+                        <div class="relative h-56 overflow-hidden rounded-xl bg-bgpanel">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-full object-cover filter grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700">
+                            <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[8px] uppercase tracking-widest text-white border border-white/10">Network</div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-sans text-xl font-bold text-white mb-2">Team Income &amp; Rank System</h4>
+                            <p class="text-gray-500 text-sm font-light line-clamp-2 mb-6">Discover the powerful 7-level team building system, welcome bonuses, and massive cycle rewards.</p>
+                            <span class="text-xs font-bold uppercase tracking-widest text-bgred flex items-center">Read Document <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-3 h-3 ml-2 group-hover:translate-x-2 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+                        </div>
+                    </div>
+
+                    <!-- Article 3 Link -->
+                    <div onclick="showPage('article3')" class="reveal delay-2 hover-target group cursor-none glass-panel rounded-2xl overflow-hidden p-2 hover:bg-white/5 transition-all duration-500">
+                        <div class="relative h-56 overflow-hidden rounded-xl bg-bgpanel">
+                            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" class="w-full h-full object-cover filter grayscale brightness-75 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700">
+                            <div class="absolute top-4 right-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[8px] uppercase tracking-widest text-white border border-white/10">Operations</div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-sans text-xl font-bold text-white mb-2">Withdrawals &amp; Security Rules</h4>
+                            <p class="text-gray-500 text-sm font-light line-clamp-2 mb-6">Understand the dual-wallet system, deduction rules (0%, 12%, 20%), and instant crypto payouts.</p>
+                            <span class="text-xs font-bold uppercase tracking-widest text-bgred flex items-center">Read Document <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-3 h-3 ml-2 group-hover:translate-x-2 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Form -->
+        <section id="join" class="py-32 relative overflow-hidden">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 relative z-10">
+                <div class="glass-panel rounded-3xl p-10 md:p-16 reveal border border-white/10 shadow-2xl relative overflow-hidden visible">
+                    <div class="text-center mb-12">
+                        <h3 class="font-sans text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Account <span class="font-serif italic font-light text-bgred">Registration</span></h3>
+                        <p class="text-gray-400 font-light text-sm">Submit your details to receive your registration link and setup guidance via WhatsApp.</p>
+                    </div>
+
+                    <form id="registrationForm" class="hover-target">
+                        <div class="input-line">
+                            <input type="text" id="name" required="" autocomplete="off" style="">
+                            <label for="name">Name</label>
+                            <div class="line-focus"></div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8">
+                            <div class="input-line">
+                                <input type="tel" id="phone" required="" autocomplete="off" style="">
+                                <label for="phone">Phone Number</label>
+                                <div class="line-focus"></div>
+                            </div>
+                            <div class="input-line">
+                                <input type="tel" id="whatsapp" required="" autocomplete="off" style="">
+                                <label for="whatsapp">WhatsApp Number</label>
+                                <div class="line-focus"></div>
+                            </div>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <button type="submit" id="submitBtn" class="hover-target inline-flex items-center justify-center gap-3 bg-white text-bgdark px-10 py-4 rounded-full font-bold text-xs uppercase tracking-[0.2em] transition-transform hover:scale-105 w-full md:w-auto shadow-glow-blue">
+                                <span>Submit Details</span>
+                                <div id="btnLoader" class="loader !border-bgdark !border-l-transparent"></div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="py-10 border-t border-white/5 flex flex-col items-center justify-center gap-6 text-center relative z-10">
+            <p class="text-gray-600 text-[9px] uppercase tracking-[0.3em]">© <span id="year">2026</span> BG Wealth Sharing Group. All Rights Reserved.</p>
+            <button onclick="openAdminModal()" class="hover-target text-gray-500 hover:text-bgred flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-mono transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="lock" aria-hidden="true" class="lucide lucide-lock w-3 h-3"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Admin Portal
+            </button>
+        </footer>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- ARTICLE 1 PAGE (Trading & Compounding) -->
+    <!-- ========================================== -->
+    <div id="article1Page" class="page-section">
+        <div class="relative h-[50vh] min-h-[400px] flex items-end pb-16 justify-center">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80')] bg-cover bg-center bg-no-repeat opacity-30 filter grayscale"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-bgdark via-bgdark/80 to-transparent"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center w-full">
+                <button onclick="showPage('main')" class="mb-8 hover-target inline-flex items-center gap-2 text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" aria-hidden="true" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Return to Portal
+                </button>
+                <div class="inline-block px-3 py-1 bg-white/10 border border-white/20 rounded-full text-[9px] uppercase tracking-widest text-white mb-6">Document 01</div>
+                <h1 class="font-serif text-4xl md:text-6xl text-white font-medium mb-4 leading-tight">The Trading &amp; Compounding Engine</h1>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6 py-16">
+            <div class="prose prose-invert prose-lg max-w-none font-light leading-relaxed text-gray-300">
+                <p class="drop-cap text-xl leading-loose">BG Wealth Sharing utilizes a highly sophisticated Binary Options Trading system to generate daily income for its members. The process is designed to be accessible, requiring zero prior trading knowledge from the user.</p>
+                
+                <h3 class="text-white font-sans text-2xl mt-12 mb-4 font-semibold">Daily Signal Operations</h3>
+                <p>Members receive exactly two trading signals daily via the Bonchat application. These signals operate on the BTC/USDT pair and are timed specifically at <strong>6:30 PM</strong> and <strong>10:30 PM</strong>.</p>
+                
+                <div class="my-8 p-6 bg-white/5 border border-white/10 rounded-xl">
+                    <ul class="space-y-4 m-0">
+                        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="target" aria-hidden="true" class="lucide lucide-target text-bgred w-5 h-5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg> <strong>Incredible Accuracy:</strong> The system boasts a 99.6% accuracy rate.</li>
+                        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shield" aria-hidden="true" class="lucide lucide-shield text-bgred w-5 h-5"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg> <strong>Risk Management:</strong> Only 1% of your capital is used per trade.</li>
+                        <li class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="trending-up" aria-hidden="true" class="lucide lucide-trending-up text-bgred w-5 h-5"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg> <strong>Return Rate:</strong> Successful trades yield a 2X return on the traded amount.</li>
+                    </ul>
+                </div>
+
+                <p>For example, if you hold a $300 account, the 1% trade size is $3. A successful signal returns $6. From the $3 profit, 60% ($1.80) is your direct profit, and 40% goes into the company's reward system. This generates a daily passive income between 1.3% and 1.8%.</p>
+                
+                <h3 class="text-white font-sans text-2xl mt-12 mb-4 font-semibold">The 55-Day Compounding Magic</h3>
+                <blockquote class="my-8 border-l-2 border-bgblue pl-6 py-2">
+                    <p class="font-serif text-2xl text-white italic">"By retaining your daily profits within the system rather than withdrawing, the magic of compounding takes effect."</p>
+                </blockquote>
+                <p>According to BG Wealth algorithms, allowing your account to compound will double your total capital (2X) in exactly 55 days. A $300 account becomes $600 without any additional deposits, purely through consistent daily execution.</p>
+            </div>
+            
+            <div class="mt-20 pt-10 border-t border-white/10 flex justify-between items-center">
+                <button onclick="showPage('main')" class="hover-target text-xs uppercase tracking-widest text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" aria-hidden="true" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Back Home
+                </button>
+                <button onclick="showPage('article2')" class="hover-target text-xs uppercase tracking-widest text-bgred hover:text-white transition-colors flex items-center gap-2">
+                    Next Document <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- ARTICLE 2 PAGE (Team & Ranks) -->
+    <!-- ========================================== -->
+    <div id="article2Page" class="page-section">
+        <div class="relative h-[50vh] min-h-[400px] flex items-end pb-16 justify-center">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32b7?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80')] bg-cover bg-center bg-no-repeat opacity-30 filter grayscale"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-bgdark via-bgdark/80 to-transparent"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center w-full">
+                <button onclick="showPage('main')" class="mb-8 hover-target inline-flex items-center gap-2 text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" aria-hidden="true" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Return to Portal
+                </button>
+                <div class="inline-block px-3 py-1 bg-white/10 border border-white/20 rounded-full text-[9px] uppercase tracking-widest text-white mb-6">Document 02</div>
+                <h1 class="font-serif text-4xl md:text-6xl text-white font-medium mb-4 leading-tight">Team Income &amp; Rank System</h1>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6 py-16">
+            <div class="prose prose-invert prose-lg max-w-none font-light leading-relaxed text-gray-300">
+                <p class="drop-cap text-xl leading-loose">While trading provides steady passive growth, the true financial explosion in BG Wealth Sharing comes from its unparalleled Team Income and Ranking System. The platform heavily incentivizes community expansion.</p>
+                
+                <h3 class="text-white font-sans text-2xl mt-12 mb-4 font-semibold">Welcome &amp; Sponsor Bonuses</h3>
+                <p>Whenever a new member deposits, instant rewards are triggered:</p>
+                <ul class="list-disc pl-6 mb-8">
+                    <li><strong>$300 to $999 Deposit:</strong> The new member receives a 5% Welcome Bonus. The referring sponsor also receives a 5% Sponsor Bonus. (e.g., on $300, both get $15).</li>
+                    <li><strong>$1000 to $10,000 Deposit:</strong> The Welcome Bonus remains 5%, but the Sponsor Bonus doubles to 10%. (e.g., on $1000, new user gets $50, sponsor gets $100).</li>
+                </ul>
+
+                <h3 class="text-white font-sans text-2xl mt-12 mb-4 font-semibold">The 7-Level Rank Progression</h3>
+                <p>By building a team, you unlock massive One-Time Rank Bonuses and recurring 10-Day Cycle Bonuses.</p>
+                
+                <div class="overflow-x-auto my-8">
+                    <table class="w-full text-left border-collapse text-sm">
+                        <thead>
+                            <tr class="border-b border-white/20 text-white">
+                                <th class="py-3 px-4">Rank</th>
+                                <th class="py-3 px-4">Requirement</th>
+                                <th class="py-3 px-4">Rank Bonus (1-Time)</th>
+                                <th class="py-3 px-4">Cycle Bonus (Every 10 Days)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-white/10">
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4 text-bgred font-bold">Level 1</td>
+                                <td class="py-3 px-4">5 Direct Sponsors</td>
+                                <td class="py-3 px-4">$100</td>
+                                <td class="py-3 px-4">$30</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4 text-bgred font-bold">Level 2</td>
+                                <td class="py-3 px-4">2 Directs hit L1 (Team 25)</td>
+                                <td class="py-3 px-4">$300</td>
+                                <td class="py-3 px-4">$150</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4 text-bgred font-bold">Level 3</td>
+                                <td class="py-3 px-4">3 Directs hit L1 (Team 125)</td>
+                                <td class="py-3 px-4">$800</td>
+                                <td class="py-3 px-4">$500</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4 text-bgred font-bold">Level 4</td>
+                                <td class="py-3 px-4">4 Directs hit L1 (Team 500)</td>
+                                <td class="py-3 px-4">$2,000</td>
+                                <td class="py-3 px-4">$1,200</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4 text-bgred font-bold">Level 5</td>
+                                <td class="py-3 px-4">5 Directs hit L1 (Team 1k)</td>
+                                <td class="py-3 px-4">$5,000</td>
+                                <td class="py-3 px-4">$2,400</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4 text-bgred font-bold">Level 6</td>
+                                <td class="py-3 px-4">6 Directs hit L1 (Team 2k)</td>
+                                <td class="py-3 px-4">$12,000</td>
+                                <td class="py-3 px-4">$5,000</td>
+                            </tr>
+                            <tr class="hover:bg-white/5 transition-colors">
+                                <td class="py-3 px-4 text-bgred font-bold">Level 7 (Legend)</td>
+                                <td class="py-3 px-4">7 Directs hit L1 (Team 5k)</td>
+                                <td class="py-3 px-4">$25,000</td>
+                                <td class="py-3 px-4">$10,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>Achieving Level 7 secures a $10,000 cycle bonus every 10 days ($30,000/month), fundamentally changing your financial trajectory forever.</p>
+            </div>
+            
+            <div class="mt-20 pt-10 border-t border-white/10 flex justify-between items-center">
+                <button onclick="showPage('article1')" class="hover-target text-xs uppercase tracking-widest text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" aria-hidden="true" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Previous
+                </button>
+                <button onclick="showPage('article3')" class="hover-target text-xs uppercase tracking-widest text-bgred hover:text-white transition-colors flex items-center gap-2">
+                    Next Document <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" aria-hidden="true" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- ARTICLE 3 PAGE (Withdrawals & Rules) -->
+    <!-- ========================================== -->
+    <div id="article3Page" class="page-section">
+        <div class="relative h-[50vh] min-h-[400px] flex items-end pb-16 justify-center">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80')] bg-cover bg-center bg-no-repeat opacity-30 filter grayscale"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-bgdark via-bgdark/80 to-transparent"></div>
+            
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center w-full">
+                <button onclick="showPage('main')" class="mb-8 hover-target inline-flex items-center gap-2 text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" aria-hidden="true" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Return to Portal
+                </button>
+                <div class="inline-block px-3 py-1 bg-white/10 border border-white/20 rounded-full text-[9px] uppercase tracking-widest text-white mb-6">Document 03</div>
+                <h1 class="font-serif text-4xl md:text-6xl text-white font-medium mb-4 leading-tight">Withdrawals &amp; Security Rules</h1>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-6 py-16">
+            <div class="prose prose-invert prose-lg max-w-none font-light leading-relaxed text-gray-300">
+                <p class="drop-cap text-xl leading-loose">To maintain the integrity and longevity of the £30 Million guarantee fund, BG Wealth and DSJ Exchange enforce strict, transparent withdrawal rules. The system utilizes a dual-wallet architecture.</p>
+                
+                <h3 class="text-white font-sans text-2xl mt-12 mb-4 font-semibold">The Dual Wallet System</h3>
+                <div class="grid md:grid-cols-2 gap-8 my-8">
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl">
+                        <h4 class="text-white font-bold mb-2">1. Trade Wallet</h4>
+                        <p class="text-sm m-0">Holds your initial deposit and daily trading profit. Used for executing the 2 daily Bonchat signals.</p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl">
+                        <h4 class="text-white font-bold mb-2">2. Exchange Wallet</h4>
+                        <p class="text-sm m-0">Holds your network rewards: Welcome Bonuses, Referral/Sponsor Bonuses, and Cycle Bonuses.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-white font-sans text-2xl mt-12 mb-4 font-semibold">Withdrawal Deductions &amp; Rules</h3>
+                <p>Withdrawals are processed instantly via Cryptocurrency (USDT, BTC, Ethereum). There are no manual delays, but specific deduction rules apply to ensure ecosystem health:</p>
+                
+                <ul class="list-disc pl-6 mb-8 space-y-2">
+                    <li><strong>Trade Wallet (Pre-2X):</strong> If you withdraw from your Trade Wallet *before* your initial capital has doubled (reached 2X), a <strong>20% deduction</strong> is applied.</li>
+                    <li><strong>Trade Wallet (Post-2X):</strong> Once your account naturally compounds to 2X, withdrawals from the Trade Wallet incur a <strong>0% deduction</strong>.</li>
+                    <li><strong>Exchange Wallet:</strong> All withdrawals from the Exchange Wallet (Team &amp; Referral income) carry a flat <strong>12% deduction</strong>.</li>
+                </ul>
+
+                <blockquote class="my-12 border-l-2 border-bgred pl-6 py-2 bg-white/5 rounded-r-xl">
+                    <p class="font-serif text-xl text-white italic m-0">"The system is designed to reward patience. By waiting the 55 days for your account to reach 2X, you avoid the 20% early-withdrawal deduction entirely."</p>
+                </blockquote>
+            </div>
+            
+            <div class="mt-20 pt-10 border-t border-white/10 flex justify-between items-center">
+                <button onclick="showPage('article2')" class="hover-target text-xs uppercase tracking-widest text-gray-400 hover:text-white transition-colors flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-left" aria-hidden="true" class="lucide lucide-arrow-left w-4 h-4"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg> Previous
+                </button>
+                <button onclick="showPage('main')" class="hover-target text-xs uppercase tracking-widest text-bgred hover:text-white transition-colors flex items-center gap-2">
+                    Return to Portal <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" aria-hidden="true" class="lucide lucide-arrow-up-right w-4 h-4"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- ADMIN SYSTEM MODALS & DASHBOARD -->
+    <!-- ========================================== -->
+    
+    <!-- ADMIN AUTH -->
+    <div id="adminModal" class="fixed inset-0 bg-bgdark/90 backdrop-blur-2xl z-[100] hidden flex items-center justify-center opacity-0 transition-opacity duration-500">
+        <div class="glass-panel border border-bgred/20 rounded-2xl p-10 max-w-md w-full mx-4 transform scale-95 transition-transform duration-500" id="adminModalContent">
+            <div class="flex justify-between items-center mb-8">
+                <h3 class="font-mono text-xs text-bgred tracking-[0.3em] uppercase">SYS_AUTH</h3>
+                <button onclick="closeAdminModal()" class="text-gray-500 hover:text-white hover-target"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" aria-hidden="true" class="lucide lucide-x w-5 h-5"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+            </div>
+            <div class="space-y-8">
+                <div class="input-line !mb-0">
+                    <input type="password" id="adminPassword" required="" class="font-mono text-center !text-xl" style="">
+                    <label for="adminPassword" class="!text-center w-full !text-[10px] !tracking-[0.3em]">DECRYPTION KEY</label>
+                    <div class="line-focus"></div>
+                </div>
+                <button onclick="loginAdmin()" class="w-full bg-white/5 border border-white/10 text-white hover:bg-white/10 font-mono text-[10px] uppercase tracking-[0.3em] py-4 rounded transition-all hover-target">
+                    Execute Bypass
+                </button>
+                <p id="adminError" class="text-bgred font-mono text-[10px] text-center mt-4 hidden tracking-[0.2em]">ERR: Invalid Signature</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADMIN DASHBOARD -->
+    <div id="adminDashboard" class="page-section min-h-screen bg-bgdark text-white relative z-10">
+        <nav class="border-b border-white/10 bg-black/50 backdrop-blur-xl sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex justify-between items-center h-20">
+                    <div class="font-mono font-bold text-xs tracking-[0.3em] flex items-center gap-3 text-gray-300">
+                        <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> OVERSEER_PROTOCOL
+                    </div>
+                    <button onclick="logoutAdmin()" class="text-gray-500 hover:text-bgred transition-colors font-mono text-[10px] uppercase tracking-[0.2em] hover-target">
+                        [ Terminate ]
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="max-w-7xl mx-auto px-6 py-12">
+            <h2 class="font-sans text-2xl font-bold mb-8">Incoming Registrations</h2>
+            <div class="glass-panel rounded-2xl border border-white/10 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left whitespace-nowrap">
+                        <thead>
+                            <tr class="border-b border-white/10 bg-white/[0.02]">
+                                <th class="py-5 px-6 font-mono text-[9px] uppercase tracking-[0.3em] text-gray-500">Timestamp</th>
+                                <th class="py-5 px-6 font-mono text-[9px] uppercase tracking-[0.3em] text-gray-500">Name</th>
+                                <th class="py-5 px-6 font-mono text-[9px] uppercase tracking-[0.3em] text-gray-500">Phone</th>
+                                <th class="py-5 px-6 font-mono text-[9px] uppercase tracking-[0.3em] text-gray-500">WhatsApp</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leadsTableBody" class="divide-y divide-white/5 font-sans font-light">
+                            <tr><td colspan="4" class="py-20 text-center font-mono text-[10px] tracking-[0.3em] text-gray-500">Syncing node data...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Toast Alert -->
+    <div id="toast" class="px-6 py-4 rounded flex items-center gap-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="info" aria-hidden="true" class="lucide lucide-info w-4 h-4 text-white" id="toastIcon"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+        <span id="toastMsg" class="font-sans text-xs uppercase tracking-widest font-bold text-white">Message</span>
+    </div>
+
+    <!-- Script logic -->
+    <script type="module">
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // -----------------------------------------
+        // CUSTOM CURSOR & UI LOGIC
+        // -----------------------------------------
+        const cursor = document.getElementById('cursor');
+        const cursorFollower = document.getElementById('cursor-follower');
+        let mouseX = 0, mouseY = 0, followerX = 0, followerY = 0;
+
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX; mouseY = e.clientY;
+            cursor.style.left = `${mouseX}px`; cursor.style.top = `${mouseY}px`;
+        });
+        function animateCursor() {
+            followerX += (mouseX - followerX) * 0.15; followerY += (mouseY - followerY) * 0.15;
+            cursorFollower.style.left = `${followerX}px`; cursorFollower.style.top = `${followerY}px`;
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+        // Reading Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("readProgress").style.width = scrolled + "%";
+        });
+
+        // Animations
+        const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Toast Alert
+        window.showToast = (message, type = 'success') => {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').textContent = message;
+            document.getElementById('toastIcon').setAttribute('data-lucide', type === 'success' ? 'check' : 'alert-circle');
+            toast.style.borderLeft = type === 'success' ? '2px solid #22c55e' : '2px solid #E31837';
+            lucide.createIcons();
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 4000);
+        };
+
+        // -----------------------------------------
+        // SPA ROUTING LOGIC
+        // -----------------------------------------
+        window.showPage = (pageId) => {
+            document.querySelectorAll('.page-section').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            document.querySelectorAll('.reveal').forEach(el => el.classList.remove('visible'));
+
+            const target = document.getElementById(pageId + (pageId === 'main' ? 'Page' : pageId.includes('article') ? 'Page' : ''));
+            if(target) {
+                target.classList.add('active');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                
+                setTimeout(() => {
+                    target.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+                }, 100);
+
+                if(pageId === 'adminDashboard') fetchLeads();
+            }
+        };
+
+        // -----------------------------------------
+        // ADMIN AUTH
+        // -----------------------------------------
+        window.openAdminModal = () => {
+            const modal = document.getElementById('adminModal');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                document.getElementById('adminModalContent').classList.remove('scale-95');
+            }, 10);
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('adminError').classList.add('hidden');
+        };
+
+        window.closeAdminModal = () => {
+            const modal = document.getElementById('adminModal');
+            modal.classList.add('opacity-0');
+            document.getElementById('adminModalContent').classList.add('scale-95');
+            setTimeout(() => modal.classList.add('hidden'), 500);
+        };
+
+        window.loginAdmin = () => {
+            if(document.getElementById('adminPassword').value === 'Iamadmin') {
+                closeAdminModal();
+                showPage('adminDashboard');
+                showToast('Authentication Key Valid.', 'success');
+            } else {
+                document.getElementById('adminError').classList.remove('hidden');
+            }
+        };
+        document.getElementById('adminPassword').addEventListener('keypress', e => { if (e.key === 'Enter') window.loginAdmin(); });
+        window.logoutAdmin = () => { showPage('main'); showToast('Session Terminated.', 'success'); };
+
+        // -----------------------------------------
+        // FIREBASE LOGIC
+        // -----------------------------------------
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCn9K_mhgCvJrmgc14HMSVet62HE6OUm8Y",
+            authDomain: "bg-wealth-sharing.firebaseapp.com",
+            databaseURL: "https://bg-wealth-sharing-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "bg-wealth-sharing"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+
+        // Form Submit
+        document.getElementById('registrationForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            const loader = document.getElementById('btnLoader');
+            const btnText = btn.querySelector('span');
+            
+            btn.disabled = true; btnText.textContent = 'TRANSMITTING...'; loader.style.display = 'inline-block';
+
+            try {
+                await push(ref(db, 'registrations'), {
+                    name: document.getElementById('name').value,
+                    phone: document.getElementById('phone').value,
+                    whatsapp: document.getElementById('whatsapp').value,
+                    timestamp: new Date().toISOString()
+                });
+                
+                // --- Updated message requested by user ---
+                showToast('We will contact you soon.', 'success'); 
+                
+                e.target.reset();
+                document.querySelectorAll('.input-line input').forEach(input => input.blur());
+            } catch (error) {
+                showToast('SYS_ERR: DB Write Blocked. Update Firebase Rules.', 'error');
+            } finally {
+                btn.disabled = false; btnText.textContent = 'Submit Details'; loader.style.display = 'none';
+            }
+        });
+
+        // Admin Fetch
+        window.fetchLeads = () => {
+            const tableBody = document.getElementById('leadsTableBody');
+            onValue(ref(db, 'registrations'), (snapshot) => {
+                tableBody.innerHTML = '';
+                if (snapshot.exists()) {
+                    const data = snapshot.val();
+                    const leads = Object.keys(data).map(k => ({id: k, ...data[k]})).sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp));
+                    leads.forEach(lead => {
+                        const date = new Date(lead.timestamp);
+                        const tr = document.createElement('tr');
+                        tr.className = 'border-b border-white/5 hover:bg-white/[0.03]';
+                        tr.innerHTML = `
+                            <td class="py-5 px-6 font-mono text-xs text-gray-500">${date.toLocaleDateString()} <span class="text-white ml-2">[${date.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'})}]</span></td>
+                            <td class="py-5 px-6 font-bold tracking-wide">${escapeHTML(lead.name)}</td>
+                            <td class="py-5 px-6"><a href="tel:${escapeHTML(lead.phone)}" class="text-gray-400 hover:text-white flex items-center gap-2"><i data-lucide="phone" class="w-3 h-3"></i> ${escapeHTML(lead.phone)}</a></td>
+                            <td class="py-5 px-6"><a href="https://wa.me/${escapeHTML(lead.whatsapp).replace(/[^0-9]/g, '')}" target="_blank" class="text-gray-400 hover:text-green-400 flex items-center gap-2"><i data-lucide="shield-check" class="w-3 h-3"></i> ${escapeHTML(lead.whatsapp)}</a></td>
+                        `;
+                        tableBody.appendChild(tr);
+                    });
+                    lucide.createIcons();
+                } else {
+                    tableBody.innerHTML = `<tr><td colspan="4" class="py-20 text-center font-mono text-[10px] uppercase tracking-[0.4em] text-gray-500">Node Registry Empty</td></tr>`;
+                }
+            });
+        };
+        window.toggleMobileMenu = () => {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        };
+        function escapeHTML(str) { return str ? str.replace(/[&<>'"]/g, t => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[t])) : ''; }
+    </script>
+
+
+
+</body></html>

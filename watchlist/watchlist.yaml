@@ -1,0 +1,52 @@
+# DSJ Exchange / BG Wealth Sharing / Swift Wave Capital successor watchlist
+# Run:  python3 monitor.py            (one-shot, appends to runs.jsonl)
+#       python3 monitor.py --diff     (diff against previous run)
+
+domains:
+  # Original BGW (FBI seized 2026-04-23 — should remain DOJ seizure notice)
+  - bgwealthsharing.com
+
+  # DSJ + BGW lookalike fleet (most should resolve dead)
+  - dsjex.net
+  - dsj89.com
+  - dsjex123.com
+  - bg877.com
+  - bg661.com
+
+  # Post-collapse successor domains (registered 2026-04-25 — 2 days post-seizure)
+  - yzzq919.cc
+  - yzzq657.cc
+
+  # Recruitment funnel landing pages (Vercel — reported for abuse, currently live)
+  - bg-wealth-sharing-six.vercel.app
+  - bg-wealth-simulator.vercel.app
+
+  # Promoter funnel domain
+  - bggracefulwealth.com
+
+  # Swift Wave Capital / VCEX clone (registered 2025-12-11 batch via Gname.com)
+  - vcexbe.com
+  - vcexup.com
+  - vcexpro.com
+  - vcexin.com
+
+  # Lee Meadows successor brands (per sonyho2715/lee-meadows-saas commit history):
+  # "Abundant Blessing AI" / "TradePulse AI" / generic "AI Trading"
+  # Plausible domains — probe for any that resolve
+  - abundantblessing.ai
+  - abundantblessingai.com
+  - abundantblessing.com
+  - tradepulse.ai
+  - tradepulseai.com
+  - tradepulse-ai.com
+  - copytradingsignals.org
+
+# Cert Transparency queries (crt.sh) — surface new lookalikes registering certs
+crtsh_queries:
+  - "%.dsjex.%"
+  - "%bgwealth%"
+  - "%bg-wealth%"
+  - "%yzzq%"
+  - "%vcex%"
+  - "%swiftwave%"
+  - "%swift-wave%"

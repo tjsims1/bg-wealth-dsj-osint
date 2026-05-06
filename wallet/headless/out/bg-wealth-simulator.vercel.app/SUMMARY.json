@@ -1,0 +1,21 @@
+{
+  "target": "https://bg-wealth-simulator.vercel.app/",
+  "events": 27,
+  "hosts": [
+    [
+      "bg-wealth-simulator.vercel.app",
+      10
+    ],
+    [
+      "fonts.gstatic.com",
+      2
+    ],
+    [
+      "fonts.googleapis.com",
+      1
+    ]
+  ],
+  "validatedTron": [],
+  "allTronCandidates": [],
+  "apiCalls": []
+}

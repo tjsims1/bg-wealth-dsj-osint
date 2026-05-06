@@ -1,0 +1,122 @@
+[
+  {
+    "i": 0,
+    "tag": "BUTTON",
+    "text": "🔗 Share",
+    "href": null
+  },
+  {
+    "i": 1,
+    "tag": "BUTTON",
+    "text": "📄 PDF",
+    "href": null
+  },
+  {
+    "i": 2,
+    "tag": "BUTTON",
+    "text": "🇻🇳 VN",
+    "href": null
+  },
+  {
+    "i": 3,
+    "tag": "BUTTON",
+    "text": "🌙",
+    "href": null
+  },
+  {
+    "i": 4,
+    "tag": "BUTTON",
+    "text": "Just Me\nSolo investor",
+    "href": null
+  },
+  {
+    "i": 5,
+    "tag": "BUTTON",
+    "text": "Standard\n30 × $500",
+    "href": null
+  },
+  {
+    "i": 6,
+    "tag": "BUTTON",
+    "text": "Growth\n20 × $1,000",
+    "href": null
+  },
+  {
+    "i": 7,
+    "tag": "BUTTON",
+    "text": "Aggressive\n50 × $1,000",
+    "href": null
+  },
+  {
+    "i": 8,
+    "tag": "BUTTON",
+    "text": "Maximum\n20 × $5,000",
+    "href": null
+  },
+  {
+    "i": 9,
+    "tag": "BUTTON",
+    "text": "💰 Summary",
+    "href": null
+  },
+  {
+    "i": 10,
+    "tag": "BUTTON",
+    "text": "📈 Growth",
+    "href": null
+  },
+  {
+    "i": 11,
+    "tag": "BUTTON",
+    "text": "📊 Projections",
+    "href": null
+  },
+  {
+    "i": 12,
+    "tag": "BUTTON",
+    "text": "🏗 Org & Bonuses",
+    "href": null
+  },
+  {
+    "i": 13,
+    "tag": "BUTTON",
+    "text": "💸 Withdrawal",
+    "href": null
+  },
+  {
+    "i": 14,
+    "tag": "BUTTON",
+    "text": "📅 Start Today",
+    "href": null
+  },
+  {
+    "i": 15,
+    "tag": "BUTTON",
+    "text": "⚡ ROI Compare",
+    "href": null
+  },
+  {
+    "i": 16,
+    "tag": "BUTTON",
+    "text": "🔄 Reinvest",
+    "href": null
+  },
+  {
+    "i": 17,
+    "tag": "BUTTON",
+    "text": "📋 WD Planner",
+    "href": null
+  },
+  {
+    "i": 18,
+    "tag": "BUTTON",
+    "text": "See Your Timeline →",
+    "href": null
+  },
+  {
+    "i": 19,
+    "tag": "BUTTON",
+    "text": "Share This Simulation",
+    "href": null
+  }
+]

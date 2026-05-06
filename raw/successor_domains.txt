@@ -1,0 +1,55 @@
+=== yzzq919.cc ===
+A: 
+NS: 
+HEAD:
+HTTP/2 403 
+date: Wed, 06 May 2026 00:01:16 GMT
+content-type: text/html; charset=utf-8
+cache-control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+expires: Thu, 01 Jan 1970 00:00:01 GMT
+
+=== yzzq657.cc ===
+A: 
+NS: 
+HEAD:
+HTTP/2 403 
+date: Wed, 06 May 2026 00:01:16 GMT
+content-type: text/html; charset=utf-8
+cache-control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+expires: Thu, 01 Jan 1970 00:00:01 GMT
+
+=== bgwealthsharing.com ===
+A: 
+NS: 
+HEAD:
+HTTP/2 200 
+date: Wed, 06 May 2026 00:01:16 GMT
+content-type: text/html
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=weSBBQyuddKGophfLXNsO5usn7w9h%2B9jJ4xDmZdNkWTLD4nFPItes1s94YM5KsZ%2FgFlnGxNeZw5do7HEciNkL8xm%2F2b0b3g4YXYbpYVeiBzAA0Jh8LX4yff3GUj20Lj7gKeX8ETfglYVOyHFJM%2BG717d"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+
+=== copytradingsignals.org ===
+A: 
+NS: 
+HEAD:
+
+=== bg-wealth-sharing-six.vercel.app ===
+A: 
+NS: 
+HEAD:
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 671064
+cache-control: public, max-age=0, must-revalidate
+
+=== bg-wealth-simulator.vercel.app ===
+A: 
+NS: 
+HEAD:
+HTTP/2 200 
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 816829
+cache-control: public, max-age=0, must-revalidate
+
