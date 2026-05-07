@@ -99,6 +99,8 @@ Any new domain matching these patterns + privacy-shielded WHOIS + Cloudflare in 
 
 These are **operator-controlled intermediates** (Tronscan tags scrape returned no consumer-exchange labels). Hop-2 trace from the top recipient (`TFTYF7k…`) shows fan-out to 5,734 unique addresses — that's the Ponzi-payout / MLM-commission layer. Real CEX off-ramping lives 1–2 hops further down. **These five are the immediate freeze candidates** for any IC3 / FinCEN filing.
 
+**On-chain status as of 2026-05-07** (six weeks post-rotation): the operator hot wallet `TYwaXc4...WLu` and **all 5 named next-hop wallets are fully drained — zero TRX, zero USDT, zero recent activity since 2026-03-23**. Last hot-wallet activity was a clean cascade: final victim drips at 11:50–11:54 UTC followed by full sweep-out at 11:59–12:35 UTC ($30K + $30K + $58,390.40 to next-hops), then dead. Operators completed the entire next-hop laundering cascade in the weeks since. Implication: **the May 2026 rectification fees (12 % of balances) are NOT flowing to the March hot wallet** — operators rotated to a new hot wallet for the current rotation cycle, address presently unknown to this investigator. Capturing the current rotation's hot wallet would require a fresh 2026-May-era victim's authenticated `/api/app/recharge/payment/info` response (same capture pattern used for the March hot wallet identification per `wallet/WALLET_FORENSICS.md`). The cleanest LE path: BonChat-compliance subpoena for the `Stephen03` / `Elena03` / `Amelia` operator-account broadcast histories from 2026-05-02 onward (rectification-broadcast period), which contain or reference the current rotation's deposit-address infrastructure.
+
 **Deposit→sweep proof (the 2026-03-20 test, $1,000 USDT):**
 
 ```
