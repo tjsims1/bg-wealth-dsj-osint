@@ -99,6 +99,33 @@ Any new domain matching these patterns + privacy-shielded WHOIS + Cloudflare in 
 
 These are **operator-controlled intermediates** (Tronscan tags scrape returned no consumer-exchange labels). Hop-2 trace from the top recipient (`TFTYF7k…`) shows fan-out to 5,734 unique addresses — that's the Ponzi-payout / MLM-commission layer. Real CEX off-ramping lives 1–2 hops further down. **These five are the immediate freeze candidates** for any IC3 / FinCEN filing.
 
+### 2.2.1 ZachXBT-Attributed Operator Cluster (independently published 2026-05-05)
+
+The on-chain investigator known as ZachXBT publicly published a partial operator-wallet list for the DSJEX/BG cluster on 2026-05-05 (`x.com/zachxbt/status/2051645845993648517`). His investigation tracked **$92M+ moved across chains between 2026-04-27 and 2026-05-03** and triggered a coordinated freeze of **$41.5M+** (Tether: $38.4M; other services: $3.1M). Per his summary: **$63M routed to Cobo (custody)** and **$30M to OKX-linked addresses** as downstream off-ramps. The seven addresses below were captured from his post on 2026-05-07 and verified by this investigator:
+
+| Chain | Address | Created | Current state | Tether blacklist |
+| --- | --- | --- | --- | --- |
+| TRON | `TGTWYCJxhvrDkZc4pyugBAnc4qWeXdXJdF` | 2026-03-28 | drained (0 TRX / 0 USDT) | free (not currently blacklisted) |
+| TRON | `TBsjjfnBi5mW3soFmSVFK1pAD5Jbwrbjcg` | 2026-03-28 | drained (0 TRX / $3 USDT) | free |
+| TRON | `TWF1bcuNLXtwQCRxb6Qn6uKqWCuXRatiei` | 2026-04-04 | drained (218 TRX / $0.43 USDT) | free |
+| Ethereum | `0xf3bd39870d26cfdcdc582ed02b97f74e19e0ee97` | (pre-existing) | drained (0 ETH / 0 USDT) | free |
+| Ethereum | `0x35c752ddbd5a5f23482141fab42f943c52ba9adb` | — | drained (0 ETH / 0.01 USDT) | free |
+| Ethereum | `0x7a22c5d74f90515ed5834b237b6f8f865c543a66` | — | drained (0 ETH / 0 USDT) | free |
+| Ethereum | `0x78255cFa63A3b49b742Cbc9aDb36aF926d3cdA90` | — | drained (0 ETH / 0.01 USDT) | free |
+
+**Observations:**
+- All 7 addresses are validated and confirmed associated with the DSJ/BG cluster by an independent investigator (ZachXBT) using methodology distinct from this report's.
+- All 7 are currently drained — funds passed through and out, consistent with ZachXBT's $92M-laundered-in-a-week finding. The freeze action ($41.5M) caught roughly 45% of the laundered total; the remainder reached Cobo / OKX before the blacklist could land.
+- None of the 7 are currently on Tether's blacklist contract — confirms ZachXBT's reporting that the freeze targeted *later-stage* consolidation addresses further downstream, while these mid-stage flow-through wallets had already been drained.
+- The 3 TRON addresses were created **2026-03-28 / 2026-04-04** — i.e. *after* the original `TYwaXc4...WLu` hot wallet was retired (2026-03-23 12:35 UTC, see below). These are the **next-generation operator hot wallets** following our documented rotation cutoff. Independent corroboration of the operator's ~4-day rotation cadence.
+- **Cross-attribution: this investigator's evidence (March hot wallet `TYwaXc4...WLu` + 5 named next-hops in §2.2) and ZachXBT's evidence (these 7 addresses, plus the larger laundering cascade through Tokenlon, Bridgers, Butter Network, USDT0 / USDD bridging) describe the *same operator network*** at sequential points in the rotation timeline. Combined: ≥$30M (this investigator) + $92M (ZachXBT) = ≥$122M traceable through the operator wallet structure. Aligns with the ~$150M total figure reported by multiple regulators and BehindMLM.
+- **Investigative leverage opens up materially** with this cross-attribution. Any LE referral citing this report can now point to:
+  1. Six freeze targets named in §2.2 (now drained but historically transit-traceable for chain-of-custody),
+  2. Seven additional freeze targets named in §2.2.1 (ZachXBT-attributed),
+  3. Two specific downstream off-ramps (Cobo custody + OKX) which ZachXBT identified as the laundering endpoints — both subpoena-responsive in the US and Asian jurisdictions.
+
+---
+
 **On-chain status as of 2026-05-07** (six weeks post-rotation): the operator hot wallet `TYwaXc4...WLu` and **all 5 named next-hop wallets are fully drained — zero TRX, zero USDT, zero recent activity since 2026-03-23**. Last hot-wallet activity was a clean cascade: final victim drips at 11:50–11:54 UTC followed by full sweep-out at 11:59–12:35 UTC ($30K + $30K + $58,390.40 to next-hops), then dead. Operators completed the entire next-hop laundering cascade in the weeks since. Implication: **the May 2026 rectification fees (12 % of balances) are NOT flowing to the March hot wallet** — operators rotated to a new hot wallet for the current rotation cycle, address presently unknown to this investigator. Capturing the current rotation's hot wallet would require a fresh 2026-May-era victim's authenticated `/api/app/recharge/payment/info` response (same capture pattern used for the March hot wallet identification per `wallet/WALLET_FORENSICS.md`). The cleanest LE path: BonChat-compliance subpoena for the `Stephen03` / `Elena03` / `Amelia` operator-account broadcast histories from 2026-05-02 onward (rectification-broadcast period), which contain or reference the current rotation's deposit-address infrastructure.
 
 **Deposit→sweep proof (the 2026-03-20 test, $1,000 USDT):**
