@@ -458,6 +458,34 @@ The DSJ Exchange / BG Wealth Sharing operation is **one cell of a long-running, 
 
 **Colorado Secretary of State (per WA DFI alert and confirmed by SEC EDGAR profile):** Both **DSJ Exchange PTY Ltd** (the SEC Form D filer, see fake-license entry above) and **BG Wealth Sharing, LLC** (the LLC name promoted in the Vietnamese-language Zoom broadcast — see `evidence/zoom/`) are registered in Colorado. WA DFI states the addresses on the Colorado SOS filings "do not appear to be legitimate places of business," noting BG Wealth Sharing provided "a generic PostNet address." Co-located shell registrations in Colorado are themselves an attribution signal: same operator-shell-vendor pattern across both legal entities.
 
+**Two additional forged documents distributed via BonChat (captured 2026-05-07; preserved at `evidence/forged-documents/`):**
+
+1. **`forged-stock-certificate-bg-wealth-sharing-ltd.jpg`** — A vintage-template stock certificate (Goes-Lithographing-style green eagle scrollwork) purporting to issue **70,000,000 shares of "BG Wealth Sharing LTD" common stock at $1.00 par value, all owned by "Stephen Beard"**, dated 13 April 2025 under "the laws of the State of Colorado." **Forgery indicia:** Colorado LLC formation does not authorize share issuance; LLCs do not issue "common stock at par value" (corporation-only language); SEC EDGAR shows zero share-registration filings for "BG Wealth Sharing LTD"; the template is a commercially-available stock-certificate printer template (vendors like StockCertificates.com sell these for $10-30). **Function in the scheme:** distributed to retail investors to imply Stephen Beard personally owns equity in a real registered corporation, supporting the §3.2 "founder" persona.
+
+2. **`forged-investment-partnership-commitment-letter.jpg`** — A purported **"Investment Partnership Commitment Letter"** on **"BG WEALTH SHARING LTD"** letterhead, claiming it as an **"Australian Company" with "A.C.N. 686 266 704"**, signed *"Stephen Beard"* with red fingerprint stamp + a **"DSJ EXCHANGE LIMITED" corporate seal**, effective 20 April 2025 → 19 August 2034. **Forgery confirmed:** Australian Business Register lookup on ACN 686 266 704 returns *"No record found matching ACN 686266704"*. There is no such Australian company. The document is a fabrication using a non-existent ACN. **What makes this document forensically the most valuable single artifact:** it contains operator-authored *contractual* terms that constitute direct documentary evidence of the rigged-trading mechanism, the cult information-control directives, and the personal liability of "Stephen Beard" — all signed and date-stamped:
+
+   - *"Over the next ten years, Stephen Beard commits to providing two signal analyses each day, ensuring that at least one out of five analyses is profitable. Participants must operate based on the trade analyses provided by Stephen Beard, adhering to the timing, direction, and specific amounts specified."* — written contractual specification of the rigged-trading mechanism, with **"Stephen Beard" personally named as the author/guarantor of the trade analyses**. Compare to the §3.2 "Stephen Beard" front-figure framing: the operators have him not just on camera but as a *signing personal guarantor* on a fraudulent contract. This substantially increases his individual exposure under any future federal action — he is no longer plausibly an unwitting prop hire (cf. earlier 白工 hypothesis); he is the **named-and-signed personal guarantor** on a written contract distributed to retail investors.
+   - *"While following these trades, investors must comply with the company's development policies, maintain the company's reputation, and uphold the company's culture."* — **contractual information-control obligation imposed on victims**.
+   - *"If an investor discovers anyone spreading rumors or disseminating negative information, they should promptly report it to the relevant parties to jointly maintain a positive investment environment."* — **contractual snitch-on-critics provision**, requiring victims to suppress external warnings (regulator alerts, dehek.com, this report).
+   - *"If a user's DSJ exchange is hacked, resulting in a loss of funds for BG members, the team will fully reimburse all lost funds."* — **fraudulent guarantee deployed as a pre-emptive neutralizer of "I was hacked / scammed" victim claims**.
+   - *"Scope of Guarantee: If all five signal phases published by Stephen Beard are incorrect, leading to losses for members trading based on the plan, BG WEALTH SHARING LTD. will cover all investment losses."* — explicit reference to the **5-phase martingale loss-recovery scheme from PPT slide 25**, written into the contract as a "guarantee" — operationally meaningless because no such reimbursement mechanism exists, but contractually establishes the martingale system as the operator-promised trade structure.
+
+   **Statutory exposure on the face of this document alone:**
+   - 18 U.S.C. § 1343 (wire fraud — false statement transmitted electronically inducing financial action)
+   - 15 U.S.C. § 77q(a) (securities fraud — material misrepresentation)
+   - 18 U.S.C. § 1028 (false identification — fabricated ACN)
+   - State criminal-document-forgery statutes (e.g. Colorado §18-5-101, Texas §32.21)
+   - Cross-border misrepresentation: claiming Australian-company status when no such entity exists triggers Australian Criminal Code §134.2 (general dishonesty) jurisdiction.
+
+**Multi-jurisdiction shell-entity claims captured to date:**
+- Colorado LLC ("BG Wealth Sharing, LLC" + "DSJ Exchange PTY Ltd") — confirmed Colorado SOS filings exist (no investment-license meaning); per WA DFI, addresses are not legitimate places of business.
+- Colorado corporation issuing 70M shares ("BG Wealth Sharing LTD") — **no such filing exists; forged stock certificate**.
+- Australian company ACN 686 266 704 ("BG Wealth Sharing LTD") — **no such ACN exists; forged contract**.
+- UK company "DSJ Exchange Ltd" — incorporated July 2024, dissolved October 2025 (Companies House #15821489); the £30M / £40M / £70M figures cited in operator broadcasts and PPT have no Companies House corroboration.
+- The operators are **forum-shopping legitimacy theater across multiple national jurisdictions** depending on victim audience cohort.
+
+---
+
 **Fake SEC license claim — VERIFIED FRAUDULENT** (advertised to victims via in-app announcements):
 
 > "Good news: DSJEX successfully applied for a SEC license from the U.S. Securities and Exchange Commission on July 11, 2025. CIK: 0002076856"
