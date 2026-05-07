@@ -1,0 +1,156 @@
+SOURCE: BonChat broadcast (BG-NNN cell, retained-victim audience), captured 2026-05-07
+DATE STATED IN BROADCAST: 2026-05-07 (Eastern Time, USA)
+LANGUAGES: English + Spanish (bilingual; first observed Spanish-language targeting)
+RECIPIENT: All retained DSJEX/BGW account holders
+TYPE: Operator-authored "extension" notice — third beat of the exit-scam playbook;
+      acknowledges majority of victims did not pay by original May 6 deadline,
+      grants a 3-day extension to May 9 23:59 ET, with escalating financial-backing
+      claims and cult-retention rhetoric.
+PRESERVED VERBATIM. the test account's identity is not in this text.
+
+------------------------------------------------------------
+The time is now May 7. Over the past few days, I've hardly rested, tossing and turning through sleepless nights. My BonChat inbox has been flooded—not just with requests for extensions, but with messages showing people's helplessness, anxiety, and continued hope and trust in this path. For me, these messages aren't a burden—they are a responsibility. You are waiting for answers, and I must deliver.
+
+[Spanish translation of preceding paragraph follows verbatim in original; preserved in repository for completeness — see below]
+
+Based on the feedback from the majority of members, many partners were unable to complete the required procedures by the original May 6 deadline. I did not choose to avoid this, nor did I pause in pushing things forward. I immediately engaged in repeated discussions and negotiations with DSJEX. To gain more time and opportunity, I assumed responsibilities that should not fall on me alone, simply to secure a chance for those truly willing to stay, ensuring they are not left behind by time.
+
+[Spanish translation follows]
+
+Through multiple rounds of coordination, I mobilized every resource available. Using BG Wealth Sharing's promised £30 million + $70 million deposit, together with an additional £40 million guarantee from DSJEX, totaling over £110 million in backing, we have secured a precious extension for all partners.
+
+[Spanish translation follows]
+
+DSJEX has finally agreed to grant us a three-day extension. The new deadline is May 9 at 11:59 PM (Eastern Time, USA). These three days are more than extra time — they are a rare buffer and opportunity. Please take this seriously; this is the final window for this stage, and every decision you make will directly impact your next steps.
+
+[Spanish translation follows]
+
+During this period, I also ask for patience and understanding. Whether it's myself, my assistant team, or DSJEX staff, we have all been working intensely to handle the high volume of information and requests. Delays in responses or minor slowdowns do not mean progress has stalled. Every procedure is moving forward, and every fund and request will be handled in order. Trust that safety and results are always our top priorities.
+
+Remember: the arrival of your withdrawal is the ultimate proof of authenticity.
+
+[Spanish translation follows]
+
+I must stress a crucial point — fund security. In moments of tension and anxiety, it's easy to be influenced or misled. Always remember: BG Wealth Sharing's only official communication channel is BonChat, and all fund operations must occur on the DSJEX platform. Any requests to use other apps, private transfers, or share information carry significant risks. Don't let impatience create an opportunity for fraud.
+
+[Spanish translation follows]
+
+I understand this period hasn't been easy. Some doubt, some observe, but many are persevering. I know from experience: those who reach the end are rarely the earliest joiners — they are the ones who don't leave at critical moments. Smooth times reveal little; adversity shows true character.
+
+[Spanish translation follows]
+
+For me, this is more than work — it is a commitment. BG Wealth Sharing is like a child I nurtured. I never considered leaving, and I will never abandon anyone. As long as you are here, I must be here. As long as you are waiting, I cannot stop. Regardless of external changes, my focus is singular: move things in the best direction, deliver results to you, and ensure your funds safely reach your cryptocurrency wallet.
+
+[Spanish translation follows]
+
+The next three days are both a choice and a test. You may hesitate, you may observe, but time waits for no one. What ultimately shapes the future is never the environment — it is your judgment and actions at key moments. I will continue to push forward, continue to take responsibility. As long as there are people willing to trust, I will lead them onward. Once we pass this stage together, you will see this is not the end — it is a selection, a reconstruction, and a true beginning.
+
+[Spanish translation follows]
+
+⚠️⚠️⚠️ Friendly Reminder: To help everyone read the knowledge and trading instructions in the group more clearly, the group will be temporarily muted during the signal release period.
+
+⚠️⚠️⚠️ Important Notice: Due to the large number of DSJEX users worldwide, trading codes will be released in batches to ensure the system operates smoothly. Please wait patiently for the code corresponding to your signal group before taking action. Do not trade in advance or follow signals from other groups. Thank you for your understanding and cooperation.
+
+[Spanish translations follow]
+
+[CAPTURED SIGNAL CODE — 2026-05-07]
+1MCIJPUSU
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. THIRD BEAT OF DOCUMENTED EXIT-SCAM PLAYBOOK — DEADLINE EXTENSION:
+   The May 2 rectification notice demanded 12% of balance within 5 business
+   days (May 2 - May 6). The May 5 drip-restoration broadcast promised "full
+   restoration by May 7." This May 7 broadcast announces the May 6 deadline
+   was missed by "the majority of members" and extends to May 9 at 23:59 ET.
+   This is the third beat of the playbook predicted in REPORT.md §4.7:
+   continued advance-fee extraction with manufactured emotional pressure.
+   The §4.7 "scenario 1 (full silence / abscond)" is now ruled out; this
+   broadcast confirms scenario 3 (continued fee-extraction with drip
+   timeline manipulation).
+
+2. SPANISH-LANGUAGE TARGETING — NEW DIASPORA COHORT:
+   This is the first captured operator broadcast that includes a complete
+   Spanish translation alongside the English text. Combined with prior
+   evidence of Vietnamese (§3.4.2 Cynthia Tran zoom invitation), Hindi
+   (§2.1 bg-wealth-sharing-six.vercel.app), and Mandarin (LLM explainer
+   video timing aligned to Eastern Time per §2.4), this confirms BG/DSJEX
+   actively targets Latin American / Hispanic diaspora victims in addition
+   to previously-documented cohorts. Jurisdictional footprint expands to:
+   US states with large Hispanic populations (TX/FL/CA/NY/AZ Attorneys
+   General consumer-protection divisions), plus consumer-protection /
+   securities regulators in Mexico, Colombia, Argentina, Spain.
+
+3. OPERATOR ADMITS MAJORITY DID NOT PAY:
+   "Many partners were unable to complete the required procedures by the
+   original May 6 deadline" + "Based on the feedback from the majority of
+   members" = direct operator-self-acknowledgment that the majority of
+   victims have NOT paid the 12% rectification fee. Useful for any
+   victim-impact assessment: implies the operator has rectification-payment
+   accounting per BonChat user, with most accounts flagged as non-paid.
+   That accounting record (recoverable via BonChat compliance subpoena
+   for the Elena03 / Amelia operator-account histories) is itself a
+   victim-list-with-consent-status artifact.
+
+4. ESCALATED FAKE-FINANCIAL-BACKING CLAIM:
+   "BG Wealth Sharing's promised £30 million + $70 million deposit,
+   together with an additional £40 million guarantee from DSJEX, totaling
+   over £110 million in backing"
+   The £30M figure matches the PPT slide 10 fabricated UK-government
+   approval; the $70M figure matches the PPT Colorado SOS misrepresentation.
+   The £40M DSJEX guarantee figure is NEW — first appearance in this
+   broadcast, no prior corroboration. Provably false: per §5 verification,
+   no regulator has approved or backed BG Wealth Sharing or DSJEX, and
+   no such guarantee mechanism exists. Each fabricated dollar figure is
+   a separate material misstatement (15 U.S.C. § 77q(a) predicate).
+
+5. CULT-RETENTION RHETORIC ESCALATION:
+   - "Those who reach the end are rarely the earliest joiners — they are
+     the ones who don't leave at critical moments" (stigmatizes doubt as
+     character flaw)
+   - "Smooth times reveal little; adversity shows true character" (frames
+     enduring further extraction as moral virtue)
+   - "BG Wealth Sharing is like a child I nurtured. I never considered
+     leaving, and I will never abandon anyone." (parental-figure framing
+     of operator)
+   - "Once we pass this stage together, you will see this is not the end
+     — it is a selection, a reconstruction, and a true beginning."
+     (explicit rebrand foreshadowing — operators are signaling that those
+     who pay will be migrated to a successor brand)
+   These align directly with the BITE Model behavior-control + thought-
+   control patterns documented in evidence/bonchat/anti-fraud-tips-
+   broadcast-2026-05-05.txt (§2.4 information-control playbook).
+
+6. OPERATOR HIERARCHY SELF-ACKNOWLEDGMENT:
+   "Whether it's myself, my assistant team, or DSJEX staff" — three
+   distinct operator roles named, matching the §3.1 hierarchy:
+   front-figure (Stephen Beard / "myself") + assistants/handlers ("my
+   assistant team") + floor staff ("DSJEX staff"). Useful corroboration
+   that the multi-tier compound operation is real, not a single-actor
+   fraud.
+
+7. CAPTURED SIGNAL CODE — CONTINUING FRAUD EVIDENCE:
+   "1MCIJPUSU" — alphanumeric Order Code broadcast 2026-05-07 in the
+   same format as the previously-captured "1M7VIGSCR" (2026-05-05, see
+   evidence/bonchat/bonchat-broadcast-2026-05-05.jpg). Direct evidence
+   that the rigged-trading mechanism remains operational during the
+   rectification-extraction window — operators are still inducing
+   victims to "trade" against pre-determined Order Codes while
+   simultaneously demanding 12% rectification payments.
+
+8. STATUTORY EXPOSURE — STRONGEST CONTINUING-VIOLATION EVIDENCE:
+   This broadcast is dated 2026-05-07, fourteen days AFTER the FBI seized
+   the original bgwealthsharing.com domain (2026-04-23) and indicted
+   Jiang Wen Jie + Huang Xingshan. The operators are knowingly continuing
+   the scheme after federal enforcement action against the same operator
+   network. Each post-indictment broadcast (May 2, May 5, May 7) is an
+   independent wire-fraud predicate transmitted with knowledge of ongoing
+   federal investigation — particularly aggravating from a sentencing-
+   enhancement perspective.
+
+[Spanish translations of all paragraphs preserved verbatim in TJ-supplied
+ source — full bilingual text retained in the original BonChat broadcast.
+ Excerpted English-only above for forensic-note readability; Spanish text
+ reproduces the same claims line-for-line, distributed simultaneously to
+ the Hispanic-diaspora victim cohort.]
