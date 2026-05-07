@@ -140,7 +140,46 @@ So this isn't an off-ramp; it's the cash-out arm of the Ponzi. Real off-ramping 
 
 ---
 
-## 8. Files in this analysis
+## 8. Tether on-chain freeze (2026-05-04) — 19 TRON addresses
+
+**On-chain source:** USDT TRON contract `TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t`, block **82411924**, **2026-05-04 14:12:18 UTC**. Nineteen `AddedBlackList(address)` events emitted in that single block — Tether's freeze of the DSJEX/BG laundering cluster ZachXBT publicly attributed on 2026-05-05.
+
+ZachXBT's tweet image quoted "$30.4M USDT" at freeze-time. Current on-chain balances (post-freeze, captured 2026-05-07) sum to **$38,430,800.62 USDT** — the delta is post-freeze deposits from launderers/victims still routing to addresses they did not realize were frozen.
+
+| TRON Base58 | Hex | USDT balance | Tier |
+| --- | --- | --- | --- |
+| `TAQa4FZweNjbxq69adEhPnFQeKZqkN1pJa` | `0x04cbf994230c465e33bb65221a790d6c7adcc70b` | 9,430,772.00 | top collector |
+| `TAAcSiQkKF1F3Jj9oxMCqojyihjBXajFGV` | `0x022824ee3ff3d016463c8fd226b64e5bdb43aa0d` | 2,000,000.00 | mid |
+| `TT4gjGCpfU78sUYRw7hUUfdWKvZnhZFuLN` | `0xbb835d2ffb6293f4fb58a1bd1f5395539ee7ce8a` | 2,000,010.54 | mid |
+| `TVumv6FZJqxsvsykjyJs1BWhLWbqwDXRDh` | `0xdabc53ccdf66393848468d4f88d2a3b99734cc3e` | 2,000,000.00 | mid |
+| `TNk9uytcAUrxoHrk1PBL2TEhFMU6Ap1WUV` | `0x8c21a67c7f624a71ec07da108aad330562fcf03c` | 2,000,000.00 | mid |
+| `TJVXcFZmzyAjGGNpeAd9o2PkqSnP2FQmfr` | `0x5d7d046c4971f84a47ac41a53b769c0f1c161e9a` | 2,000,000.00 | mid |
+| `THJHHP9qS9o7v9ek7ztw6C2cuzsr7vPZRE` | `0x50645b943063e140c570389fe82177ce3a63cdd8` | 2,000,000.00 | mid |
+| `TRSQrMpSy1axo3pK8dWAvMbKXeZhdE7uSX` | `0xa9af02764cb18f00b205ec2d0ba35c8c5c681439` | 2,000,000.00 | mid |
+| `TSCdgoNMjcX2jarrw6TBq4X4LfsGfzWo4W` | `0xb20c06b572dca85104ea9bf2b9adc118f732e9c7` | 2,000,000.00 | mid |
+| `TEEXJYUAMupkXW2dx9V9WDkjKcckjkP5hi` | `0x2ec60514b15a127af5f616ada7635a10dbf4cb9c` | 2,000,000.00 | mid |
+| `TFxCPJf9qFujUiHnT4hcKfrqQG7UFAWsiQ` | `0x419fd2fc1ea6036d9d3972c52bd8bd401afa1456` | 2,000,000.00 | mid |
+| `TEAGP3Kgv8hJWmUEmrtDjHH2AunmpzztxL` | `0x2df7e63c72b3bf77a77b0b5d17fe253dd8c5dc37` | 2,000,000.00 | mid |
+| `TH3wtXtmuEbooiUGz47JDzm4VQvsr9qKyy` | `0x4dae58526dca41c72df452fcccc1cb9a111daa37` | 1,000,000.00 | base |
+| `TD4rPd5RXQm9qn8d2keRVuPvZhQtCVsEXB` | `0x21f9aafee5e0f21fef80c7431b9266ed053b9a61` | 1,000,000.00 | base |
+| `TYWzZS6QFx95h1HQMNz4JjVMTwa2wcF2Re` | `0xf755b12e45addbaebe875150cbe422637d7c489e` | 1,000,000.00 | base |
+| `TXYteZ8Zsrx89YTG3wMzDkwrQ38yTh86M4` | `0xecb976a233bdcacc33ad4f265971bf13072e2052` | 1,000,000.00 | base |
+| `TVWHdLRLTMrMEvbXFk9E3JGHY4HSThYiDY` | `0xd64b25562d16ed81c058d0e2428949145fbcdfac` | 1,000,010.00 | base |
+| `TSkeScCcfDxuajYSApzZnKpt5qZZ1wTpdj` | `0xb819f7ac8fcc774644305e75ece2677ae7391b44` | 1,000,000.00 | base |
+| `TWwPnnkY1gaS8jDzyTTkAsjfQD7z5mbwUm` | `0xe602d0b6b32c1bafb6c096cd7ef8e1fc8cd7af6e` | 1,000,008.08 | base |
+
+**Pattern:** 1× $9.43M head + 10× ~$2M + 7× ~$1M + ~$28 dust. Round-million-USDT deposits across 18 of 19 wallets (only the head wallet is irregular) — characteristic of a tiered MLM payout/commission table, not organic user activity. None of the 19 overlap with our March-rotation hot-wallet (`TYwaXc…WLu`) trace; these are downstream nodes ZachXBT identified independently in the April-May post-collapse laundering chain.
+
+**Cross-attribution:** our March hot-wallet trace ($30.9M through-volume / 9,567 victim addresses / single 4-day rotation cycle) + ZachXBT's April-May $92M cross-chain laundering trace + this $38.4M Tether freeze = the same operator network at sequential rotations of the same Ponzi.
+
+**Source artifacts:**
+- `wallet/chain/tether_freeze_19_balances.json` — latest balance snapshot
+- `wallet/chain/freeze_runs.jsonl` — append-only history (one JSON per snapshot)
+- `wallet/chain/freeze_monitor.py` — re-runner: `python3 freeze_monitor.py` to take a fresh snapshot, `--diff` to show last vs previous
+
+---
+
+## 9. Files in this analysis
 
 - `wallet/WALLET_FORENSICS.md` — this report
 - `wallet/RE_NOTES.md` — earlier RE notes for VCEX/Struts2 backend (different stack)
