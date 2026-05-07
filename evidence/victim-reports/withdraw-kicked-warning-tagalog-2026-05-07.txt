@@ -1,0 +1,87 @@
+SOURCE: BonChat broadcast — VICTIM-AUTHORED warning, being repeatedly spammed
+        across BG Wealth Sharing channels by an anonymous member or members
+        attempting to alert other victims.
+CAPTURED: 2026-05-07
+LANGUAGE: Tagalog (Filipino)
+TYPE: First-hand victim observation contradicting operator's May 5 "drip-
+      restoration" promise. Direct evidence the rectification-tax-then-withdraw
+      flow ends in account termination, not restored access.
+PRESERVED VERBATIM. The original poster is anonymous; their identity is not
+captured. They are warning, not a target of any allegation.
+
+------------------------------------------------------------
+[ORIGINAL — Tagalog]
+
+UPDATE SA ISANG MEMBER NA NAGBAYAD NANG TAX, TAPOS NAG INITIATED NA E
+WITHRAW HIS LAST REMAINING BALANCE , HAS BEEN KICK OUT. LOST LAHAT NANG
+ASSETS NIYA SA DSJEX.
+
+SO YONG PROMISE NA MAGIGING MAAYOS NA WITHDRAWAL AFTER PAYING 12% TAX AY
+HINDI TOTOO. BIG RED FLAG!
+
+------------------------------------------------------------
+[ENGLISH translation by investigator]
+
+UPDATE ABOUT A MEMBER WHO PAID THE TAX, THEN INITIATED A WITHDRAWAL OF
+HIS LAST REMAINING BALANCE — HAS BEEN KICKED OUT. LOST ALL HIS ASSETS
+ON DSJEX.
+
+SO THE PROMISE THAT THE WITHDRAWAL WOULD GO SMOOTHLY AFTER PAYING 12%
+TAX IS NOT TRUE. BIG RED FLAG!
+
+------------------------------------------------------------
+
+FORENSIC NOTES (added by investigator, NOT from broadcast):
+
+1. CONFIRMS §4.7 EXIT-SCAM PREDICTION:
+   The May 2 rectification notice (rectification-notice-broadcast-
+   2026-05-02.txt) demanded 12% of balance for "tax settlement," with
+   the operator-authored promise that "the funds you paid during the
+   rectification period can be withdrawn normally after the audit is
+   completed."
+   The May 5 drip-restoration broadcast (restoration-notice-broadcast-
+   2026-05-05.txt) reinforced this: "members who have completed their
+   12% tax payment will gradually have their trading, withdrawal, and
+   fund transfer functions restored."
+   The May 7 extension broadcast (extension-notice-broadcast-2026-05-07
+   .txt) extended the deadline to May 9 and reinforced the same promise.
+   This victim-authored warning, captured 2026-05-07, is direct first-
+   hand observation that the actual operator behavior is the opposite:
+   pay → attempt withdrawal → kicked out → balance zero. The textbook
+   advance-fee scam tail.
+
+2. INFORMATION-CONTROL BREACH:
+   Per the May 5 anti-fraud-tips broadcast (anti-fraud-tips-broadcast-
+   2026-05-05.txt), victims are contractually and culturally directed
+   to "refute and not spread any false information about BG and DSJEX"
+   and to "report" anyone who does (cf. the forged Investment
+   Partnership Commitment Letter, which makes this a written
+   contractual obligation per evidence/forged-documents/forged-
+   investment-partnership-commitment-letter.jpg). The presence of
+   this victim-authored warning being repeatedly broadcast within
+   BonChat ("someone keeps spamming this," per source observer)
+   demonstrates the operators' information-control mechanism is
+   failing in real time. At least one victim is breaking the
+   cult-style silence to warn others — a leading indicator of
+   community-level Ponzi unraveling.
+
+3. FILIPINO-DIASPORA TARGETING — SIXTH LANGUAGE COHORT:
+   Tagalog usage in this BonChat broadcast confirms a Filipino
+   victim community within BG Wealth Sharing's audience. Combined
+   with prior evidence (English / Vietnamese / Hindi / Mandarin /
+   Spanish), this is the sixth distinct diaspora language cohort
+   documented. The Philippines SEC has already issued an advisory
+   against BG Wealth Sharing (REPORT.md §5 regulatory posture);
+   this captures the on-the-ground victim-community response in
+   Tagalog.
+
+4. EVIDENTIARY VALUE:
+   Single-victim observation, anonymous source, second-hand reporting
+   ("a member who paid the tax then..."). NOT primary-source proof of
+   the kicked-out behavior on its own, but corroborates the operator-
+   authored exit-scam pattern documented across multiple primary-
+   source operator broadcasts (May 2 / 5 / 7). The intersection of
+   (operator-authored "withdrawals will be restored" promise) +
+   (victim-observed "kicked out and lost everything") = textbook
+   wire-fraud pattern (false statement transmitted electronically,
+   inducing financial action, with knowledge of falsity).
