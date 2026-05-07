@@ -124,6 +124,25 @@ The on-chain investigator known as ZachXBT publicly published a partial operator
   2. Seven additional freeze targets named in §2.2.1 (ZachXBT-attributed),
   3. Two specific downstream off-ramps (Cobo custody + OKX) which ZachXBT identified as the laundering endpoints — both subpoena-responsive in the US and Asian jurisdictions.
 
+**Cobo + OKX endpoint deposit addresses (ZachXBT-published, this-investigator-verified):**
+
+| Service | Deposit address | Created | Verified inbound USDT-TRC20 | ZachXBT-claimed total |
+| --- | --- | --- | --- | --- |
+| Cobo | `TFjQWjNkyTJ5xmqy87WBTYaUS7gWzLuWzu` | 2026-04-27 | **$30,059,254** (62 txs) | (sub-portion of $63M total) |
+| Cobo | `TD1yXHq8NAPFZN5tCAAsd2HsrYfMuuqGCq` | 2026-04-29 | **$12,857,282** (27 txs) | (sub-portion of $63M total) |
+| Cobo | `TMsA7dJpEYJ8r8HCGK7tyAg5NGtJzFWMom` | (unverified) | 0 USDT-TRC20 (presumed cross-chain inbound) | (sub-portion of $63M total) |
+| Cobo | `TN5YhGsCBPZSi3ATUp2G5wht5Wmbumy23o` | (unverified) | 0 USDT-TRC20 (presumed cross-chain inbound) | (sub-portion of $63M total) |
+| OKX | `TTV5Dn2tfU16NzrX3HoRuaRWcuLnuboQff` | (unverified) | 0 USDT-TRC20 (presumed cross-chain inbound) | $30M total |
+
+**Verified primary-source: $42,916,536 of USDT-TRC20 inbound** to two of the four Cobo deposit addresses, occurring in the 2026-04-27 → 2026-05-03 laundering window per ZachXBT's tracking. The remaining $20M of Cobo's $63M and the full $30M of OKX's intake presumably routed through the cross-chain bridges ZachXBT named (Tokenlon, Bridgers, Butter Network, USDT0, USDD) — i.e. the funds reached Cobo/OKX via Ethereum or via wrapped-USDD paths rather than direct USDT-TRC20 transfer, which is consistent with sophisticated laundering hygiene.
+
+**Cobo and OKX as compliance-subpoena targets:**
+
+- **Cobo** (Singapore-headquartered custody platform; founded 2017; $20B+ AUM as of 2025; serves institutional clients including exchanges, payment processors, custodians). Both the Cobo entity and individual deposit-account holders are subpoena-responsive in Singapore + US (via MLAT). The four deposit addresses above are the *immediate* identifiers for which Cobo accounts received the $63M; Cobo's compliance team can produce the underlying account-holder identities (KYC required for institutional onboarding) and the destination-of-funds disposal data downstream of those accounts.
+- **OKX** (Seychelles-incorporated exchange; aggressive US enforcement-cooperation track record; known to honor Tether freezes and law-enforcement subpoenas). The single OKX deposit address above is sufficient for OKX compliance to produce the corresponding user account identity, login IP history, KYC documents, and downstream withdrawal trail.
+
+**These two service-side subpoenas are the cleanest path to apex-actor identification** in the entire investigation. Operator-controlled wallets can be replaced trivially (rotation cadence ≈ 4 days); Cobo / OKX accounts cannot be — they're tied to KYC documents, banking on-ramps, and persistent identity infrastructure. Whoever holds the accounts that received the $93M is, by definition, **at minimum a launderer-level participant in the operation, plausibly an apex actor**, and very probably named in real-name format on the underlying KYC.
+
 ---
 
 **On-chain status as of 2026-05-07** (six weeks post-rotation): the operator hot wallet `TYwaXc4...WLu` and **all 5 named next-hop wallets are fully drained — zero TRX, zero USDT, zero recent activity since 2026-03-23**. Last hot-wallet activity was a clean cascade: final victim drips at 11:50–11:54 UTC followed by full sweep-out at 11:59–12:35 UTC ($30K + $30K + $58,390.40 to next-hops), then dead. Operators completed the entire next-hop laundering cascade in the weeks since. Implication: **the May 2026 rectification fees (12 % of balances) are NOT flowing to the March hot wallet** — operators rotated to a new hot wallet for the current rotation cycle, address presently unknown to this investigator. Capturing the current rotation's hot wallet would require a fresh 2026-May-era victim's authenticated `/api/app/recharge/payment/info` response (same capture pattern used for the March hot wallet identification per `wallet/WALLET_FORENSICS.md`). The cleanest LE path: BonChat-compliance subpoena for the `Stephen03` / `Elena03` / `Amelia` operator-account broadcast histories from 2026-05-02 onward (rectification-broadcast period), which contain or reference the current rotation's deposit-address infrastructure.
