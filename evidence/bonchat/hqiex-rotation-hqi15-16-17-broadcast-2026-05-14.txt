@@ -1,12 +1,17 @@
-Source:    Forwarded to Vault Data Servers via BonChat operator broadcast
-Captured:  2026-05-14 18:59 MST (2026-05-15 01:59 UTC)
-Channel:   BonChat — BG-015 cohort (same as prior three broadcasts)
-Sequence:  Fourth broadcast in the HQIEX-pivot sequence
-           - 18:48 MST: hqi22.com, hqi23.com (both Cloudflare-flagged at broadcast)
-           - 18:53 MST: migration mechanics + Elena03->Elena2026 handle rotation
-           - 18:55 MST: hqi18.com, hqi19.com (HTTP 200 at broadcast)
-           - 18:59 MST: this broadcast — hqi15/16/17
-           - 11 minutes elapsed; 7 of 16 reserve domains burned
+Source:        Forwarded to Vault Data Servers via BonChat operator broadcast
+Operator-broadcast date: 2026-05-14 (per source recall)
+Source-relay timestamp:  2026-05-14 18:59 MST (when TJ forwarded into investigator's chat)
+Channel:       BonChat — BG-015 cohort (same as prior HQIEX-pivot broadcasts)
+Sequence:      Same-day rotation following the hqi18/19 push earlier on
+               2026-05-14. The 2026-05-13 initial rebrand (hqi22/23) had
+               been Cloudflare-flagged by this point.
+
+               EARLIER NOTE WITHDRAWN: An earlier version of this file
+               claimed all four HQIEX broadcasts went out in an 11-minute
+               window with a 44% reserve burn. That timing was wrong — it
+               reflected the gaps between source-relay messages, not
+               operator-broadcast intervals. Actual operator-broadcast
+               cadence: 2026-05-13 (rebrand) → 2026-05-14 (rotations).
 
 ---
 
@@ -47,12 +52,14 @@ Analysis (per investigator):
    The flag will continue to land on each new sibling within hours of
    first request, regardless of whether the domain is broadcast.
 
-4. **Reserve burn rate.** 16 domains pre-staged on 2026-05-03; 7 broadcast
-   in 11 minutes (44 %); 4 of 7 still working. Projected reserve-exhaustion
-   if cadence continues: ~25 minutes total. Operators will need to either
-   (a) register a fresh batch (look for Gname.com Pte. Ltd. + Cloudflare
-   `maria/mark` NS + same-day timestamp burst on 2026-05-14 or 2026-05-15
-   UTC) or (b) pivot to a different CDN entirely (more interesting signal
-   — would suggest they've finally identified Cloudflare's classifier as
-   the obstacle and are migrating to bulletproof hosting / a non-Cloudflare
-   front).
+4. **Reserve consumption.** 16 domains pre-staged on 2026-05-03; 7 have been
+   broadcast across 2026-05-13 (hqi22/23) and 2026-05-14 (hqi15/16/17/18/19);
+   4 of 7 still working (hqi15, hqi17, hqi18, hqi19). At the observed
+   ~daily rotation cadence with ~daily Cloudflare flagging, the remaining
+   reserve (hqi20, hqi21, hqi25, hqi26, hqi27, hqi28, hqi29, hqi30, hqi31
+   — 9 untested unflagged domains) provides on the order of two-to-three
+   weeks of runway. Watch for: (a) a fresh batch from Gname.com Pte. Ltd.
+   behind Cloudflare `maria/mark` NS pair, or (b) a CDN pivot away from
+   Cloudflare entirely — the latter being the more interesting signal as
+   it would indicate operators have diagnosed the classifier as their
+   bottleneck.

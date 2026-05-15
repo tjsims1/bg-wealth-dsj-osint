@@ -1,11 +1,12 @@
-Source:    Forwarded to Vault Data Servers via BonChat operator broadcast
-Captured:  2026-05-14 18:48 MST (2026-05-15 01:48 UTC)
-Channel:   BonChat (same operator-broadcast channel as prior DSJ/BG notices)
-Context:   First operator broadcast since the 2026-05-07 "extension notice" that
-           said BG would honor accounts after platform "investigation". One week
-           later, the operators have officially abandoned the DSJEX brand and
-           rolled out HQIEX as the successor, with a fresh $100 "activation"
-           deposit gating any access to alleged DSJ balance recovery.
+Source:        Forwarded to Vault Data Servers via BonChat operator broadcast
+Operator-broadcast date: 2026-05-13 (per source recall)
+Source-relay timestamp: 2026-05-14 18:48 MST (when TJ forwarded into investigator's chat)
+Channel:       BonChat (same operator-broadcast channel as prior DSJ/BG notices)
+Context:       First operator broadcast since the 2026-05-07 "extension notice" that
+               said BG would honor accounts after platform "investigation". Six days
+               later, the operators have officially abandoned the DSJEX brand and
+               rolled out HQIEX as the successor, with a fresh $100 "activation"
+               deposit gating any access to alleged DSJ balance recovery.
 
 ---
 

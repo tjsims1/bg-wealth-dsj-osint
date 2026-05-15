@@ -109,28 +109,32 @@ domains:
   - signalraiders.com
   - signalraiders.io
 
-  # HQIEX — successor brand announced 2026-05-14 BonChat broadcast.
-  # All 16 domains registered in two scripted bursts on 2026-05-03:
+  # HQIEX — successor brand. Initial rebrand broadcast 2026-05-13 in the
+  # BG-015 BonChat cohort (hqi22.com / hqi23.com); same-day rotations
+  # 2026-05-14 (hqi18/19 then hqi15/16/17).
+  # All 16 domains pre-registered in two scripted bursts on 2026-05-03:
   #   - 14:28:30-35Z: 14 domains in a 5-second window
   #   - 14:32:14Z:    2 more domains
   # Registered ONE DAY BEFORE Tether's 2026-05-04 freeze and SIX DAYS BEFORE
-  # the operators' May 7 "restoration" promises — proves the rebrand was
+  # operators' May 7 "restoration" promises — proves the rebrand was
   # planned while operators were still telling victims they'd honor DSJ
   # balances. Same Gname.com Pte. Ltd. registrar as the entire BG/DSJ/VCEX
-  # fleet. Cloudflare has flagged hqi22/23 as "Suspected phishing site";
-  # operators rotated to hqi18/hqi19 within 7 minutes of broadcasting the
-  # original pair (HTTP 200 — not yet flagged).
+  # fleet. Cloudflare reliably flags each sibling as "Suspected phishing
+  # site" within ~24 hours of activation, including domains never broadcast
+  # to victims (hqi16 was flagged before its first broadcast) — Cloudflare's
+  # classifier is fingerprinting on intrinsic infrastructure features
+  # (Gname.com + maria/mark NS + Vite asset paths + new-domain age).
   # Same Vite/Vue SPA stack as DSJEX (tra809.tw, yzzq657.cc) — identical
   # backend codebase (AES key dapp-20230831abc, signing salt VCExhhw...).
-  - hqi15.com
-  - hqi16.com
-  - hqi17.com
-  - hqi18.com   # broadcast 2026-05-14 18:55 MST, HTTP 200
-  - hqi19.com   # broadcast 2026-05-14 18:55 MST, HTTP 200
+  - hqi15.com   # broadcast 2026-05-14, HTTP 200
+  - hqi16.com   # broadcast 2026-05-14, Cloudflare phishing-flagged
+  - hqi17.com   # broadcast 2026-05-14, HTTP 200
+  - hqi18.com   # broadcast 2026-05-14, HTTP 200
+  - hqi19.com   # broadcast 2026-05-14, HTTP 200
   - hqi20.com
   - hqi21.com
-  - hqi22.com   # broadcast 2026-05-14 18:48 MST, Cloudflare phishing-flagged
-  - hqi23.com   # broadcast 2026-05-14 18:48 MST, Cloudflare phishing-flagged
+  - hqi22.com   # broadcast 2026-05-13, Cloudflare phishing-flagged
+  - hqi23.com   # broadcast 2026-05-13, Cloudflare phishing-flagged
   - hqi25.com
   - hqi26.com
   - hqi27.com

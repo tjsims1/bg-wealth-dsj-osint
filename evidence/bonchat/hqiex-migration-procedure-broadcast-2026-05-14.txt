@@ -1,12 +1,24 @@
-Source:    Forwarded to Vault Data Servers via BonChat operator broadcast
-Captured:  2026-05-14 18:53 MST (2026-05-15 01:53 UTC)
-Channel:   BonChat — BG-015 group meeting / operator broadcast
-Cohort:    BG-015 (per upline disclosure in this message)
-Sequence:  Second broadcast in the HQIEX-pivot sequence, 5 minutes after the
-           initial rebrand notice (hqiex-rebrand-broadcast-2026-05-14.txt).
-           First broadcast announced the platform change; this broadcast
-           specifies the migration mechanics, the new assistant handle, and
-           the 4-day deadline window.
+Source:        Forwarded to Vault Data Servers via BonChat operator broadcast
+Operator-broadcast date: undetermined — between 2026-05-13 and 2026-05-14
+                        (source forwarded multiple HQIEX-pivot broadcasts in
+                        close succession; exact operator-side broadcast date
+                        for this message could not be reconstructed from the
+                        source's BonChat history at relay time).
+Source-relay timestamp: 2026-05-14 18:53 MST (when TJ forwarded into investigator's chat)
+Channel:       BonChat — BG-015 group meeting / operator broadcast
+Cohort:        BG-015 (per upline disclosure in this message)
+Sequence:      Second-or-later broadcast in the HQIEX-pivot sequence. The
+               initial rebrand notice (`hqiex-rebrand-broadcast-2026-05-14.txt`,
+               operator-broadcast 2026-05-13) announced the platform change;
+               this broadcast specifies the migration mechanics, the new
+               assistant handle, and the 4-day deadline window.
+
+               EARLIER NOTE WITHDRAWN: An earlier version of this file claimed
+               this broadcast went out "5 minutes after the initial rebrand
+               notice." That timing was wrong — it reflected the gap between
+               source-relay messages, not operator-broadcast intervals. The
+               actual operator-broadcast date for this message is undetermined
+               within the 2026-05-13 → 2026-05-14 window.
 
 ---
 
