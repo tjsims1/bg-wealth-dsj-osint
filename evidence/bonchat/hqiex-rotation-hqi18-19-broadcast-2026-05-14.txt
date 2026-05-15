@@ -1,0 +1,53 @@
+Source:    Forwarded to Vault Data Servers via BonChat operator broadcast
+Captured:  2026-05-14 18:55 MST (2026-05-15 01:55 UTC)
+Channel:   BonChat — BG-015 cohort (same as prior two broadcasts)
+Sequence:  Third broadcast in the HQIEX-pivot sequence (initial rebrand at
+           18:48; migration procedure at 18:53; this rotation push at 18:55).
+           7 minutes after rebrand. Cloudflare's "Suspected phishing site"
+           flag on hqi22/23 was already in place when these were broadcast,
+           so operators were rotating preemptively.
+
+---
+
+HQI Platform Registration Links:
+
+hqi18.com/h5/ios#/home
+
+hqi19.com/h5/ios#/home
+
+Invitation Code: CBK806SRN400
+
+---
+
+Analysis (per investigator):
+
+1. **Same invitation code (CBK806SRN400) = same BG-015 cohort.** Operators
+   are not splitting cohorts across these domains; this is brand rotation,
+   not commission-tree segmentation.
+
+2. **URL path `/h5/ios#/home` matches DSJEX backend stack.** Vue/Vant SPA
+   with hash routing. The `/ios` segment is the iOS mobile-config trust
+   gateway documented for DSJEX at `dsj627.icu/dsj625.mobileconfig`. This
+   confirms the HQIEX platform is the same backend codebase as DSJEX (and
+   VCEX — see REPORT.md §2.4 and wallet/RE_NOTES.md): AES key
+   `dapp-20230831abc` and signing salt `VCExhhw…` likely apply unchanged
+   to HQIEX traffic. Same operators, same backend, new brand wrapper.
+
+3. **Pre-staged rotation reserve — 16 domains.** WHOIS proves the full
+   `hqi15-31.com` range (minus hqi14, hqi24, hqi32, hqi33) was registered
+   in two scripted bursts on 2026-05-03 14:28:30-35Z (14 domains in a
+   5-second window) and 14:32:14Z (2 more domains). 16-domain rotation
+   reserve registered 11 days before this broadcast — sufficient for
+   weeks of rotation at the DSJEX cadence even after Cloudflare flags
+   each one.
+
+4. **Why operators are rotating already.** The first rebrand broadcast
+   (18:48) named hqi22.com and hqi23.com. Both were already returning
+   Cloudflare's "Suspected phishing site" 403 interstitial by the time
+   they were broadcast. Within 7 minutes, operators rotated to hqi18/19.
+   This either means (a) operators tested the broadcast URLs in real time
+   and noticed the Cloudflare flag, or (b) victims responded that the
+   URLs didn't load and operators reactively rolled to new siblings.
+   Either way, the rotation cadence in the HQIEX brand is starting at
+   sub-10-minute intervals — faster than any rotation we observed under
+   DSJEX (which was daily-to-bi-daily).

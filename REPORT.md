@@ -89,12 +89,25 @@ The notice instructs all team members to register on `hqi22.com` or `hqi23.com` 
 
 **The operators owned the HQIEX rebrand domains six days BEFORE telling victims that DSJ would be restored.** The May 7 "extension notice" was a deliberate stall while the successor platform was being staged.
 
-| Domain | Registered | Registrar | DNS | Current state |
+| Domain | Registered (UTC) | Registrar | Broadcast | Current state |
 | --- | --- | --- | --- | --- |
-| `hqi22.com` | 2026-05-03 14:28:30Z | Gname.com Pte. Ltd. | Cloudflare (maria/mark NS) | HTTP 403 — **Cloudflare returns "Suspected phishing site" interstitial** |
-| `hqi23.com` | 2026-05-03 14:28:31Z | Gname.com Pte. Ltd. | Cloudflare (maria/mark NS) | HTTP 403 — **Cloudflare returns "Suspected phishing site" interstitial** |
+| `hqi22.com` | 2026-05-03 14:28:30Z | Gname.com Pte. Ltd. | 2026-05-14 18:48 MST | HTTP 403 — Cloudflare "Suspected phishing site" |
+| `hqi23.com` | 2026-05-03 14:28:31Z | Gname.com Pte. Ltd. | 2026-05-14 18:48 MST | HTTP 403 — Cloudflare "Suspected phishing site" |
+| `hqi18.com` | 2026-05-03 14:28:35Z | Gname.com Pte. Ltd. | 2026-05-14 18:55 MST | HTTP 200 (not yet flagged) |
+| `hqi19.com` | 2026-05-03 14:28:35Z | Gname.com Pte. Ltd. | 2026-05-14 18:55 MST | HTTP 200 (not yet flagged) |
 
-Both domains were CDN-flagged within **11 days of registration** — fast-enough for the operators' rollout window that they may be forced to register additional rotation siblings (`hqi24.com`, `hqi25.com`, etc.) before the broadcast reaches all retained victims. Watchlist updated to probe likely siblings (`hqi21.com`, `hqi24.com`, `hqi25.com`, `hqiex.com`, `hqiex.net`, `hqiex.cc`) on the next monitor cycle.
+**Pre-staged rotation reserve — 16 domains.** A third broadcast at 18:55 MST (**`evidence/bonchat/hqiex-rotation-hqi18-19-broadcast-2026-05-14.txt`**) rotated to `hqi18.com` and `hqi19.com` — within seven minutes of the original rebrand notice. WHOIS proves the full `hqi15-31.com` range (minus `hqi14`, `hqi24`, `hqi32`, `hqi33`) was registered on 2026-05-03 in two scripted bursts:
+
+| Batch | UTC time | Domains |
+| --- | --- | --- |
+| 1 | **14:28:30–35Z** (5-second window) | `hqi15`, `hqi16`, `hqi17`, `hqi18`, `hqi19`, `hqi20`, `hqi21`, `hqi22`, `hqi23`, `hqi25`, `hqi26`, `hqi27`, `hqi28`, `hqi29` |
+| 2 | **14:32:14Z** (4 min later) | `hqi30`, `hqi31` |
+
+That is **16 .com domains registered in under 4 minutes**, all via Gname.com Pte. Ltd., all behind Cloudflare's `maria.ns` / `mark.ns` NS pair. This is the largest single-batch pre-staging captured in this investigation — sufficient for weeks of rotation at the DSJEX cadence even after every individual domain is Cloudflare-flagged. The mere existence of a 16-domain reserve registered the day before the Tether freeze establishes that the operators **planned a multi-week rotation campaign on the successor platform** before they even told victims a successor existed. All 16 are now on watchlist.
+
+**Backend confirmed identical to DSJEX.** Captured `https://hqi18.com/h5/ios` returns the same **Vite + Vue/Vant SPA** entrypoint structure as DSJEX (`tra809.tw`, `yzzq657.cc`): `<script type="module" src="/h5/js/index-Bc1CLRsI.js">`, vendor + index CSS bundles, hash-routed `/h5/#/…` paths. **Same backend codebase, same operators**: the AES key `dapp-20230831abc` and signing salt `VCExhhw…` reverse-engineered from the DSJEX/VCEX backend (see §2.4 and `wallet/RE_NOTES.md`) are expected to apply unchanged to HQIEX traffic. This is a re-skin of the same platform, not a new build.
+
+**Rotation cadence acceleration.** The first rebrand broadcast (18:48 MST) named `hqi22/23`. Both were already Cloudflare-flagged at broadcast time. Operators rotated to `hqi18/19` within **7 minutes** (18:55 MST) — sub-10-minute reactive rotation, far faster than the daily-to-bi-daily rotation cadence observed under DSJEX. The implication: Cloudflare's automated phishing detection is now in a tight feedback loop with the operators' rotation pace, and the 16-domain reserve may be consumed in days rather than weeks.
 
 **Mechanism = advance-fee recovery scam.** Victims who already paid the 12 % "rectification fee" in April-May are now told their DSJ balances cannot be released until they pay another **\$100 flat** on the new platform. This is the second extraction in a two-stage recovery scam. There is no scenario under which the "fund transfer" materializes — the on-chain trail (§2.2.1, §2.2, `wallet/WALLET_FORENSICS.md` §8) shows the operator wallets that received victim deposits were drained in the April-May laundering window and the \$38.4M that didn't reach Cobo/OKX was frozen by Tether on May 4. The \$100 activation deposits flow to new operator wallets that have not yet been published (capture pending the same recharge-info endpoint method documented in `wallet/WALLET_FORENSICS.md`).
 

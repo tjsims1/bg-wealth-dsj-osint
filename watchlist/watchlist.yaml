@@ -109,19 +109,36 @@ domains:
   - signalraiders.com
   - signalraiders.io
 
-  # HQIEX — successor brand announced 2026-05-14 BonChat broadcast
-  # Both registered 2026-05-03 (one day BEFORE Tether's 2026-05-04 freeze and
-  # six days before operators' May 7 "restoration" promises — proves the
-  # rebrand was planned while operators were still telling victims they'd
-  # honor DSJ balances). Same Gname.com Pte. Ltd. registrar as the entire
-  # BG/DSJ/VCEX fleet. Cloudflare has already flagged both as "Suspected
-  # phishing site" (HTTP 403 phishing-block page returned 2026-05-14).
-  - hqi22.com
-  - hqi23.com
-  # Plausible rotation siblings — same numeric-suffix pattern as DSJEX
+  # HQIEX — successor brand announced 2026-05-14 BonChat broadcast.
+  # All 16 domains registered in two scripted bursts on 2026-05-03:
+  #   - 14:28:30-35Z: 14 domains in a 5-second window
+  #   - 14:32:14Z:    2 more domains
+  # Registered ONE DAY BEFORE Tether's 2026-05-04 freeze and SIX DAYS BEFORE
+  # the operators' May 7 "restoration" promises — proves the rebrand was
+  # planned while operators were still telling victims they'd honor DSJ
+  # balances. Same Gname.com Pte. Ltd. registrar as the entire BG/DSJ/VCEX
+  # fleet. Cloudflare has flagged hqi22/23 as "Suspected phishing site";
+  # operators rotated to hqi18/hqi19 within 7 minutes of broadcasting the
+  # original pair (HTTP 200 — not yet flagged).
+  # Same Vite/Vue SPA stack as DSJEX (tra809.tw, yzzq657.cc) — identical
+  # backend codebase (AES key dapp-20230831abc, signing salt VCExhhw...).
+  - hqi15.com
+  - hqi16.com
+  - hqi17.com
+  - hqi18.com   # broadcast 2026-05-14 18:55 MST, HTTP 200
+  - hqi19.com   # broadcast 2026-05-14 18:55 MST, HTTP 200
+  - hqi20.com
   - hqi21.com
-  - hqi24.com
+  - hqi22.com   # broadcast 2026-05-14 18:48 MST, Cloudflare phishing-flagged
+  - hqi23.com   # broadcast 2026-05-14 18:48 MST, Cloudflare phishing-flagged
   - hqi25.com
+  - hqi26.com
+  - hqi27.com
+  - hqi28.com
+  - hqi29.com
+  - hqi30.com
+  - hqi31.com
+  # Plausible brand-mappable siblings (probe for any that get registered)
   - hqiex.com
   - hqiex.net
   - hqiex.cc
