@@ -1,0 +1,82 @@
+Source:    Forwarded to Vault Data Servers via BonChat operator broadcast
+Captured:  2026-05-14 18:53 MST (2026-05-15 01:53 UTC)
+Channel:   BonChat — BG-015 group meeting / operator broadcast
+Cohort:    BG-015 (per upline disclosure in this message)
+Sequence:  Second broadcast in the HQIEX-pivot sequence, 5 minutes after the
+           initial rebrand notice (hqiex-rebrand-broadcast-2026-05-14.txt).
+           First broadcast announced the platform change; this broadcast
+           specifies the migration mechanics, the new assistant handle, and
+           the 4-day deadline window.
+
+---
+
+In the BG-015 group meeting, I announced the latest developments: Due to pressure on the DSJEX system and a prolonged regulatory investigation, all withdrawals and operations are temporarily frozen. To protect everyone's interests, we have decided to transfer all account assets to the HQI exchange under BG's guarantee. BG will fully cover the migration costs and fees, ensuring the safety of every member's funds and the continuity of trading.
+
+Migration Procedure!
+
+1. Register a new HQI exchange account;
+
+Registration links:
+hqi22.com
+hqi23.com
+
+Invitation code: CBK806SRN400
+
+2. Add the following account using your current Bonchat account: Elena2026 (We will be temporarily suspending the use of the Elena03 assistant account)
+
+3. After registration, send your HQI account ID and your original DSJ account ID to assistant Elena2026 to facilitate fund transfer. After the funds in your original DSJ account are transferred to your HQI account, you will need to deposit $100 into your HQI account to activate your trading account (an unactivated account cannot start trading, and the deposited $100 will remain in your account and belong to you personally).
+
+[Migration period: May 14th to May 18th. If you are confident in starting a new chapter with me, please complete all procedures within the specified time to ensure your smooth trading and guaranteed profits (the migration process will be completely stopped after May 18th; members who do not complete the process will be considered to have voluntarily given up).]
+
+---
+
+Analysis (per investigator):
+
+1. **BG-015 cohort marker.** The "BG-015 group meeting" phrasing confirms the
+   operators segment recruited victims into numbered groups (BG-001 → BG-N),
+   each with its own dedicated upline/promoter handling broadcasts. The
+   `CBK806SRN400` invitation code funnels BG-015 members into a single
+   new-platform cohort, preserving the upline tree for commission tracking
+   and selective-extraction targeting on HQIEX.
+
+2. **Elena03 → Elena2026 handle rotation.** The Elena03 BonChat assistant
+   account — documented as the operator broadcast account through April-May
+   (see REPORT.md §9 / evidence/bonchat/) — is being formally retired and
+   replaced by Elena2026. BonChat (operator: `bonchat.live`) holds the full
+   message and contact history for both accounts. **Subpoena target:** both
+   handle histories, the May 14 transition messages including the membership
+   list (every account that adds Elena2026 in the May 14-18 window is by
+   definition a stranded DSJ victim plus a candidate for the next extraction).
+
+3. **Operator data-collection step.** Victims are instructed to send their
+   *old DSJ account ID + new HQI account ID* to Elena2026. This is the
+   correlation map operators need to bridge their existing victim database
+   (with payment history, ranking, rectification-fee status) to the HQIEX
+   platform. Once mapped, operators can:
+   - Display "transferred" balance figures on HQIEX matching what DSJ showed
+     (theatrical only — no on-chain transfer)
+   - Selectively "honor" balances for victims who pay the $100 activation
+     and have a profile worth continued extraction (high-deposit history,
+     paid the 12 % rectification fee already, etc.)
+   - Quietly drop low-value victims, marking them "voluntarily given up"
+     per the deadline language
+
+4. **Manufactured urgency (May 14-18).** A 4-day window with explicit
+   forfeiture language ("considered to have voluntarily given up") is a
+   classic high-pressure deception tell. Legitimate platforms do not erase
+   member balances after 4 days of slow migration. The deadline serves two
+   functions: (a) maximize the rate of $100 deposits before authorities or
+   media pick up the rebrand, (b) provide a future cover story for non-
+   refunds ("they didn't migrate in time").
+
+5. **The $100 "remains in your account" promise.** Same framing used for
+   every DSJ rectification fee paid in April-May. None of those balances
+   were honored. There is no scenario, given the on-chain evidence
+   (REPORT.md §2.2.1, wallet/WALLET_FORENSICS.md §8), under which any
+   DSJ balance materializes on HQIEX. The "fund transfer" is a database
+   update with no underlying asset movement.
+
+6. **No mention of the 12 % rectification fee.** Victims who paid the
+   rectification fee in April-May (the first extraction) are not given any
+   credit toward the $100 activation (the second extraction). This is a
+   double-charge — consistent with how recovery scams typically work.
