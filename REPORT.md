@@ -15,7 +15,7 @@ Two Chinese nationals — **Jiang Wen Jie** (aka Jiang Nan) and **Huang Xingshan
 
 The platform branding personas — "**Professor Stephen Beard**" (claimed founder, gives daily "signals") and "**Joseph Smith**" (claimed COO) — are not who they claim to be. **Stephen Beard is a real person who appears recurrently in live Zoom meetings with victim recruits** (eyewitness corroboration). This rules out the AI-synthesis hypothesis (earlier report draft retracted). His **visual profile fits the Chinese "白工" (white-monkey job) archetype** — the kind of Western foreigner Chinese state media (CGTN) and promoter agencies recruit for legitimacy theater — so the most plausible reconstruction is: **白工 origin → escalated involvement**. Recurring live Zoom appearances rule out a one-shot prop hire and put him squarely in the "knowing participant" category by now, regardless of how much he understood at first. Treat him as a **target / co-conspirator candidate, not a mere witness**, while recognizing he is **a hired front man — not the apex of the operation**. Investigators should reverse-image-search his face (likely surfaces in prior CGTN appearances or other Chinese-promoter materials) and subpoena recordings of past BGW Zoom sessions for direct-evidence statements. The actual technical operation relied on freelance/commissioned developers in India and possibly elsewhere, with the source code briefly exposed on public GitHub.
 
-The scheme is **operationally dead** but **not contained**: surviving accomplices are running successor "click a button" clones (Swift Wave Capital, others), at least two recruitment landing pages remain live on Vercel as of report time, and BonChat trading-signal channels continue to deliver scripted entries to retained victims.
+The scheme is **operationally dead** but **not contained**: surviving accomplices are running successor "click a button" clones (Swift Wave Capital, others), at least two recruitment landing pages remain live on Vercel as of report time, and BonChat trading-signal channels continue to deliver scripted entries to retained victims. **The operator network publicly pivoted to a successor platform ("HQIEX") on 2026-05-14 via the same BonChat broadcast channel** — soliciting a fresh \$100 "activation deposit" from stranded DSJ victims in classic advance-fee recovery-scam form. The HQIEX domains were registered the day before the Tether freeze and a full week before the operators told victims DSJ would be restored — definitive evidence the May 7 "restoration" notice was a stall. See §2.1.1.
 
 ---
 
@@ -69,6 +69,36 @@ The scheme is **operationally dead** but **not contained**: surviving accomplice
 Any new domain matching these patterns + privacy-shielded WHOIS + Cloudflare in front + Gname.com registrar should be treated as suspect.
 
 **Centralized backend hint:** `api.ddjea.com` services *multiple* DSJ frontends (the test session pinged `api.tra809.tw` once but all real traffic flowed to `api.ddjea.com`). One backend, many disposable storefronts.
+
+### 2.1.1 HQIEX — successor brand and advance-fee pivot (announced 2026-05-14)
+
+On **2026-05-14 18:48 MST** an operator broadcast in BonChat announced that BG Wealth Sharing was abandoning the DSJEX brand in favor of a new platform, **HQIEX**, with the following text (full transcript: `evidence/bonchat/hqiex-rebrand-broadcast-2026-05-14.txt`):
+
+> *"Due to the ongoing investigation of DSJEX, its platform operations are temporarily unable to maintain normal stability. After comprehensive evaluation and coordination with multiple parties, BG Wealth Sharing has decided not to accept DSJEX's current proposed solutions and has officially launched a new cooperative platform, HQIEX, to ensure the team's subsequent operations, trading stability, and the security of members' funds."*
+
+The notice instructs all team members to register on `hqi22.com` or `hqi23.com` using invitation code `CBK806SRN400` and to deposit **\$100 to "activate" the new account** before any "fund transfer" assistance will be provided.
+
+**This is dispositive evidence the operators planned the rebrand while still publicly promising to honor DSJ balances:**
+
+| Date (UTC) | Event |
+| --- | --- |
+| **2026-05-03 14:28:30Z** | `hqi22.com` and `hqi23.com` registered (Gname.com Pte. Ltd., 1 second apart — script-driven bulk registration) |
+| 2026-05-04 14:12:18Z | Tether freezes the 19-address operator cluster (`$38.4M`, see §2.2.1) |
+| 2026-05-07 | Operator broadcast: "platform restoration in progress" — "extension notice" promising remediation |
+| 2026-05-14 | HQIEX rebrand announced; victims told the May 7 restoration is no longer happening; pay \$100 to activate the replacement |
+
+**The operators owned the HQIEX rebrand domains six days BEFORE telling victims that DSJ would be restored.** The May 7 "extension notice" was a deliberate stall while the successor platform was being staged.
+
+| Domain | Registered | Registrar | DNS | Current state |
+| --- | --- | --- | --- | --- |
+| `hqi22.com` | 2026-05-03 14:28:30Z | Gname.com Pte. Ltd. | Cloudflare (maria/mark NS) | HTTP 403 — **Cloudflare returns "Suspected phishing site" interstitial** |
+| `hqi23.com` | 2026-05-03 14:28:31Z | Gname.com Pte. Ltd. | Cloudflare (maria/mark NS) | HTTP 403 — **Cloudflare returns "Suspected phishing site" interstitial** |
+
+Both domains were CDN-flagged within **11 days of registration** — fast-enough for the operators' rollout window that they may be forced to register additional rotation siblings (`hqi24.com`, `hqi25.com`, etc.) before the broadcast reaches all retained victims. Watchlist updated to probe likely siblings (`hqi21.com`, `hqi24.com`, `hqi25.com`, `hqiex.com`, `hqiex.net`, `hqiex.cc`) on the next monitor cycle.
+
+**Mechanism = advance-fee recovery scam.** Victims who already paid the 12 % "rectification fee" in April-May are now told their DSJ balances cannot be released until they pay another **\$100 flat** on the new platform. This is the second extraction in a two-stage recovery scam. There is no scenario under which the "fund transfer" materializes — the on-chain trail (§2.2.1, §2.2, `wallet/WALLET_FORENSICS.md` §8) shows the operator wallets that received victim deposits were drained in the April-May laundering window and the \$38.4M that didn't reach Cobo/OKX was frozen by Tether on May 4. The \$100 activation deposits flow to new operator wallets that have not yet been published (capture pending the same recharge-info endpoint method documented in `wallet/WALLET_FORENSICS.md`).
+
+Evidence: `evidence/bonchat/hqiex-rebrand-broadcast-2026-05-14.txt`, `evidence/hqiex/hqi22.com-cloudflare-phishing-block-2026-05-14.html`, `evidence/hqiex/hqi23.com-cloudflare-phishing-block-2026-05-14.html`.
 
 ### 2.2 Cryptocurrency Indicators
 

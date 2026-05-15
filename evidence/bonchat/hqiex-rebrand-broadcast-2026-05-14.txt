@@ -1,0 +1,48 @@
+Source:    Forwarded to Vault Data Servers via BonChat operator broadcast
+Captured:  2026-05-14 18:48 MST (2026-05-15 01:48 UTC)
+Channel:   BonChat (same operator-broadcast channel as prior DSJ/BG notices)
+Context:   First operator broadcast since the 2026-05-07 "extension notice" that
+           said BG would honor accounts after platform "investigation". One week
+           later, the operators have officially abandoned the DSJEX brand and
+           rolled out HQIEX as the successor, with a fresh $100 "activation"
+           deposit gating any access to alleged DSJ balance recovery.
+
+---
+
+【Important Notice】
+
+Due to the ongoing investigation of DSJEX, its platform operations are temporarily unable to maintain normal stability. After comprehensive evaluation and coordination with multiple parties, BG Wealth Sharing has decided not to accept DSJEX's current proposed solutions and has officially launched a new cooperative platform, HQIEX, to ensure the team's subsequent operations, trading stability, and the security of members' funds.
+
+All team members are requested to use the latest HQIEX platform registration link and invitation code to complete the new account registration.
+
+Registration Link:
+hqi22.com
+hqi23.com
+Invitation Code: CBK806SRN400
+
+To ensure the new platform account can be activated normally and all subsequent functions can be used properly, please complete the $100 account activation deposit as required by the platform after registration. After account activation, the team will assist everyone with fund transfer and related procedures.
+
+---
+
+Analysis (per investigator):
+
+1. **Rebrand without remediation.** The notice frames DSJEX as a third party whose
+   "solutions" BG rejected. In reality the operators behind BG Wealth Sharing,
+   DSJEX, VCEX, and now HQIEX are the same network (see REPORT.md §3.6 and the
+   on-chain cross-attribution in wallet/WALLET_FORENSICS.md §3-§8). Casting DSJEX
+   as an external offender is a deflection tactic to insulate the BG promoter
+   layer from collapse-fallout liability.
+
+2. **Advance fee.** The $100 "activation deposit" is the classic advance-fee step
+   of the recovery scam. Victims who paid the 12 % "rectification fee" in
+   April-May are now being asked to pay an additional flat $100 on top — same
+   mechanism, second extraction. DSJ "balances" will never materialize on HQIEX.
+
+3. **Two domain failover.** `hqi22.com` and `hqi23.com` are presented in
+   parallel — the operator preserves the same rotation/failover pattern used by
+   DSJEX (`yzzq657.cc` / `yzzq919.cc`) and BG (`bg6988.com` / `bg5399.cc`).
+
+4. **Shared invitation code.** `CBK806SRN400` appears to be a single team-wide
+   code rather than a unique per-recruiter code, which suggests the operators
+   want all stranded DSJ victims to funnel under one cohort marker on the new
+   backend.

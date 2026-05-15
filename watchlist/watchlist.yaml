@@ -109,6 +109,23 @@ domains:
   - signalraiders.com
   - signalraiders.io
 
+  # HQIEX — successor brand announced 2026-05-14 BonChat broadcast
+  # Both registered 2026-05-03 (one day BEFORE Tether's 2026-05-04 freeze and
+  # six days before operators' May 7 "restoration" promises — proves the
+  # rebrand was planned while operators were still telling victims they'd
+  # honor DSJ balances). Same Gname.com Pte. Ltd. registrar as the entire
+  # BG/DSJ/VCEX fleet. Cloudflare has already flagged both as "Suspected
+  # phishing site" (HTTP 403 phishing-block page returned 2026-05-14).
+  - hqi22.com
+  - hqi23.com
+  # Plausible rotation siblings — same numeric-suffix pattern as DSJEX
+  - hqi21.com
+  - hqi24.com
+  - hqi25.com
+  - hqiex.com
+  - hqiex.net
+  - hqiex.cc
+
 # Cert Transparency queries (crt.sh) — surface new lookalikes registering certs
 crtsh_queries:
   - "%.dsjex.%"
@@ -125,3 +142,5 @@ crtsh_queries:
   - "%nexomax%"
   - "%txex%"
   - "%lwex%"
+  - "%hqiex%"
+  - "%hqi2%"
