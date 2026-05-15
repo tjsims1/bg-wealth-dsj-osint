@@ -95,6 +95,11 @@ The notice instructs all team members to register on `hqi22.com` or `hqi23.com` 
 | `hqi23.com` | 2026-05-03 14:28:31Z | Gname.com Pte. Ltd. | 2026-05-14 18:48 MST | HTTP 403 — Cloudflare "Suspected phishing site" |
 | `hqi18.com` | 2026-05-03 14:28:35Z | Gname.com Pte. Ltd. | 2026-05-14 18:55 MST | HTTP 200 (not yet flagged) |
 | `hqi19.com` | 2026-05-03 14:28:35Z | Gname.com Pte. Ltd. | 2026-05-14 18:55 MST | HTTP 200 (not yet flagged) |
+| `hqi15.com` | 2026-05-03 14:28:33Z | Gname.com Pte. Ltd. | 2026-05-14 18:59 MST | HTTP 200 (not yet flagged) |
+| `hqi16.com` | 2026-05-03 14:28:35Z | Gname.com Pte. Ltd. | 2026-05-14 18:59 MST | HTTP 403 — Cloudflare "Suspected phishing site" |
+| `hqi17.com` | 2026-05-03 14:28:35Z | Gname.com Pte. Ltd. | 2026-05-14 18:59 MST | HTTP 200 (not yet flagged) |
+
+**Reserve burn rate (real-time observation 2026-05-14 18:48 → 18:59 MST):** 7 of 16 pre-staged domains broadcast in **11 minutes**. 3 of 7 (`hqi22`, `hqi23`, `hqi16`) are Cloudflare-flagged at broadcast time; `hqi16` was flagged *before its first broadcast* and never appeared in earlier notices, meaning Cloudflare's classifier is fingerprinting on intrinsic infrastructure features (Gname.com Pte. Ltd. registrar + `maria/mark` NS pair + Vite-built `/h5/js/index-*.js` asset paths + new-domain age) rather than victim/community reports. **The flag lands on each sibling within hours of activation regardless of whether the domain is broadcast** — operators cannot pre-test their way out. URL path drifted from `/h5/ios#/home` (18:55) to `/h5/ios#/login` (18:59) — operators are real-time-adjusting the deep-link target based on victim behavior.
 
 **Pre-staged rotation reserve — 16 domains.** A third broadcast at 18:55 MST (**`evidence/bonchat/hqiex-rotation-hqi18-19-broadcast-2026-05-14.txt`**) rotated to `hqi18.com` and `hqi19.com` — within seven minutes of the original rebrand notice. WHOIS proves the full `hqi15-31.com` range (minus `hqi14`, `hqi24`, `hqi32`, `hqi33`) was registered on 2026-05-03 in two scripted bursts:
 

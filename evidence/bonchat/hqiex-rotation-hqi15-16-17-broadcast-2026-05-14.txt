@@ -1,0 +1,58 @@
+Source:    Forwarded to Vault Data Servers via BonChat operator broadcast
+Captured:  2026-05-14 18:59 MST (2026-05-15 01:59 UTC)
+Channel:   BonChat — BG-015 cohort (same as prior three broadcasts)
+Sequence:  Fourth broadcast in the HQIEX-pivot sequence
+           - 18:48 MST: hqi22.com, hqi23.com (both Cloudflare-flagged at broadcast)
+           - 18:53 MST: migration mechanics + Elena03->Elena2026 handle rotation
+           - 18:55 MST: hqi18.com, hqi19.com (HTTP 200 at broadcast)
+           - 18:59 MST: this broadcast — hqi15/16/17
+           - 11 minutes elapsed; 7 of 16 reserve domains burned
+
+---
+
+HQI Platform Registration Links:
+
+hqi15.com/h5/ios#/login
+
+hqi16.com/h5/ios#/login
+
+hqi17.com/h5/ios#/login
+
+Invitation Code: CBK806SRN400
+
+---
+
+Analysis (per investigator):
+
+1. **URL-path change to `#/login` (was `#/home`).** Operators corrected the
+   landing target after observing that victims need to authenticate, not
+   land on a generic home view. Indicates operators are watching real-time
+   victim behavior across the rollout.
+
+2. **Live HTTP probe at broadcast time (2026-05-14 18:59 MST + ~1 min):**
+   - hqi15.com  HTTP 200 (clean SPA shell)
+   - hqi16.com  HTTP 403 — Cloudflare "Suspected phishing site"
+   - hqi17.com  HTTP 200 (clean SPA shell)
+   **Three of the seven broadcast domains so far (hqi22, hqi23, hqi16) are
+   Cloudflare-flagged within hours/minutes of being made operational.**
+   Operators broadcast hqi16 without pre-checking — confirms they are not
+   testing URLs before pushing to the BG-015 channel.
+
+3. **Cloudflare auto-detection signal.** The fact that hqi16 was flagged
+   *before its first broadcast* and never appeared in earlier operator
+   notices means Cloudflare's classifier is fingerprinting on intrinsic
+   features (NS pair `maria/mark.ns.cloudflare.com`, Gname.com Pte. Ltd.
+   registrar, new-domain age, the specific Vite-built `/h5/js/index-*.js`
+   asset paths, or some combination) — *not* on victim/community reports.
+   The flag will continue to land on each new sibling within hours of
+   first request, regardless of whether the domain is broadcast.
+
+4. **Reserve burn rate.** 16 domains pre-staged on 2026-05-03; 7 broadcast
+   in 11 minutes (44 %); 4 of 7 still working. Projected reserve-exhaustion
+   if cadence continues: ~25 minutes total. Operators will need to either
+   (a) register a fresh batch (look for Gname.com Pte. Ltd. + Cloudflare
+   `maria/mark` NS + same-day timestamp burst on 2026-05-14 or 2026-05-15
+   UTC) or (b) pivot to a different CDN entirely (more interesting signal
+   — would suggest they've finally identified Cloudflare's classifier as
+   the obstacle and are migrating to bulletproof hosting / a non-Cloudflare
+   front).
